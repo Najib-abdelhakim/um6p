@@ -1019,7 +1019,7 @@ var projets = [
         type: "Waste",
         sousType: "Waste sorting center",
         image: "",
-        icone: "",
+        icone: "img/WS.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1030,7 +1030,7 @@ var projets = [
         type: "Waste",
         sousType: "Clothes recycling collect",
         image: "",
-        icone: "",
+        icone: "img/CR.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1041,18 +1041,18 @@ var projets = [
         type: "Waste",
         sousType: "Clothes recycling collect",
         image: "",
-        icone: "",
+        icone: "img/CR.jpg",
         campus: "Ben Guerir"
     },
     {
-        id: "BG-094",
-        nom: "Waste sorting center",
+        id: "BG-093",
+        nom: "newres",
         coordinates: [32.2183478, -7.9361096],
         description: "Clothes recycling collection point",
         type: "Waste",
         sousType: "Clothes recycling collect",
         image: "",
-        icone: "",
+        icone: "img/CR.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1063,7 +1063,7 @@ var projets = [
         type: "Waste",
         sousType: "Laptop recycling",
         image: "",
-        icone: "",
+        icone: "img/LR.JPG",
         campus: "Ben Guerir"
     },
     
@@ -1076,7 +1076,7 @@ var projets = [
         type: "resturation",
         sousType: "Gachipain",
         image: "",
-        icone: "",
+        icone: "img/GP.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1087,7 +1087,7 @@ var projets = [
         type: "resturation",
         sousType: "Gachipain",
         image: "",
-        icone: "",
+        icone: "img/GP.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1098,7 +1098,7 @@ var projets = [
         type: "resturation",
         sousType: "Gachipain",
         image: "",
-        icone: "",
+        icone: "img/GP.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1109,7 +1109,7 @@ var projets = [
         type: "resturation",
         sousType: "Gachipain",
         image: "",
-        icone: "",
+        icone: "img/GP.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1120,7 +1120,7 @@ var projets = [
         type: "resturation",
         sousType: "FRIGE SOLIDAIRE",
         image: "",
-        icone: "",
+        icone: "img/FS.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1131,7 +1131,7 @@ var projets = [
         type: "resturation",
         sousType: "FRIGE SOLIDAIRE",
         image: "",
-        icone: "",
+        icone: "img/FS.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1142,7 +1142,7 @@ var projets = [
         type: "resturation",
         sousType: "Gachipain",
         image: "",
-        icone: "",
+        icone: "img/GP.jpg",
         campus: "Ben Guerir"
     },
     
@@ -1168,7 +1168,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1179,7 +1179,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1190,7 +1190,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1201,7 +1201,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1212,7 +1212,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1223,7 +1223,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1234,7 +1234,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1245,7 +1245,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1256,7 +1256,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1267,7 +1267,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1278,7 +1278,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1289,7 +1289,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1300,7 +1300,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1311,7 +1311,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1322,7 +1322,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1333,7 +1333,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1344,7 +1344,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1355,7 +1355,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1366,7 +1366,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1377,7 +1377,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1388,7 +1388,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1399,7 +1399,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1410,7 +1410,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1421,7 +1421,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1432,7 +1432,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1443,7 +1443,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1454,7 +1454,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1465,7 +1465,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1476,7 +1476,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1487,7 +1487,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1498,7 +1498,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1509,7 +1509,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1520,7 +1520,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1531,7 +1531,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1542,7 +1542,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1553,7 +1553,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1564,7 +1564,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1575,7 +1575,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1586,7 +1586,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1597,7 +1597,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1608,7 +1608,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1619,7 +1619,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Biological pest control",
         image: "",
-        icone: "img/.jpg",
+        icone: "img/BC.jpg",
         campus: "Ben Guerir"
     }
     ,
@@ -1631,7 +1631,7 @@ var projets = [
         type: "resturation",
         sousType: "GO Plant",
         image: "",
-        icone: "",
+        icone: "img/GO.jpg",
         campus: "Ben Guerir"
     }
     ,
@@ -2360,7 +2360,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var campusControls = document.getElementById('campusControls');
     if (campusControls) {
         campusControls.innerHTML = `
-            <button class="campus-btn active" data-campus="all" onclick="afficherTousCampus()">🌍 Tous</button>
+            <button class="campus-btn active" data-campus="all" onclick="afficherTousCampus()"> Tous</button>
             <button class="campus-btn" data-campus="Ben Guerir" onclick="recentrerBenGuerir()">📍 Ben Guerir</button>
             <button class="campus-btn" data-campus="Rabat" onclick="recentrerRabat()">📍 Rabat</button>
         `;
