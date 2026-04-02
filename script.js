@@ -1045,7 +1045,7 @@ var projets = [
         campus: "Ben Guerir"
     },
     {
-        id: "BG-093",
+        id: "BG-094",
         nom: "newres",
         coordinates: [32.2183478, -7.9361096],
         description: "Clothes recycling collection point",
@@ -1621,10 +1621,9 @@ var projets = [
         image: "",
         icone: "img/BC.jpg",
         campus: "Ben Guerir"
-    }
-    ,
+    },
     {
-        id: "RB-028",
+        id: "BG-145",
         nom: "GO Plant",
         coordinates: [32.2164095, -7.9385290],
         description: "Plant-based restaurant initiative",
@@ -1633,9 +1632,282 @@ var projets = [
         image: "",
         icone: "img/GO.jpg",
         campus: "Ben Guerir"
-    }
-    ,
-    
+    },
+    {
+        id: "BG-146",
+        nom: "Botanic garden",
+        coordinates: [32.215367, -7.940962],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-147",
+        nom: "Botanic garden",
+        coordinates: [32.215258, -7.940871],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-148",
+        nom: "Botanic garden",
+        coordinates: [32.214968, -7.941247],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-149",
+        nom: "Botanic garden",
+        coordinates: [32.215054, -7.941392],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-150",
+        nom: "Botanic garden",
+        coordinates: [32.215272, -7.940666 ],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-151",
+        nom: "Botanic garden",
+        coordinates: [32.215151, -7.940572 ],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-152",
+        nom: "Botanic garden",
+        coordinates: [32.215524, -7.940913 ],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-153",
+        nom: "Botanic garden",
+        coordinates: [32.215636, -7.941035 ],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-154",
+        nom: "Botanic garden",
+        coordinates: [32.214771, -7.940144 ],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-155",
+        nom: "Botanic garden",
+        coordinates: [32.214533, -7.939902 ],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-156",
+        nom: "Botanic garden",
+        coordinates: [32.214444, -7.939804 ],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-157",
+        nom: "Botanic garden",
+        coordinates: [32.214307, -7.939670 ],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-158",
+        nom: "Botanic garden",
+        coordinates: [32.213914, -7.939266 ],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-159",
+        nom: "Botanic garden",
+        coordinates: [32.213633, -7.938982 ],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-160",
+        nom: "Botanic garden",
+        coordinates: [32.213332, -7.938657 ],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-161",
+        nom: "Botanic garden",
+        coordinates: [32.215134, -7.940314 ],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-162",
+        nom: "Botanic garden",
+        coordinates: [32.214702, -7.939979 ],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-163",
+        nom: "Botanic garden",
+        coordinates: [32.214601, -7.939775 ],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-164",
+        nom: "Botanic garden",
+        coordinates: [32.214438, -7.939595 ],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-165",
+        nom: "Botanic garden",
+        coordinates: [32.214890, -7.940526],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-166",
+        nom: "Botanic garden",
+        coordinates: [32.214834, -7.940493],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-167",
+        nom: "Botanic garden",
+        coordinates: [32.214681, -7.940794],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-168",
+        nom: "Botanic garden",
+        coordinates: [32.214625, -7.940761],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-169",
+        nom: "Botanic garden",
+        coordinates: [32.214461, -7.941115],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-170",
+        nom: "Botanic garden",
+        coordinates: [32.214395, -7.941053],
+        description: "To explore local biodiversity while enjoying an enriching outdoor learning experience, information panels on plants have been installed on campus, allowing the community to discover and appreciate the diverse ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991231.png",
+        icone: "img/BG.jpg",
+        campus: "Ben Guerir"
+    },
     
     // ==================== CAMPUS RABAT ====================
     {
@@ -1934,454 +2206,490 @@ var projets = [
     }
 ];
 
-// Fonction utilitaire pour obtenir les types uniques
-function getUniqueTypes() {
-    const types = new Set();
-    projets.forEach(projet => {
-        if (projet.type) types.add(projet.type);
+var arretsGolfette = [
+    // Ben gerire
+
+    { id: "GOLF-01", coords: [32.217594, -7.937086] },
+    { id: "GOLF-02", coords: [32.219548, -7.939168] },
+    { id: "GOLF-04", coords: [32.219909, -7.938983] },
+    { id: "GOLF-05", coords: [32.219979, -7.939342] },
+    { id: "GOLF-06", coords: [32.218952, -7.940753] },
+    { id: "GOLF-07", coords: [32.216153, -7.939091] },
+    { id: "GOLF-08", coords: [32.216445, -7.939384] },
+    { id: "GOLF-09", coords: [32.213574, -7.943262] },
+    { id: "GOLF-10", coords: [32.216073, -7.939943] },
+    { id: "GOLF-11", coords: [32.214856, -7.938757] },
+    { id: "GOLF-12", coords: [32.214252, -7.939670] },
+    { id: "GOLF-13", coords: [32.214051, -7.939464] },
+    { id: "GOLF-14", coords: [32.213833, -7.939793] },
+
+    //Rabat
+
+    { id: "GOL-1", coords: [33.980053, -6.733953] },
+    { id: "GOL-2", coords: [33.980425, -6.731994] },
+    { id: "GOL-4", coords: [33.978717, -6.728802] },
+    { id: "GOL-5", coords: [33.979644, -6.728094] },
+    { id: "GOL-6", coords: [33.979135, -6.727110] },
+    { id: "GOL-7", coords: [33.979214, -6.727040] },
+    { id: "GOL-8", coords: [33.979728, -6.728033] },
+    { id: "GOL-9", coords: [33.980663, -6.727351] },
+    { id: "GOL-10", coords: [33.980293, -6.726601] },
+    { id: "GOL-11", coords: [33.980333, -6.726525] },
+    { id: "GOL-12", coords: [33.980717, -6.727294] },
+    { id: "GOL-13", coords: [33.981353, -6.726824] },
+    { id: "GOL-14", coords: [33.982602, -6.729229] },
+    { id: "GOL-15", coords: [33.980006, -6.731167] },
+    { id: "GOL-16", coords: [33.979500, -6.727591] },
+    { id: "GOL-17", coords: [33.979422874361916, -6.727658203373228] },
+    { id: "GOL-18", coords: [33.979645, -6.728086] },
+    { id: "GOL-19", coords: [33.978240, -6.729183] },
+    { id: "GOL-20", coords: [33.979192, -6.730999] },
+    { id: "GOL-21", coords: [33.978723, -6.731355] },
+    { id: "GOL-22", coords: [33.979010, -6.731937] },
+    { id: "GOL-23", coords: [33.9809578906194, -6.73037998257016] },
+];
+
+var trajetsGolfette = [
+    { id: "TRAJET-01", nom: "Ligne-1-BG", couleur: "#28a745", arrets: ["GOLF-01", "GOLF-02", "GOLF-03", "GOLF-04", "GOLF-05", "GOLF-06"] },
+    { id: "TRAJET-02", nom: "Ligne-2-BG", couleur: "#0066b3", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-09"] },
+    { id: "TRAJET-03", nom: "Ligne-3-BG", couleur: "#fd7e14", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-10","GOLF-11", "GOLF-12", "GOLF-13", "GOLF-14"] },
+    { id: "TRAJET-04", nom: "Ligne-1-RB", couleur: "#a72828", arrets: ["GOL-1", "GOL-2", "GOL-3", "GOL-4", "GOL-5", "GOL-6","GOL-7", "GOL-8", "GOL-9", "GOL-10", "GOL-11", "GOL-12","GOL-13", "GOL-14", "GOL-15"] },
+    { id: "TRAJET-05", nom: "Ligne-2-RB", couleur: "#a72894", arrets: ["GOL-16", "GOL-17", "GOL-18", "GOL-19", "GOL-20", "GOL-21","GOL-22", "GOL-23", "GOL-16"] },
+
+];
+
+var trajetActuel = null;
+
+
+var arretsBus = [
+    { id: "BUS-01", coords: [32.214110, -7.937251] },
+    { id: "BUS-02", coords: [32.215140, -7.938333] },
+    { id: "BUS-03", coords: [32.217086, -7.935701] },
+    { id: "BUS-04", coords: [32.219834, -7.938491] },
+    { id: "BUS-05", coords: [32.216935, -7.942335] },
+    { id: "BUS-06", coords: [32.213287, -7.938580] },
+    { id: "BUS-07", coords: [32.214183, -7.937371] },
+    { id: "BUS-08", coords: [32.214083, -7.937271] },
+
+    { id: "BUS-09", coords: [32.211296, -7.940944] },
+    { id: "BUS-10", coords: [32.211322, -7.941260] },
+    { id: "BUS-11", coords: [32.211021, -7.941319] },
+    { id: "BUS-12", coords: [32.210971, -7.940934] },
+    { id: "BUS-13", coords: [32.209275, -7.939573] },
+    { id: "BUS-14", coords: [32.209094, -7.939561] },
+    { id: "BUS-15", coords: [32.209124, -7.939311] },
+    { id: "BUS-16", coords: [32.209124, -7.937991] },
+    { id: "BUS-17", coords: [32.210071, -7.937812] },
+    { id: "BUS-18", coords: [32.210775, -7.937277] },
+    { id: "BUS-19", coords: [32.211550, -7.936980] },
+    { id: "BUS-20", coords: [32.212234, -7.937051] },
+    { id: "BUS-21", coords: [32.213536, -7.937873] },
+
+
+    // Rabat exemple
+    { id: "BUS-RB-01", coords: [33.984798, -6.730144] },
+    { id: "BUS-RB-02", coords: [33.981129, -6.726009] },
+    { id: "BUS-RB-03", coords: [33.982339, -6.7244645] }  
+];
+
+
+var trajetsBus = [
+    { id: "BUS-T1" ,nom: "Ligne-1-BG", couleur: "#ff0000", arrets: ["BUS-01", "BUS-02", "BUS-03", "BUS-04","BUS-05", "BUS-06", "BUS-07", "BUS-08","BUS-09", "BUS-10", "BUS-11", "BUS-12","BUS-13", "BUS-14", "BUS-15", "BUS-16","BUS-17", "BUS-18", "BUS-19", "BUS-20","BUS-21"]},
+    { id: "BUS-T2", nom: "Ligne-1-RA", couleur: "#0000ff", arrets: ["BUS-RB-01", "BUS-RB-02", "BUS-RB-03"]}
+];
+
+var trajetBusActuel = null;
+
+function afficherTrajet(trajetId) {
+    if (trajetActuel) { map.removeLayer(trajetActuel); trajetActuel = null; }
+    var trajet = trajetsGolfette.find(t => t.id === trajetId);
+    if (!trajet) return;
+    var points = [];
+    for (var i = 0; i < trajet.arrets.length; i++) {
+        var arret = arretsGolfette.find(a => a.id === trajet.arrets[i]);
+        if (arret) points.push(arret.coords);
+    }
+    trajetActuel = L.polyline(points, { color: trajet.couleur, weight: 5, opacity: 0.9 }).addTo(map);
+}
+
+function afficherTrajetBus(trajetId) {
+    if (trajetBusActuel) {
+        map.removeLayer(trajetBusActuel);
+        trajetBusActuel = null;
+    }
+
+    var trajet = trajetsBus.find(t => t.id === trajetId);
+    if (!trajet) return;
+
+    var points = [];
+
+    trajet.arrets.forEach(function(id) {
+        var arret = arretsBus.find(a => a.id === id);
+        if (arret) points.push(arret.coords);
     });
-    return Array.from(types).sort();
+
+    trajetBusActuel = L.polyline(points, {
+        color: trajet.couleur,
+        weight: 5,
+        dashArray: "10, 10", // 🔥 style bus (pointillé)
+        opacity: 0.9
+    }).addTo(map);
 }
 
-// Fonction utilitaire pour obtenir les sous-types par type
-function getSubTypesByType(type) {
-    const subTypes = new Set();
-    projets.forEach(projet => {
-        if (projet.type === type && projet.sousType) {
-            subTypes.add(projet.sousType);
-        }
-    });
-    return Array.from(subTypes).sort();
+function effacerTousLesTrajets() {
+    if (trajetActuel) {
+        map.removeLayer(trajetActuel);
+        trajetActuel = null;
+    }
+
+    if (trajetBusActuel) {
+        map.removeLayer(trajetBusActuel);
+        trajetBusActuel = null;
+    }
 }
 
-// Fonction utilitaire pour filtrer par campus
-function filtrerParCampus(campus) {
-    return projets.filter(projet => projet.campus === campus);
-}
-
-// Export pour utilisation dans d'autres fichiers (si nécessaire)
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { projets, getUniqueTypes, getSubTypesByType, filtrerParCampus };
-}
 
 // ==================== INITIALISATION DE LA CARTE ====================
+
 var map = L.map('map').setView([32.221017121521314, -7.935687823358653], 15);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap contributors' }).addTo(map);
 
-// Fond de carte
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap contributors'
-}).addTo(map);
-
-// Stocker les marqueurs pour y accéder plus tard
 var markers = [];
-var currentCampus = 'all'; // 'all', 'Ben Guerir', 'Rabat'
+var currentCampus = 'all';
 
-// ==================== FONCTIONS DE CRÉATION DES MARQUEURS ====================
 
-// Fonction pour créer un marqueur personnalisé avec image
+// ==================== CRÉATION DES MARQUEURS ====================
+
 function creerMarqueurPersonnalise(projet) {
-    // Vérifier si l'icône existe, sinon utiliser une icône par défaut
     var iconUrl = projet.icone && projet.icone !== "" ? projet.icone : 'https://cdn-icons-png.flaticon.com/512/2991/2991231.png';
-    
     var customIcon = L.divIcon({
         className: 'custom-marker',
-        html: `<img src="${iconUrl}" alt="${projet.nom}" title="${projet.nom}" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2991/2991231.png'">`,
+        html: `<img src="${iconUrl}" style="width:45px;height:45px;border-radius:50%;border:3px solid white;box-shadow:0 4px 10px rgba(0,0,0,0.3);background:white;padding:5px;">`,
         iconSize: [45, 45],
         popupAnchor: [0, -25]
     });
     
-    return L.marker(projet.coordinates, { icon: customIcon });
+    var marker = L.marker(projet.coordinates, { icon: customIcon });
+    
+    // Construction du popup
+    var popupHtml = `<div style="padding:10px; max-width:300px;">`;
+    
+    // Image du projet (si elle existe)
+    if (projet.image && projet.image !== "") {
+        popupHtml += `<img src="${projet.image}" style="width:100%; height:150px; object-fit:cover; border-radius:8px; margin-bottom:10px;" onerror="this.style.display='none'">`;
+    }
+    
+    // Titre
+    popupHtml += `<h3 style="color:#0066b3;margin:0 0 10px 0;">${projet.nom}</h3>`;
+    
+    // Campus
+    popupHtml += `<p><strong>Campus:</strong> ${projet.campus}</p>`;
+    
+    // Description (si elle existe)
+    if (projet.description && projet.description !== "") {
+        popupHtml += `<p><strong>Description:</strong> ${projet.description}</p>`;
+    }
+    
+    popupHtml += `</div>`;
+    
+    marker.bindPopup(popupHtml, { maxWidth: 350 });
+    return marker;
 }
 
-// Fonction pour générer dynamiquement le contenu du popup
-function genererPopupContent(projet) {
-    let html = `
-        <div class="custom-popup">
-            <div class="popup-image">
-                <img src="${projet.image && projet.image !== "" ? projet.image : 'https://cdn-icons-png.flaticon.com/512/2991/2991231.png'}" alt="${projet.nom}" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2991/2991231.png'">
-            </div>
-            <div class="popup-content">
-                <h3>${projet.nom || 'Projet UM6P'}</h3>
-    `;
-    
-    if (projet.campus) {
-        html += `<p><strong>Campus:</strong> ${projet.campus}</p>`;
-    }
-    
-    if (projet.type) {
-        html += `<p><strong>Type:</strong> ${projet.type}</p>`;
-    }
-    
-    if (projet.sousType) {
-        html += `<p><strong>Sous-type:</strong> ${projet.sousType}</p>`;
-    }
-    
-    if (projet.description && projet.description !== "") {
-        html += `<p><strong>Description:</strong> ${projet.description}</p>`;
-    }
-    
-    html += `</div></div>`;
-    
-    return html;
-}
 
 // ==================== FONCTIONS DE FILTRAGE ====================
 
-// Fonction pour filtrer les marqueurs par type
-function filtrerParType(type) {
-    markers.forEach(function(item) {
-        map.removeLayer(item.marker);
-    });
-    
-    markers.forEach(function(item) {
-        if (item.projet.type === type && (currentCampus === 'all' || item.projet.campus === currentCampus)) {
-            item.marker.addTo(map);
-        }
-    });
-}
-
-// Fonction pour filtrer par sous-type
-function filtrerParSousType(sousType) {
-    markers.forEach(function(item) {
-        map.removeLayer(item.marker);
-    });
-    
-    markers.forEach(function(item) {
-        if (item.projet.sousType === sousType && (currentCampus === 'all' || item.projet.campus === currentCampus)) {
-            item.marker.addTo(map);
-        }
-    });
-}
-
-// Fonction pour filtrer par campus
-function filtrerParCampus(campus) {
+function filtrerParCampusMap(campus) {
     currentCampus = campus;
-    
+    markers.forEach(function(item) { map.removeLayer(item.marker); });
     markers.forEach(function(item) {
-        map.removeLayer(item.marker);
+        if (campus === 'all' || item.projet.campus === campus) { item.marker.addTo(map); }
     });
-    
-    markers.forEach(function(item) {
-        if (campus === 'all' || item.projet.campus === campus) {
-            item.marker.addTo(map);
-        }
-    });
-    
-    // Mettre à jour l'affichage de la sidebar si nécessaire
-    mettreAJourSidebar();
+    afficherListeTypes();
 }
 
-// Fonction pour réinitialiser tous les marqueurs
 function resetMarqueurs() {
     markers.forEach(function(item) {
-        if (currentCampus === 'all' || item.projet.campus === currentCampus) {
-            item.marker.addTo(map);
-        }
+        if (currentCampus === 'all' || item.projet.campus === currentCampus) { item.marker.addTo(map); }
     });
 }
+
 
 // ==================== FONCTIONS DE LA SIDEBAR ====================
 
-// Fonction pour organiser les projets par type et sous-type (avec filtrage campus)
 function organiserProjetsParType() {
     var types = {};
-    
     projets.forEach(function(projet) {
-        // Appliquer le filtrage par campus
-        if (currentCampus !== 'all' && projet.campus !== currentCampus) {
-            return;
-        }
-        
-        if (!types[projet.type]) {
-            types[projet.type] = {
-                nom: projet.type,
-                sousTypes: {}
-            };
-        }
-        
+        if (currentCampus !== 'all' && projet.campus !== currentCampus) return;
+        if (!types[projet.type]) { types[projet.type] = { nom: projet.type, sousTypes: {} }; }
         if (!types[projet.type].sousTypes[projet.sousType]) {
-            types[projet.type].sousTypes[projet.sousType] = {
-                nom: projet.sousType,
-                icone: projet.icone,
-                projets: []
-            };
+            types[projet.type].sousTypes[projet.sousType] = { nom: projet.sousType, icone: projet.icone, projets: [] };
         }
-        
         types[projet.type].sousTypes[projet.sousType].projets.push(projet);
     });
-    
     return types;
 }
 
-// Fonction pour obtenir le nombre total de projets (avec filtrage)
 function getTotalProjetsCount() {
-    if (currentCampus === 'all') {
-        return projets.length;
-    }
+    if (currentCampus === 'all') return projets.length;
     return projets.filter(p => p.campus === currentCampus).length;
 }
 
-// Fonction pour mettre à jour la sidebar
 function mettreAJourSidebar() {
     afficherListeTypes();
-    
-    // Mettre à jour le titre du campus actif
-    const campusTitle = document.getElementById('campusTitle');
-    if (campusTitle) {
-        if (currentCampus === 'all') {
-            campusTitle.textContent = 'Tous les campus';
-        } else {
-            campusTitle.textContent = currentCampus;
-        }
-    }
-    
-    // Mettre à jour le compteur
-    const projetCount = document.getElementById('projetCount');
-    if (projetCount) {
-        projetCount.textContent = getTotalProjetsCount();
-    }
+    var campusTitle = document.getElementById('campusTitle');
+    if (campusTitle) { campusTitle.textContent = currentCampus === 'all' ? 'Tous les campus' : currentCampus; }
+    var projetCount = document.getElementById('projetCount');
+    if (projetCount) { projetCount.textContent = getTotalProjetsCount(); }
 }
 
-// Fonction pour afficher la liste dans la sidebar
 function afficherListeTypes() {
     var types = organiserProjetsParType();
     var typesList = document.getElementById('typesList');
     if (!typesList) return;
-    
+
     typesList.innerHTML = '';
-    
+
+    // ==================== TYPES DE PROJETS ====================
     for (var typeNom in types) {
         var typeData = types[typeNom];
         var sousTypes = typeData.sousTypes;
-        
+
         var typeCard = document.createElement('div');
         typeCard.className = 'type-card';
-        
+
+        // Header
         var header = document.createElement('div');
         header.className = 'type-header';
         header.innerHTML = `
             <span class="type-nom">
                 <span>${typeNom}</span>
-                <span style="font-size: 12px; background: rgba(255,255,255,0.3); padding: 2px 8px; border-radius: 12px;">${Object.keys(sousTypes).length}</span>
+                <span style="font-size:12px;background:rgba(255,255,255,0.3);padding:2px 8px;border-radius:12px;">
+                    ${Object.keys(sousTypes).length}
+                </span>
             </span>
             <span class="toggle-icon">▼</span>
         `;
-        
+
+        // Content
         var content = document.createElement('div');
         content.className = 'type-content';
-        
+
+        // Sous-types
         for (var sousTypeNom in sousTypes) {
             var sousTypeData = sousTypes[sousTypeNom];
             var projetCount = sousTypeData.projets.length;
-            var iconUrl = sousTypeData.icone && sousTypeData.icone !== "" ? sousTypeData.icone : 'https://cdn-icons-png.flaticon.com/512/2991/2991231.png';
-            
+
+            var iconUrl = sousTypeData.icone && sousTypeData.icone !== ""
+                ? sousTypeData.icone
+                : 'https://cdn-icons-png.flaticon.com/512/2991/2991231.png';
+
             var sousTypeItem = document.createElement('div');
             sousTypeItem.className = 'sous-type-item';
             sousTypeItem.setAttribute('data-soustype', sousTypeNom);
-            
+
             sousTypeItem.innerHTML = `
-                <img src="${iconUrl}" alt="${sousTypeNom}" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2991/2991231.png'">
+                <img src="${iconUrl}">
                 <div class="sous-type-info">
                     <div class="sous-type-nom">${sousTypeNom}</div>
                     <div class="sous-type-count">${projetCount} projet${projetCount > 1 ? 's' : ''}</div>
                 </div>
             `;
-            
-            sousTypeItem.addEventListener('click', function(e) {
+
+            // Click filtre
+            sousTypeItem.addEventListener('click', function (e) {
                 e.stopPropagation();
+
                 var sousType = this.getAttribute('data-soustype');
-                filtrerParSousType(sousType);
-                
-                document.querySelectorAll('.sous-type-item').forEach(function(item) {
-                    item.style.background = 'rgba(255,255,255,0.8)';
+
+                markers.forEach(item => map.removeLayer(item.marker));
+
+                markers.forEach(function (item) {
+                    if (
+                        item.projet.sousType === sousType &&
+                        (currentCampus === 'all' || item.projet.campus === currentCampus)
+                    ) {
+                        item.marker.addTo(map);
+                    }
                 });
+
+                effacerTousLesTrajets();
+
+                document.querySelectorAll('.sous-type-item').forEach(i => {
+                    i.style.background = 'rgba(255,255,255,0.8)';
+                });
+
                 this.style.background = 'rgba(0,102,179,0.2)';
             });
-            
+
             content.appendChild(sousTypeItem);
         }
-        
-        header.addEventListener('click', function() {
+
+        // Toggle
+        header.addEventListener('click', function () {
             this.classList.toggle('collapsed');
-            var content = this.nextElementSibling;
-            if (content) content.classList.toggle('collapsed');
+            var contentDiv = this.nextElementSibling;
+            if (contentDiv) contentDiv.classList.toggle('collapsed');
         });
-        
+
         typeCard.appendChild(header);
         typeCard.appendChild(content);
         typesList.appendChild(typeCard);
     }
-    
-    // Bouton pour réinitialiser tous les filtres
+
+    // ==================== FONCTION GENERIQUE POUR TRAJETS ====================
+    function creerCarteTrajets(titre, couleurHeader, listeTrajets, fonctionClick) {
+        var card = document.createElement('div');
+        card.className = 'type-card';
+        card.style.marginTop = '20px';
+        card.style.border = `2px solid ${couleurHeader}`;
+
+        var header = document.createElement('div');
+        header.className = 'type-header';
+        header.style.background = couleurHeader;
+        header.innerHTML = `<span class="type-nom">${titre}</span>`;
+
+        var content = document.createElement('div');
+        content.className = 'type-content';
+
+        listeTrajets.forEach(function (trajet) {
+            var item = document.createElement('div');
+            item.className = 'sous-type-item';
+            item.style.borderLeftColor = trajet.couleur;
+            item.style.cursor = 'pointer';
+
+            item.innerHTML = `
+                <div style="
+                    width:30px;height:30px;border-radius:50%;
+                    background:${trajet.couleur};
+                    display:flex;align-items:center;justify-content:center;
+                    margin-right:10px;color:white;">
+                </div>
+                <div class="sous-type-info">
+                    <div class="sous-type-nom">${trajet.nom}</div>
+                </div>
+            `;
+
+            item.addEventListener('click', function () {
+                effacerTousLesTrajets();
+                fonctionClick(trajet.id);
+            });
+
+            content.appendChild(item);
+        });
+
+        card.appendChild(header);
+        card.appendChild(content);
+
+        return card;
+    }
+
+    // ==================== BUS ====================
+    var busCard = creerCarteTrajets(
+        "TRAJETS BUS",
+        "#28a745",
+        trajetsBus,
+        afficherTrajetBus
+    );
+    typesList.appendChild(busCard);
+
+    // ==================== GOLFETTES ====================
+    var golfetteCard = creerCarteTrajets(
+        "TRAJETS GOLFETTES",
+        "#28a745",
+        trajetsGolfette,
+        afficherTrajet
+    );
+    typesList.appendChild(golfetteCard);
+
+    // ==================== RESET ====================
     var resetCard = document.createElement('div');
     resetCard.className = 'type-card';
     resetCard.style.background = 'rgba(4, 167, 66, 0.8)';
     resetCard.style.color = 'white';
+
     resetCard.innerHTML = `
-        <div class="type-header" style="background: #349354; justify-content: center;">
+        <div class="type-header" style="background:#349354;justify-content:center;">
             <span class="type-nom">TOUS LES PROJETS</span>
         </div>
     `;
-    
-    resetCard.addEventListener('click', function() {
+
+    resetCard.addEventListener('click', function () {
         resetMarqueurs();
-        
-        document.querySelectorAll('.sous-type-item').forEach(function(item) {
+        effacerTousLesTrajets();
+
+        document.querySelectorAll('.sous-type-item').forEach(item => {
             item.style.background = 'rgba(255,255,255,0.8)';
         });
     });
-    
+
     typesList.appendChild(resetCard);
 }
 
+
 // ==================== FONCTIONS DE CONTRÔLE ====================
 
-// Fonction pour recentrer sur Ben Guerir
 function recentrerBenGuerir() {
     map.setView([32.221017121521314, -7.935687823358653], 15);
-    filtrerParCampus('Ben Guerir');
+    filtrerParCampusMap('Ben Guerir');
+    effacerTousLesTrajets();
 }
 
-// Fonction pour recentrer sur Rabat
 function recentrerRabat() {
     map.setView([33.978971, -6.729941], 17);
-    filtrerParCampus('Rabat');
+    filtrerParCampusMap('Rabat');
+    effacerTousLesTrajets();
 }
 
-// Fonction pour afficher tous les campus
 function afficherTousCampus() {
     map.setView([33.0, -7.4], 8);
-    filtrerParCampus('all');
+    filtrerParCampusMap('all');
+    effacerTousLesTrajets();
 }
 
-// Fonction pour recentrer sur la carte entière
-function recentrerCarte() {
-    if (currentCampus === 'Rabat') {
-        map.setView([33.978971, -6.729941], 17);
-    } else {
-        map.setView([32.221017121521314, -7.935687823358653], 15);
-    }
-}
-
-// Fonction pour toggle la sidebar
 function toggleSidebar() {
     var sidebar = document.getElementById('sidebar');
     var toggleBtn = document.getElementById('toggleSidebar');
-    
     if (sidebar && toggleBtn) {
         sidebar.classList.toggle('collapsed');
-        
-        if (sidebar.classList.contains('collapsed')) {
-            toggleBtn.innerHTML = '▶';
-        } else {
-            toggleBtn.innerHTML = '◀';
-        }
+        toggleBtn.innerHTML = sidebar.classList.contains('collapsed') ? '▶' : '◀';
     }
 }
+
 
 // ==================== AJOUT DES MARQUEURS ====================
 
-// Ajouter les marqueurs sur la carte
 projets.forEach(function(projet) {
     var marker = creerMarqueurPersonnalise(projet);
-    var popupContent = genererPopupContent(projet);
-    
-    marker.bindPopup(popupContent, {
-        maxWidth: 350,
-        minWidth: 250,
-        className: 'custom-popup-container'
-    });
-    
     marker.addTo(map);
-    
-    // Stocker le marqueur avec les données du projet
-    markers.push({
-        marker: marker,
-        projet: projet
-    });
+    markers.push({ marker: marker, projet: projet });
 });
 
-// ==================== AJOUT DES CONTRÔLES ====================
 
-// Ajouter une échelle
-L.control.scale({
-    imperial: false,
-    metric: true,
-    position: 'bottomleft'
-}).addTo(map);
+// ==================== CONTRÔLES DE LA CARTE ====================
 
-// Ajouter un contrôle de légende
-var legend = L.control({ position: 'bottomright' });
+L.control.scale({ imperial: false, metric: true, position: 'bottomleft' }).addTo(map);
 
-legend.onAdd = function(map) {
-    var div = L.DomUtil.create('div', 'info legend');
-    div.style.backgroundColor = 'white';
-    div.style.padding = '10px';
-    div.style.borderRadius = '5px';
-    div.style.boxShadow = '0 0 15px rgba(0,0,0,0.2)';
-    div.style.fontSize = '12px';
-    
-    var types = getUniqueTypes();
-    
-    div.innerHTML = '<h4 style="margin:0 0 5px 0;">Types de projets</h4>';
-    
-    types.forEach(function(type) {
-        div.innerHTML += '<div style="margin: 3px 0;">• ' + type + '</div>';
-    });
-    
-    return div;
-};
-
-legend.addTo(map);
-
-// Fonction utilitaire pour obtenir les types uniques
-function getUniqueTypes() {
-    const types = new Set();
-    projets.forEach(projet => {
-        if (projet.type) types.add(projet.type);
-    });
-    return Array.from(types).sort();
-}
 
 // ==================== INITIALISATION ====================
 
-// Initialiser la sidebar et les événements
 document.addEventListener('DOMContentLoaded', function() {
-    // Afficher la liste des types
     afficherListeTypes();
-    
-    // Ajouter l'événement pour le bouton de toggle de la sidebar
     var toggleBtn = document.getElementById('toggleSidebar');
-    if (toggleBtn) {
-        toggleBtn.addEventListener('click', toggleSidebar);
-    }
-    
-    // Ajouter les contrôles de campus (à créer dans votre HTML)
+    if (toggleBtn) toggleBtn.addEventListener('click', toggleSidebar);
     var campusControls = document.getElementById('campusControls');
     if (campusControls) {
-        campusControls.innerHTML = `
-            <button class="campus-btn active" data-campus="all" onclick="afficherTousCampus()"> Tous</button>
-            <button class="campus-btn" data-campus="Ben Guerir" onclick="recentrerBenGuerir()">📍 Ben Guerir</button>
-            <button class="campus-btn" data-campus="Rabat" onclick="recentrerRabat()">📍 Rabat</button>
-        `;
+        campusControls.innerHTML = `<button class="campus-btn" onclick="afficherTousCampus()">🌍 Tous</button><button class="campus-btn" onclick="recentrerBenGuerir()">📍 Ben Guerir</button><button class="campus-btn" onclick="recentrerRabat()">📍 Rabat</button>`;
     }
-    
-    // Mettre à jour le compteur initial
-    const projetCount = document.getElementById('projetCount');
-    if (projetCount) {
-        projetCount.textContent = projets.length;
-    }
+    var projetCount = document.getElementById('projetCount');
+    if (projetCount) projetCount.textContent = projets.length;
 });
 
-// ==================== FONCTIONS GLOBALES POUR LE HTML ====================
 
-// Exposer les fonctions globalement pour qu'elles soient accessibles depuis le HTML
-window.filtrerParType = filtrerParType;
-window.filtrerParSousType = filtrerParSousType;
-window.resetMarqueurs = resetMarqueurs;
-window.recentrerCarte = recentrerCarte;
-window.toggleSidebar = toggleSidebar;
+window.filtrerParCampus = filtrerParCampusMap;
 window.recentrerBenGuerir = recentrerBenGuerir;
 window.recentrerRabat = recentrerRabat;
 window.afficherTousCampus = afficherTousCampus;
-window.filtrerParCampus = filtrerParCampus;
+window.toggleSidebar = toggleSidebar;
+window.afficherTrajet = afficherTrajet;
+window.afficherTrajetBus = afficherTrajetBus;
