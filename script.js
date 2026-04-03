@@ -818,18 +818,6 @@ var projets = [
         icone: "img/PV.jpg",
         campus: "Ben Guerir"
     },
-    {
-        id: "BG-074",
-        nom: "Station Navettes",
-        coordinates: [32.219942, -7.939093],
-        description: "Shuttle station",
-        type: "Transport",
-        sousType: "Station Navettes",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/SN.jpg",
-        campus: "Ben Guerir"
-    },
-    
     // Biodiversité - Suite
     {
         id: "BG-075",
@@ -1908,7 +1896,129 @@ var projets = [
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
-    
+    {
+        id: "BG-171",
+        nom: "Golfette",
+        coordinates: [32.2163800, -7.9388884],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-172",
+        nom: "Golfette",
+        coordinates: [32.2169360, -7.9378672],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-173",
+        nom: "Golfette",
+        coordinates: [32.217619, -7.937109],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Ben Guerir"
+    },
+        {
+        id: "BG-174",
+        nom: "Golfette",
+        coordinates: [32.216055, -7.939914],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Ben Guerir"
+    },
+        {
+        id: "BG-175",
+        nom: "Golfette",
+        coordinates: [32.216139, -7.939069],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Ben Guerir"
+    },
+        {
+        id: "GB-176",
+        nom: "Golfette",
+        coordinates: [32.214466, -7.942004],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Ben Guerir"
+    },
+        {
+        id: "BG-177",
+        nom: "Golfette",
+        coordinates: [32.213831, -7.939753],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Ben Guerir"
+    },
+        {
+        id: "BG-178",
+        nom: "Golfette",
+        coordinates: [32.218939, -7.940762],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Ben Guerir"
+    }
+    ,
+        {
+        id: "BG-179",
+        nom: "Golfette",
+        coordinates: [32.219472, -7.940066],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Rabat"
+    },
+        {
+        id: "BG-180",
+        nom: "Golfette",
+        coordinates: [32.219762, -7.939701],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Ben Guerir"
+    },
+      {
+        id: "BG-181",
+        nom: "Golfette",
+        coordinates: [32.218473, -7.938007],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Ben Guerir"
+    },
+
     // ==================== CAMPUS RABAT ====================
     {
         id: "RB-001",
@@ -2203,24 +2313,216 @@ var projets = [
         image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
         icone: "img/G.jpg",
         campus: "Rabat"
+    },
+    
+    {
+        id: "RB-027",
+        nom: "Golfette",
+        coordinates: [33.979463, -6.727598],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Rabat"
+    },
+    {
+        id: "RB-028",
+        nom: "Golfette",
+        coordinates: [33.980430, -6.726783],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Rabat"
+    },{
+        id: "RB-029",
+        nom: "Golfette",
+        coordinates: [33.982352, -6.728712],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Rabat"
+    },{
+        id: "RB-030",
+        nom: "Golfette",
+        coordinates: [33.981596, -6.727332],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Rabat"
+    },{
+        id: "RB-031",
+        nom: "Golfette",
+        coordinates: [33.979736, -6.730643],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Rabat"
+    },{
+        id: "RB-032",
+        nom: "Golfette",
+        coordinates: [33.978873, -6.728991],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Rabat"
+    },{
+        id: "RB-026",
+        nom: "Golfette",
+        coordinates: [33.978846, -6.730337],
+        description: "Golf cart service",
+        type: "Transport",
+        sousType: "Golfette",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/G.jpg",
+        campus: "Rabat"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ,
+    {
+        id: "BG-074",
+        nom: "Station Navettes",
+        coordinates: [32.215558, -7.937840],
+        description: "Shuttle station",
+        type: "Transport",
+        sousType: "Station Navettes",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/SN.jpg",
+        campus: "Ben Guerir"
+    },
+    ,
+    {
+        id: "BG-074",
+        nom: "Station Navettes",
+        coordinates: [32.216360, -7.936734],
+        description: "Shuttle station",
+        type: "Transport",
+        sousType: "Station Navettes",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/SN.jpg",
+        campus: "Ben Guerir"
+    },
+    ,
+    {
+        id: "BG-074",
+        nom: "Station Navettes",
+        coordinates: [32.217821, -7.936440],
+        description: "Shuttle station",
+        type: "Transport",
+        sousType: "Station Navettes",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/SN.jpg",
+        campus: "Ben Guerir"
+    },
+    ,
+    {
+        id: "BG-074",
+        nom: "Station Navettes",
+        coordinates: [32.218720, -7.937377],
+        description: "Shuttle station",
+        type: "Transport",
+        sousType: "Station Navettes",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/SN.jpg",
+        campus: "Ben Guerir"
+    },
+    ,
+    {
+        id: "BG-074",
+        nom: "Station Navettes",
+        coordinates: [32.218814, -7.939755],
+        description: "Shuttle station",
+        type: "Transport",
+        sousType: "Station Navettes",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/SN.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-074",
+        nom: "Station Navettes",
+        coordinates: [32.218032, -7.940818],
+        description: "Shuttle station",
+        type: "Transport",
+        sousType: "Station Navettes",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/SN.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-074",
+        nom: "Station Navettes",
+        coordinates: [32.216111, -7.941487],
+        description: "Shuttle station",
+        type: "Transport",
+        sousType: "Station Navettes",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/SN.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-074",
+        nom: "Station Navettes",
+        coordinates: [32.214645, -7.939947],
+        description: "Shuttle station",
+        type: "Transport",
+        sousType: "Station Navettes",
+        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
+        icone: "img/SN.jpg",
+        campus: "Ben Guerir"
     }
 ];
 
 var arretsGolfette = [
     // Ben gerire
 
-    { id: "GOLF-01", coords: [32.217594, -7.937086] },
-    { id: "GOLF-02", coords: [32.219548, -7.939168] },
-    { id: "GOLF-04", coords: [32.219909, -7.938983] },
-    { id: "GOLF-05", coords: [32.219979, -7.939342] },
-    { id: "GOLF-06", coords: [32.218952, -7.940753] },
+    { id: "GOLF-01", coords: [32.217573, -7.937139] },
+    { id: "GOLF-02", coords: [32.219580, -7.939183] },
+    { id: "GOLF-04", coords: [32.219928, -7.939020] },
+    { id: "GOLF-05", coords: [32.219947, -7.939402] },
+    { id: "GOLF-06", coords: [32.218924, -7.940814] },
     { id: "GOLF-07", coords: [32.216153, -7.939091] },
-    { id: "GOLF-08", coords: [32.216445, -7.939384] },
+    { id: "GOLF-08", coords: [32.216482, -7.939416] },
     { id: "GOLF-09", coords: [32.213574, -7.943262] },
     { id: "GOLF-10", coords: [32.216073, -7.939943] },
     { id: "GOLF-11", coords: [32.214856, -7.938757] },
-    { id: "GOLF-12", coords: [32.214252, -7.939670] },
-    { id: "GOLF-13", coords: [32.214051, -7.939464] },
+    { id: "GOLF-12", coords: [32.214229, -7.939642] },
+    { id: "GOLF-13", coords: [32.214079, -7.939484] },
     { id: "GOLF-14", coords: [32.213833, -7.939793] },
 
     //Rabat
