@@ -9,7 +9,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "ABRIS INSECTE",
         image: "img/insect shelter/1.jpeg",
-        icone: "img/insect shelter/AI.jpg",
+        icone: "img/AI.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -20,7 +20,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "ABRIS INSECTE",
         image: "img/insect shelter/3.jpeg",
-        icone: "img/insect shelter/AI.jpg",
+        icone: "img/AI.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -936,7 +936,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "ABRIS INSECTE",
         image: "img/insect shelter/.jpeg",
-        icone: "img/insect shelter/AI.jpg",
+        icone: "img/AI.jpg",
         campus: "Ben Guerir"
     },
     {

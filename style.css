@@ -389,3 +389,83 @@ body {
         font-size: 0.7rem;
     }
 }
+
+/* Section filtres */
+.filters-section, .sous-types-section, .trajets-section {
+    margin-bottom: 20px;
+}
+
+.filters-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1e5a3a;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #2c7a4d30;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.types-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.type-filter-btn {
+    background: #e8f3ec;
+    border: 1px solid #c5e0cf;
+    color: #1e5a3a;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.type-filter-btn:hover {
+    background: #d0e8d9;
+    transform: scale(1.02);
+}
+
+.type-filter-btn.active {
+    background: #2c7a4d;
+    color: white;
+    border-color: #2c7a4d;
+}
+
+.sous-types-list {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.reset-card {
+    margin-top: 15px;
+}
+
+.reset-btn {
+    width: 100%;
+    background: #3c9e62;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.reset-btn:hover {
+    background: #1e5a3a;
+    transform: scale(1.02);
+}
+
+.empty-message {
+    text-align: center;
+    padding: 20px;
+    color: #8aa899;
+    font-style: italic;
+}

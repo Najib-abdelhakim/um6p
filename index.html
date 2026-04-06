@@ -3,15 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>UM6P Green Map</title>
+    <title>UM6P - Atlas des Projets Durables</title>
     
-    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
-    
-    <!-- Style personnalisé -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,11 +22,22 @@
             <h2>Green Map</h2>
             <button class="toggle-sidebar" id="toggleSidebar">◀</button>
         </div>
-        <div class="stats-banner" id="statsBanner">
-            <span><span id="projetCount">0</span> projets</span>
-            <span><span id="campusName">Tous les campus</span></span>
+        
+        <!-- SECTION FILTRES PAR TYPE -->
+        <div class="filters-section">
+            <div class="filters-title">Types</div>
+            <div class="types-filters" id="typesFilters"></div>
         </div>
-        <div class="types-list" id="typesList"></div>
+        
+        <!-- SECTION SOUS-TYPES -->
+        <div class="sous-types-section">
+            <div class="filters-title">categories</div>
+            <div class="sous-types-list" id="sousTypesList"></div>
+        </div>
+        
+        <!-- SECTION TRAJETS -->
+        <div class="trajets-section" id="trajetsSection"></div>
+        
     </div>
 </div>
 
