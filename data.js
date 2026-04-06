@@ -2065,442 +2065,34 @@ var projets = [
         image: "img/station navettes/station_navettes.png",
         icone: "img/SN.jpg",
         campus: "Ben Guerir"
-    },
-
-
-
-
-
-
-
-
-
-    // ==================== CAMPUS RABAT ====================
-    {
-        id: "RB-001",
-        nom: "Solar Panels",
-        coordinates: [33.978971, -6.729941],
-        description: "Photovoltaic installation",
-        type: "Energy",
-        sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-002",
-        nom: "Solar Panels",
-        coordinates: [33.979574, -6.728962],
-        description: "Photovoltaic installation",
-        type: "Energy",
-        sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-003",
-        nom: "Solar Panels",
-        coordinates: [33.979957, -6.729530],
-        description: "Photovoltaic installation",
-        type: "Energy",
-        sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-004",
-        nom: "Solar Panels",
-        coordinates: [33.981182, -6.730907],
-        description: "Photovoltaic installation",
-        type: "Energy",
-        sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-005",
-        nom: "Solar Panels",
-        coordinates: [33.980660, -6.728974],
-        description: "Photovoltaic installation",
-        type: "Energy",
-        sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-006",
-        nom: "Solar Panels",
-        coordinates: [33.979912, -6.727426],
-        description: "Photovoltaic installation",
-        type: "Energy",
-        sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-007",
-        nom: "Solar Panels",
-        coordinates: [33.981927, -6.728851],
-        description: "Photovoltaic installation",
-        type: "Energy",
-        sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-008",
-        nom: "Solar Panels",
-        coordinates: [33.98127706854908, -6.727697356684673],
-        description: "Photovoltaic installation",
-        type: "Energy",
-        sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-009",
-        nom: "Solar Panels",
-        coordinates: [33.98062876505242, -6.7263927769962715],
-        description: "Photovoltaic installation",
-        type: "Energy",
-        sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-010",
-        nom: "Solar Panels",
-        coordinates: [33.978991256218286, -6.727149479790195],
-        description: "Photovoltaic installation",
-        type: "Energy",
-        sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-011",
-        nom: "Solar Panels",
-        coordinates: [33.981308, -6.724904],
-        description: "Photovoltaic installation",
-        type: "Energy",
-        sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
-        campus: "Rabat"
-    },
-    
-    // Rabat - LEED Gold
-    {
-        id: "RB-012",
-        nom: "LEED Gold Building",
-        coordinates: [33.979555, -6.731057],
-        description: "LEED Gold Certified Building",
-        type: "Buildings",
-        sousType: "Bâtiment Certifié LEED Gold",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/CG.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-013",
-        nom: "LEED Gold Building",
-        coordinates: [33.97873122546315, -6.7282242076889816],
-        description: "LEED Gold Certified Building",
-        type: "Buildings",
-        sousType: "Bâtiment Certifié LEED Gold",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/CG.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-014",
-        nom: "LEED Gold Building",
-        coordinates: [33.97934196392451, -6.727883127610101],
-        description: "LEED Gold Certified Building",
-        type: "Buildings",
-        sousType: "Bâtiment Certifié LEED Gold",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/CG.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-015",
-        nom: "LEED Gold Building",
-        coordinates: [33.979477, -6.726705],
-        description: "LEED Gold Certified Building",
-        type: "Buildings",
-        sousType: "Bâtiment Certifié LEED Gold",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/CG.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-016",
-        nom: "LEED Gold Building",
-        coordinates: [33.980483, -6.728631],
-        description: "LEED Gold Certified Building",
-        type: "Buildings",
-        sousType: "Bâtiment Certifié LEED Gold",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/CG.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-017",
-        nom: "LEED Gold Building",
-        coordinates: [33.980824, -6.729333],
-        description: "LEED Gold Certified Building",
-        type: "Buildings",
-        sousType: "Bâtiment Certifié LEED Gold",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/CG.jpg",
-        campus: "Rabat"
-    },
-    
-    // Rabat - LEED Silver
-    {
-        id: "RB-018",
-        nom: "STUDENT CENTER",
-        coordinates: [33.979857, -6.731882],
-        description: "Bâtiment dédié à la vie étudiante, inauguré en 2023, certifié LEED BD+C v4: New Construction – Silver (2026) de 6 187 m², comprenant des espaces de restauration, zones de détente, espaces associatifs et lieux de rencontre favorisant la vie sociale et communautaire du campus.",
-        type: "Buildings",
-        sousType: "Batiment Certifié LEED Silver",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/CS.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-019",
-        nom: "STUDENT CENTER",
-        coordinates: [33.980921, -6.731196],
-        description: "Student Center - LEED BD+C Silver",
-        type: "Buildings",
-        sousType: "Batiment Certifié LEED Silver",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/CS.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-020",
-        nom: "LEED Silver Building",
-        coordinates: [33.981521, -6.730720],
-        description: "LEED Silver Certified Building",
-        type: "Buildings",
-        sousType: "Batiment Certifié LEED Silver",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/CS.jpg",
-        campus: "Rabat"
-    },
-    
-    // Rabat - LEED Certified
-    {
-        id: "RB-021",
-        nom: "LEED Certified Building",
-        coordinates: [33.980255, -6.729705],
-        description: "LEED Certified Building",
-        type: "Buildings",
-        sousType: "Bâtiment Certifié LEED Certified",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/C.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-022",
-        nom: "LEED Certified Building",
-        coordinates: [33.979936, -6.729096],
-        description: "LEED Certified Building",
-        type: "Buildings",
-        sousType: "Bâtiment Certifié LEED Certified",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/C.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-023",
-        nom: "LEED Certified Building",
-        coordinates: [33.979654, -6.728478],
-        description: "LEED Certified Building",
-        type: "Buildings",
-        sousType: "Bâtiment Certifié LEED Certified",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/C.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-024",
-        nom: "LEED Certified Building",
-        coordinates: [33.980152, -6.728138],
-        description: "LEED Certified Building",
-        type: "Buildings",
-        sousType: "Bâtiment Certifié LEED Certified",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/C.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-025",
-        nom: "LEED Certified Building",
-        coordinates: [33.97826418131694, -6.728618579717627],
-        description: "LEED Certified Building",
-        type: "Buildings",
-        sousType: "Bâtiment Certifié LEED Certified",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/C.jpg",
-        campus: "Rabat"
-    },
-    
-    // Rabat - Transport
-    {
-        id: "RB-026",
-        nom: "Golfette",
-        coordinates: [33.980751, -6.730145],
-        description: "UM6P offers over 20 free electric golf cart shuttles to help the community move efficiently across campus. This service promotes convenient, low-emission mobility while reducing the need for individual vehicle use.",
-        type: "Transport",
-        sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
-        campus: "Rabat"
-    },
-    
-    {
-        id: "RB-027",
-        nom: "Golfette",
-        coordinates: [33.979463, -6.727598],
-        description: "UM6P offers over 20 free electric golf cart shuttles to help the community move efficiently across campus. This service promotes convenient, low-emission mobility while reducing the need for individual vehicle use.",
-        type: "Transport",
-        sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
-        campus: "Rabat"
-    },
-    {
-        id: "RB-028",
-        nom: "Golfette",
-        coordinates: [33.980430, -6.726783],
-        description: "UM6P offers over 20 free electric golf cart shuttles to help the community move efficiently across campus. This service promotes convenient, low-emission mobility while reducing the need for individual vehicle use.",
-        type: "Transport",
-        sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
-        campus: "Rabat"
-    },{
-        id: "RB-029",
-        nom: "Golfette",
-        coordinates: [33.982352, -6.728712],
-        description: "UM6P offers over 20 free electric golf cart shuttles to help the community move efficiently across campus. This service promotes convenient, low-emission mobility while reducing the need for individual vehicle use.",
-        type: "Transport",
-        sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
-        campus: "Rabat"
-    },{
-        id: "RB-030",
-        nom: "Golfette",
-        coordinates: [33.981596, -6.727332],
-        description: "UM6P offers over 20 free electric golf cart shuttles to help the community move efficiently across campus. This service promotes convenient, low-emission mobility while reducing the need for individual vehicle use.",
-        type: "Transport",
-        sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
-        campus: "Rabat"
-    },{
-        id: "RB-031",
-        nom: "Golfette",
-        coordinates: [33.979736, -6.730643],
-        description: "UM6P offers over 20 free electric golf cart shuttles to help the community move efficiently across campus. This service promotes convenient, low-emission mobility while reducing the need for individual vehicle use.",
-        type: "Transport",
-        sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
-        campus: "Rabat"
-    },{
-        id: "RB-032",
-        nom: "Golfette",
-        coordinates: [33.978873, -6.728991],
-        description: "UM6P offers over 20 free electric golf cart shuttles to help the community move efficiently across campus. This service promotes convenient, low-emission mobility while reducing the need for individual vehicle use.",
-        type: "Transport",
-        sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
-        campus: "Rabat"
-    },{
-        id: "RB-026",
-        nom: "Golfette",
-        coordinates: [33.978846, -6.730337],
-        description: "UM6P offers over 20 free electric golf cart shuttles to help the community move efficiently across campus. This service promotes convenient, low-emission mobility while reducing the need for individual vehicle use.",
-        type: "Transport",
-        sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
-        campus: "Rabat"
-    },
+    }
 
 ];
 
+// ==================== ARRETS ET TRAJETS GOLFETTES (CORRIGES) ====================
 var arretsGolfette = [
-    // Ben gerire
-
     { id: "GOLF-01", coords: [32.217573, -7.937139] },
     { id: "GOLF-02", coords: [32.219580, -7.939183] },
-    { id: "GOLF-04", coords: [32.219928, -7.939020] },
-    { id: "GOLF-05", coords: [32.219947, -7.939402] },
-    { id: "GOLF-06", coords: [32.218924, -7.940814] },
-    { id: "GOLF-07", coords: [32.216153, -7.939091] },
-    { id: "GOLF-08", coords: [32.216482, -7.939416] },
-    { id: "GOLF-09", coords: [32.213574, -7.943262] },
-    { id: "GOLF-10", coords: [32.216073, -7.939943] },
-    { id: "GOLF-11", coords: [32.214856, -7.938757] },
-    { id: "GOLF-12", coords: [32.214229, -7.939642] },
-    { id: "GOLF-13", coords: [32.214079, -7.939484] },
-    { id: "GOLF-14", coords: [32.213833, -7.939793] },
-
-    //Rabat
-
-    { id: "GOL-1", coords: [33.980156, -6.733270] },
-    { id: "GOL-2", coords: [33.980435, -6.732090] },
-    { id: "GOL-4", coords: [33.978717, -6.728802] },
-    { id: "GOL-5", coords: [33.979644, -6.728094] },
-    { id: "GOL-6", coords: [33.979135, -6.727110] },
-    { id: "GOL-7", coords: [33.979214, -6.727040] },
-    { id: "GOL-8", coords: [33.979728, -6.728033] },
-    { id: "GOL-9", coords: [33.980663, -6.727351] },
-    { id: "GOL-10", coords: [33.980293, -6.726601] },
-    { id: "GOL-11", coords: [33.980333, -6.726525] },
-    { id: "GOL-12", coords: [33.980717, -6.727294] },
-    { id: "GOL-13", coords: [33.981353, -6.726824] },
-    { id: "GOL-14", coords: [33.982602, -6.729229] },
-    { id: "GOL-15", coords: [33.979983, -6.731190] },
-    { id: "GOL-16", coords: [33.979500, -6.727591] },
-    { id: "GOL-17", coords: [33.979422874361916, -6.727658203373228] },
-    { id: "GOL-18", coords: [33.979645, -6.728086] },
-    { id: "GOL-19", coords: [33.978240, -6.729183] },
-    { id: "GOL-20", coords: [33.979161, -6.730976] },
-    { id: "GOL-21", coords: [33.978697, -6.731358] },
-    { id: "GOL-22", coords: [33.978987, -6.731901] },
-    { id: "GOL-23", coords: [33.9809578906194, -6.73037998257016] },
+    { id: "GOLF-03", coords: [32.219928, -7.939020] },  // ← AJOUTÉ (était GOLF-04)
+    { id: "GOLF-04", coords: [32.219947, -7.939402] },
+    { id: "GOLF-05", coords: [32.218924, -7.940814] },
+    { id: "GOLF-06", coords: [32.216153, -7.939091] },
+    { id: "GOLF-07", coords: [32.216482, -7.939416] },
+    { id: "GOLF-08", coords: [32.213574, -7.943262] },
+    { id: "GOLF-09", coords: [32.216073, -7.939943] },
+    { id: "GOLF-10", coords: [32.214856, -7.938757] },
+    { id: "GOLF-11", coords: [32.214229, -7.939642] },
+    { id: "GOLF-12", coords: [32.214079, -7.939484] },
+    { id: "GOLF-13", coords: [32.213833, -7.939793] }
 ];
 
 var trajetsGolfette = [
-    { id: "TRAJET-01", nom: "Ligne-1-BG", couleur: "#28a745", arrets: ["GOLF-01", "GOLF-02", "GOLF-03", "GOLF-04", "GOLF-05", "GOLF-06"] },
-    { id: "TRAJET-02", nom: "Ligne-2-BG", couleur: "#0066b3", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-09"] },
-    { id: "TRAJET-03", nom: "Ligne-3-BG", couleur: "#fd7e14", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-10","GOLF-11", "GOLF-12", "GOLF-13", "GOLF-14"] },
-    { id: "TRAJET-04", nom: "Ligne-1-RB", couleur: "#a72828", arrets: ["GOL-1", "GOL-2", "GOL-3", "GOL-4", "GOL-5", "GOL-6","GOL-7", "GOL-8", "GOL-9", "GOL-10", "GOL-11", "GOL-12","GOL-13", "GOL-14", "GOL-15"] },
-    { id: "TRAJET-05", nom: "Ligne-2-RB", couleur: "#a72894", arrets: ["GOL-16", "GOL-17", "GOL-18", "GOL-19", "GOL-20", "GOL-21","GOL-22", "GOL-23", "GOL-16"] },
-
+    { id: "TRAJET-01", nom: "Ligne 1 - BG", couleur: "#28a745", arrets: ["GOLF-01", "GOLF-02", "GOLF-03", "GOLF-04", "GOLF-05"] },
+    { id: "TRAJET-02", nom: "Ligne 2 - BG", couleur: "#0066b3", arrets: ["GOLF-01", "GOLF-06", "GOLF-07", "GOLF-08"] },
+    { id: "TRAJET-03", nom: "Ligne 3 - BG", couleur: "#fd7e14", arrets: ["GOLF-01", "GOLF-06", "GOLF-07", "GOLF-09", "GOLF-10", "GOLF-11", "GOLF-12", "GOLF-13"] }
 ];
 
-
-
-
+// ==================== ARRETS ET TRAJETS BUS (CORRIGES) ====================
 var arretsBus = [
     { id: "BUS-01", coords: [32.214110, -7.937251] },
     { id: "BUS-02", coords: [32.215140, -7.938333] },
@@ -2510,7 +2102,6 @@ var arretsBus = [
     { id: "BUS-06", coords: [32.213287, -7.938580] },
     { id: "BUS-07", coords: [32.214183, -7.937371] },
     { id: "BUS-08", coords: [32.214083, -7.937271] },
-
     { id: "BUS-09", coords: [32.211296, -7.940944] },
     { id: "BUS-10", coords: [32.211322, -7.941260] },
     { id: "BUS-11", coords: [32.211021, -7.941319] },
@@ -2523,17 +2114,9 @@ var arretsBus = [
     { id: "BUS-18", coords: [32.210775, -7.937277] },
     { id: "BUS-19", coords: [32.211550, -7.936980] },
     { id: "BUS-20", coords: [32.212234, -7.937051] },
-    { id: "BUS-21", coords: [32.213536, -7.937873] },
-
-
-    // Rabat exemple
-    { id: "BUS-RB-01", coords: [33.984798, -6.730144] },
-    { id: "BUS-RB-02", coords: [33.981129, -6.726009] },
-    { id: "BUS-RB-03", coords: [33.982339, -6.7244645] }  
+    { id: "BUS-21", coords: [32.213536, -7.937873] }
 ];
 
-
 var trajetsBus = [
-    { id: "BUS-T1" ,nom: "Ligne-1-BG", couleur: "#ff0000", arrets: ["BUS-01", "BUS-02", "BUS-03", "BUS-04","BUS-05", "BUS-06", "BUS-07", "BUS-08","BUS-09", "BUS-10", "BUS-11", "BUS-12","BUS-13", "BUS-14", "BUS-15", "BUS-16","BUS-17", "BUS-18", "BUS-19", "BUS-20","BUS-21"]},
-    { id: "BUS-T2", nom: "Ligne-1-RA", couleur: "#0000ff", arrets: ["BUS-RB-01", "BUS-RB-02", "BUS-RB-03"]}
+    { id: "BUS-T1", nom: "Ligne Bus - BG", couleur: "#ff0000", arrets: ["BUS-01", "BUS-02", "BUS-03", "BUS-04", "BUS-05", "BUS-06", "BUS-07", "BUS-08", "BUS-09", "BUS-10", "BUS-11", "BUS-12", "BUS-13", "BUS-14", "BUS-15", "BUS-16", "BUS-17", "BUS-18", "BUS-19", "BUS-20", "BUS-21"] }
 ];

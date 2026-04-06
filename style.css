@@ -28,6 +28,28 @@ body {
     background: #c8e0d4;
 }
 
+/* SUPPRESSION DES POINTS BLANCS */
+.leaflet-control-zoom,
+.leaflet-control-attribution,
+.leaflet-control-scale {
+    display: none !important;
+}
+
+.leaflet-marker-icon:not(.custom-marker) {
+    display: none !important;
+}
+
+/* NE PAS cacher les path (trajets) */
+.leaflet-overlay-pane svg circle,
+.leaflet-overlay-pane svg rect {
+    display: none !important;
+}
+
+.leaflet-popup-tip {
+    background: transparent !important;
+    border: none !important;
+}
+
 /* SIDEBAR */
 .sidebar {
     width: 360px;
@@ -48,7 +70,10 @@ body {
 
 .sidebar.collapsed .sidebar-header h2,
 .sidebar.collapsed .stats-banner,
-.sidebar.collapsed .type-card {
+.sidebar.collapsed .filters-section,
+.sidebar.collapsed .sous-types-section,
+.sidebar.collapsed .trajets-section,
+.sidebar.collapsed .reset-card {
     display: none;
 }
 
@@ -102,10 +127,50 @@ body {
     color: #1e5a3a;
 }
 
-.types-list {
+/* Section filtres */
+.filters-section, .sous-types-section, .trajets-section {
+    margin-bottom: 20px;
+}
+
+.filters-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1e5a3a;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #2c7a4d30;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.types-filters {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.type-filter-btn {
+    background: #e8f3ec;
+    border: 1px solid #c5e0cf;
+    color: #1e5a3a;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.type-filter-btn:hover {
+    background: #d0e8d9;
+    transform: scale(1.02);
+}
+
+.type-filter-btn.active {
+    background: #2c7a4d;
+    color: white;
+    border-color: #2c7a4d;
 }
 
 .type-card {
@@ -115,6 +180,7 @@ body {
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.05);
     border: 1px solid #ddebe2;
     transition: all 0.2s;
+    margin-bottom: 16px;
 }
 
 .type-card:hover {
@@ -212,230 +278,6 @@ body {
     margin-top: 3px;
 }
 
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background: #e2ecd9;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #7bbf95;
-    border-radius: 10px;
-}
-
-/* ========== POPUP AMÉLIORÉ - IMAGE GRANDE (220px) ========== */
-.leaflet-popup-content-wrapper {
-    border-radius: 20px !important;
-    padding: 0 !important;
-    overflow: hidden !important;
-    box-shadow: 0 12px 28px rgba(0,0,0,0.2) !important;
-    width: auto !important;
-}
-
-.leaflet-popup-content {
-    margin: 0 !important;
-    width: 380px !important;
-    max-width: 420px !important;
-    min-width: 320px !important;
-}
-
-/* Image wrapper - HAUTEUR AGRANDIE */
-.popup-img-wrapper {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: #f0f3ef;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 3px solid #3c9e62;
-}
-
-/* Image elle-même */
-.popup-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* Contenu du popup */
-.popup-content {
-    padding: 16px 18px 20px;
-    background: #ffffff;
-}
-
-.popup-content h3 {
-    color: #1e5a3a;
-    font-size: 1.35rem;
-    font-weight: 700;
-    margin: 0 0 8px 0;
-    letter-spacing: -0.2px;
-    border-left: 4px solid #3c9e62;
-    padding-left: 12px;
-}
-
-.popup-badge {
-    display: inline-block;
-    background: #eaf4ed;
-    color: #2c7a4d;
-    font-size: 0.7rem;
-    font-weight: 600;
-    padding: 4px 12px;
-    border-radius: 30px;
-    margin-bottom: 12px;
-}
-
-.popup-description {
-    font-size: 0.85rem;
-    line-height: 1.45;
-    color: #2d3e35;
-    margin: 12px 0;
-    background: #f9fbf8;
-    padding: 10px 12px;
-    border-radius: 16px;
-}
-
-/* INFOS COMPLÉMENTAIRES - style visible */
-.info-complementaire {
-    background: #f1f5ef;
-    border-left: 3px solid #3c9e62;
-    padding: 10px 12px;
-    font-size: 0.8rem;
-    border-radius: 12px;
-    margin-top: 10px;
-    color: #1f3b2e;
-    font-weight: 500;
-    word-break: break-word;
-    white-space: pre-wrap;
-}
-
-.info-complementaire strong {
-    color: #1e5a3a;
-    font-weight: 700;
-}
-
-/* Tip du popup */
-.leaflet-popup-tip {
-    background: white !important;
-}
-
-/* Marqueur personnalisé */
-.custom-marker {
-    background: transparent;
-    border: none;
-    transition: filter 0.2s;
-}
-
-.custom-marker:hover {
-    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
-    transform: scale(1.05);
-}
-
-/* Contrôles campus flottants */
-.campus-controls {
-    position: absolute;
-    bottom: 25px;
-    left: 20px;
-    z-index: 900;
-    display: flex;
-    gap: 12px;
-    background: rgba(255,255,255,0.85);
-    backdrop-filter: blur(8px);
-    padding: 8px 16px;
-    border-radius: 50px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
-}
-
-.campus-btn {
-    background: #2c7a4d;
-    border: none;
-    color: white;
-    padding: 8px 18px;
-    border-radius: 40px;
-    font-weight: 600;
-    font-size: 0.8rem;
-    cursor: pointer;
-    transition: all 0.2s;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-.campus-btn:hover {
-    background: #165a36;
-    transform: scale(1.02);
-}
-
-@media (max-width: 768px) {
-    .sidebar {
-        width: 280px;
-    }
-    .leaflet-popup-content {
-        width: 300px !important;
-    }
-    .popup-img-wrapper {
-        height: 180px !important;
-    }
-    .campus-controls {
-        bottom: 15px;
-        left: 10px;
-        padding: 5px 12px;
-        gap: 8px;
-    }
-    .campus-btn {
-        padding: 6px 12px;
-        font-size: 0.7rem;
-    }
-}
-
-/* Section filtres */
-.filters-section, .sous-types-section, .trajets-section {
-    margin-bottom: 20px;
-}
-
-.filters-title {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #1e5a3a;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #2c7a4d30;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.types-filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 5px;
-}
-
-.type-filter-btn {
-    background: #e8f3ec;
-    border: 1px solid #c5e0cf;
-    color: #1e5a3a;
-    padding: 6px 14px;
-    border-radius: 30px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.type-filter-btn:hover {
-    background: #d0e8d9;
-    transform: scale(1.02);
-}
-
-.type-filter-btn.active {
-    background: #2c7a4d;
-    color: white;
-    border-color: #2c7a4d;
-}
-
 .sous-types-list {
     max-height: 350px;
     overflow-y: auto;
@@ -468,4 +310,247 @@ body {
     padding: 20px;
     color: #8aa899;
     font-style: italic;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e2ecd9;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7bbf95;
+    border-radius: 10px;
+}
+
+/* ========== POPUP AMELIORE ========== */
+.leaflet-popup-content-wrapper {
+    border-radius: 20px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.2) !important;
+}
+
+.leaflet-popup-content {
+    margin: 0 !important;
+    width: 380px !important;
+    max-width: 420px !important;
+    min-width: 320px !important;
+}
+
+.popup-img-wrapper {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    background: #f0f3ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #3c9e62;
+}
+
+.popup-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.popup-content {
+    padding: 16px 18px 20px;
+    background: #ffffff;
+}
+
+.popup-content h3 {
+    color: #1e5a3a;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    border-left: 4px solid #3c9e62;
+    padding-left: 12px;
+}
+
+.popup-badge {
+    display: inline-block;
+    background: #eaf4ed;
+    color: #2c7a4d;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 30px;
+    margin-bottom: 12px;
+}
+
+.popup-description {
+    font-size: 0.85rem;
+    line-height: 1.45;
+    color: #2d3e35;
+    margin: 12px 0;
+    background: #f9fbf8;
+    padding: 10px 12px;
+    border-radius: 16px;
+}
+
+.info-complementaire {
+    background: #f1f5ef;
+    border-left: 3px solid #3c9e62;
+    padding: 10px 12px;
+    font-size: 0.8rem;
+    border-radius: 12px;
+    margin-top: 10px;
+    color: #1f3b2e;
+    font-weight: 500;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.info-complementaire strong {
+    color: #1e5a3a;
+    font-weight: 700;
+}
+
+/* Marqueur personnalise */
+.custom-marker {
+    background: transparent;
+    border: none;
+    transition: filter 0.2s;
+}
+
+.custom-marker:hover {
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+    transform: scale(1.05);
+}
+
+/* Controles campus flottants */
+.campus-controls {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    z-index: 900;
+    display: flex;
+    gap: 12px;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(8px);
+    padding: 8px 16px;
+    border-radius: 50px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.campus-btn {
+    background: #2c7a4d;
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.campus-btn:hover {
+    background: #165a36;
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 280px;
+    }
+    .leaflet-popup-content {
+        width: 300px !important;
+    }
+    .popup-img-wrapper {
+        height: 180px !important;
+    }
+    .campus-controls {
+        bottom: 15px;
+        left: 10px;
+        padding: 5px 12px;
+        gap: 8px;
+    }
+    .campus-btn {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
+}
+
+
+/* Sections filtres */
+.filters-section, .sous-types-section, .trajets-section {
+    margin-bottom: 20px;
+}
+
+.filters-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #1e5a3a;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #2c7a4d30;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.types-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.type-filter-btn {
+    background: #e8f3ec;
+    border: 1px solid #c5e0cf;
+    color: #1e5a3a;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.type-filter-btn:hover {
+    background: #d0e8d9;
+}
+
+.type-filter-btn.active {
+    background: #2c7a4d;
+    color: white;
+    border-color: #2c7a4d;
+}
+
+.sous-types-list {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.reset-card {
+    margin-top: 15px;
+}
+
+.reset-btn {
+    width: 100%;
+    background: #3c9e62;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background: #1e5a3a;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 20px;
+    color: #8aa899;
 }
