@@ -5,18 +5,18 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
+    background-color: #e9f0e9;
 }
 
 .container {
     display: flex;
     height: 100vh;
     width: 100%;
-    flex-direction: row-reverse; /* Pour mettre la sidebar à droite */
+    flex-direction: row-reverse;
 }
 
-/* Styles pour la carte */
 .map-container {
     flex: 1;
     position: relative;
@@ -25,29 +25,30 @@ body {
 #map {
     height: 100%;
     width: 100%;
+    background: #c8e0d4;
 }
 
-/* Styles pour le panneau latéral (à DROITE avec transparence) */
+/* SIDEBAR */
 .sidebar {
-    width: 320px;
-    background: rgba(255, 255, 255, 0.85); /* Transparent (shafaaf) */
-    backdrop-filter: blur(10px); /* Effet de flou pour plus de transparence */
-    border-left: 2px solid rgba(0, 102, 179, 0.3);
+    width: 360px;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(12px);
+    border-left: 1px solid rgba(0, 80, 50, 0.25);
     overflow-y: auto;
-    padding: 20px;
-    box-shadow: -2px 0 15px rgba(0,0,0,0.1);
+    padding: 20px 16px;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.08);
     z-index: 1000;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 
 .sidebar.collapsed {
-    width: 60px;
-    padding: 20px 10px;
+    width: 70px;
+    padding: 20px 8px;
 }
 
 .sidebar.collapsed .sidebar-header h2,
-.sidebar.collapsed .type-card,
-.sidebar.collapsed .sous-type-item {
+.sidebar.collapsed .stats-banner,
+.sidebar.collapsed .type-card {
     display: none;
 }
 
@@ -55,69 +56,84 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #2c7a4d30;
 }
 
 .sidebar-header h2 {
-    color: #00b31b;
-    font-size: 1.3rem;
+    color: #1e5a3a;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.3px;
     white-space: nowrap;
 }
 
 .toggle-sidebar {
-    background: #3e9564;
-    color: rgb(36, 44, 38);
+    background: #2c7a4d;
+    color: white;
     border: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    border-radius: 40px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
-    transition: all 0.3s;
+    font-size: 18px;
+    transition: all 0.2s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .toggle-sidebar:hover {
-    background: #00a329;
-    transform: scale(1.1);
+    background: #1e5a3a;
+    transform: scale(1.05);
 }
 
-/* Style pour la liste des types */
+.stats-banner {
+    background: #e8f3ec;
+    border-radius: 40px;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1e5a3a;
+}
+
 .types-list {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 16px;
 }
 
-/* Style pour chaque type principal */
 .type-card {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border: 1px solid rgba(0, 102, 179, 0.2);
-    transition: all 0.3s;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddebe2;
+    transition: all 0.2s;
 }
 
 .type-card:hover {
-    box-shadow: 0 6px 12px rgba(0,102,179,0.2);
-    border-color: #00b31b;
+    border-color: #6fbf8a;
+    box-shadow: 0 8px 18px rgba(0, 100, 50, 0.1);
 }
 
 .type-header {
-    background: linear-gradient(135deg,#36b35c);
+    background: linear-gradient(105deg, #2c7a4d 0%, #3c9e62 100%);
     color: white;
-    padding: 12px 15px;
+    padding: 12px 16px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: bold;
-    font-size: 1.1rem;
+    font-weight: 700;
+    font-size: 0.9rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 .type-header .type-nom {
@@ -128,7 +144,7 @@ body {
 
 .type-header .toggle-icon {
     font-size: 14px;
-    transition: transform 0.3s;
+    transition: transform 0.25s;
 }
 
 .type-header.collapsed .toggle-icon {
@@ -136,48 +152,47 @@ body {
 }
 
 .type-content {
-    padding: 10px;
-    max-height: 500px;
+    padding: 12px;
+    max-height: 480px;
     overflow-y: auto;
     transition: max-height 0.3s ease;
-    background: rgba(255, 255, 255, 0.7);
+    background: #fefef9;
 }
 
 .type-content.collapsed {
     max-height: 0;
-    padding: 0 10px;
+    padding: 0 12px;
     overflow: hidden;
 }
 
-/* Style pour les sous-types individuels */
 .sous-type-item {
     display: flex;
     align-items: center;
-    padding: 8px 10px;
-    margin: 5px 0;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
+    padding: 10px 12px;
+    margin: 6px 0;
+    background: white;
+    border-radius: 14px;
     cursor: pointer;
     transition: all 0.2s;
-    border-left: 3px solid transparent;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border-left: 4px solid transparent;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
 }
 
 .sous-type-item:hover {
-    background: rgba(0, 102, 179, 0.1);
-    border-left-color: #00b306;
-    transform: translateX(5px);
+    background: #eef6f0;
+    border-left-color: #2c7a4d;
+    transform: translateX(4px);
 }
 
 .sous-type-item img {
-    width: 30px;
-    height: 30px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 12px;
     object-fit: cover;
-    border: 2px solid #00b31b;
+    border: 2px solid #cfe3d6;
     background: white;
-    padding: 3px;
+    padding: 4px;
 }
 
 .sous-type-info {
@@ -185,111 +200,192 @@ body {
 }
 
 .sous-type-nom {
-    font-weight: bold;
-    color: #333;
-    font-size: 13px;
+    font-weight: 700;
+    color: #1e3a2f;
+    font-size: 0.85rem;
+    line-height: 1.3;
 }
 
 .sous-type-count {
-    font-size: 11px;
-    color: #666;
+    font-size: 0.7rem;
+    color: #5f7c6b;
+    margin-top: 3px;
 }
 
-/* Style pour les popups personnalisés */
-.custom-popup {
-    max-width: 350px;
-    min-width: 250px;
-}
-
-.custom-popup img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
-    margin: -12px -12px 10px -12px;
-}
-
-.popup-content {
-    padding: 5px;
-}
-
-.popup-content h3 {
-    color: #00b312;
-    margin-bottom: 10px;
-    font-size: 18px;
-    border-bottom: 2px solid #00b327;
-    padding-bottom: 5px;
-}
-
-.popup-content p {
-    margin: 8px 0;
-    line-height: 1.5;
-    font-size: 14px;
-}
-
-.popup-content strong {
-    color: #00b32a;
-}
-
-/* Style pour les marqueurs personnalisés */
-.custom-marker {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.custom-marker:hover {
-    transform: scale(1.1);
-}
-
-.custom-marker img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    background: white;
-    padding: 5px;
-}
-
-/* Bouton de recentrage */
-.recenter-btn {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-    background: rgba(255, 255, 255, 0.9);
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    cursor: pointer;
-    font-weight: bold;
-    color: #00b336;
-    transition: all 0.3s;
-    backdrop-filter: blur(5px);
-}
-
-.recenter-btn:hover {
-    background: #00b318;
-    color: white;
-}
-
-/* Scrollbar personnalisée */
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(0,0,0,0.05);
+    background: #e2ecd9;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 179, 18, 0.5);
-    border-radius: 3px;
+    background: #7bbf95;
+    border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #00b312;
+/* ========== POPUP AMÉLIORÉ - IMAGE GRANDE (220px) ========== */
+.leaflet-popup-content-wrapper {
+    border-radius: 20px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.2) !important;
+    width: auto !important;
+}
+
+.leaflet-popup-content {
+    margin: 0 !important;
+    width: 380px !important;
+    max-width: 420px !important;
+    min-width: 320px !important;
+}
+
+/* Image wrapper - HAUTEUR AGRANDIE */
+.popup-img-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #f0f3ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #3c9e62;
+}
+
+/* Image elle-même */
+.popup-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Contenu du popup */
+.popup-content {
+    padding: 16px 18px 20px;
+    background: #ffffff;
+}
+
+.popup-content h3 {
+    color: #1e5a3a;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.2px;
+    border-left: 4px solid #3c9e62;
+    padding-left: 12px;
+}
+
+.popup-badge {
+    display: inline-block;
+    background: #eaf4ed;
+    color: #2c7a4d;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 30px;
+    margin-bottom: 12px;
+}
+
+.popup-description {
+    font-size: 0.85rem;
+    line-height: 1.45;
+    color: #2d3e35;
+    margin: 12px 0;
+    background: #f9fbf8;
+    padding: 10px 12px;
+    border-radius: 16px;
+}
+
+/* INFOS COMPLÉMENTAIRES - style visible */
+.info-complementaire {
+    background: #f1f5ef;
+    border-left: 3px solid #3c9e62;
+    padding: 10px 12px;
+    font-size: 0.8rem;
+    border-radius: 12px;
+    margin-top: 10px;
+    color: #1f3b2e;
+    font-weight: 500;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.info-complementaire strong {
+    color: #1e5a3a;
+    font-weight: 700;
+}
+
+/* Tip du popup */
+.leaflet-popup-tip {
+    background: white !important;
+}
+
+/* Marqueur personnalisé */
+.custom-marker {
+    background: transparent;
+    border: none;
+    transition: filter 0.2s;
+}
+
+.custom-marker:hover {
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+    transform: scale(1.05);
+}
+
+/* Contrôles campus flottants */
+.campus-controls {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    z-index: 900;
+    display: flex;
+    gap: 12px;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(8px);
+    padding: 8px 16px;
+    border-radius: 50px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.campus-btn {
+    background: #2c7a4d;
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.campus-btn:hover {
+    background: #165a36;
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 280px;
+    }
+    .leaflet-popup-content {
+        width: 300px !important;
+    }
+    .popup-img-wrapper {
+        height: 180px !important;
+    }
+    .campus-controls {
+        bottom: 15px;
+        left: 10px;
+        padding: 5px 12px;
+        gap: 8px;
+    }
+    .campus-btn {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
 }
