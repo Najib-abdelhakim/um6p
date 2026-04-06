@@ -49,8 +49,35 @@ function creerMarqueurAvecInfos(projet) {
 // ==================== INITIALISATION ====================
 function initMap() {
     if (typeof projets === 'undefined') {
-        console.error("Données non chargées");
+        console.error("ERREUR: Données projets non chargées! Vérifiez que data.js est chargé avant script.js");
         return;
+    }
+    
+    console.log("=== INIT MAP ===");
+    console.log("Total projets:", projets.length);
+    console.log("Projets Ben Guerir:", projets.filter(p => p.campus === "Ben Guerir").length);
+    console.log("Projets Rabat:", projets.filter(p => p.campus === "Rabat").length);
+    
+    // Vérifier les données des trajets
+    console.log("=== VERIFICATION DONNEES TRAJETS ===");
+    console.log("trajetsGolfette existe?", typeof trajetsGolfette !== 'undefined');
+    console.log("trajetsBus existe?", typeof trajetsBus !== 'undefined');
+    console.log("arretsGolfette existe?", typeof arretsGolfette !== 'undefined');
+    console.log("arretsBus existe?", typeof arretsBus !== 'undefined');
+    
+    if(typeof trajetsGolfette !== 'undefined') {
+        console.log("Nombre de trajets golfette:", trajetsGolfette.length);
+        console.log("Trajets golfette:", trajetsGolfette);
+    }
+    if(typeof trajetsBus !== 'undefined') {
+        console.log("Nombre de trajets bus:", trajetsBus.length);
+        console.log("Trajets bus:", trajetsBus);
+    }
+    
+    // Afficher les coordonnées Rabat pour vérifier
+    let rabatProjets = projets.filter(p => p.campus === "Rabat");
+    if(rabatProjets.length > 0) {
+        console.log("Premier projet Rabat:", rabatProjets[0].nom, rabatProjets[0].coordinates);
     }
     
     map = L.map('map').setView([32.221017, -7.935687], 15);
@@ -59,10 +86,17 @@ function initMap() {
     }).addTo(map);
     
     projets.forEach(proj => {
-        let marker = creerMarqueurAvecInfos(proj);
-        marker.addTo(map);
-        markersList.push({ marker: marker, projet: proj });
+        // Vérifier que les coordonnées sont valides
+        if(proj.coordinates && proj.coordinates.length === 2) {
+            let marker = creerMarqueurAvecInfos(proj);
+            marker.addTo(map);
+            markersList.push({ marker: marker, projet: proj });
+        } else {
+            console.warn("Coordonnées invalides pour:", proj.nom, proj.coordinates);
+        }
     });
+    
+    console.log("Total marqueurs créés:", markersList.length);
     
     appliquerFiltres();
     afficherFiltresTypes();
@@ -70,9 +104,18 @@ function initMap() {
     afficherTrajetsSection();
     mettreAJourStats();
     
-    document.getElementById('btnAll')?.addEventListener('click', afficherTousCampus);
-    document.getElementById('btnBG')?.addEventListener('click', recentrerBenGuerir);
-    document.getElementById('btnRabat')?.addEventListener('click', recentrerRabat);
+    // Contrôles campus
+    let campusDiv = document.getElementById('campusControls');
+    if(campusDiv) {
+        campusDiv.innerHTML = `
+            <button class="campus-btn" id="btnAll">Tous</button>
+            <button class="campus-btn" id="btnBG">Ben Guerir</button>
+            <button class="campus-btn" id="btnRabat">Rabat</button>
+        `;
+        document.getElementById('btnAll').onclick = () => afficherTousCampus();
+        document.getElementById('btnBG').onclick = () => recentrerBenGuerir();
+        document.getElementById('btnRabat').onclick = () => recentrerRabat();
+    }
     
     document.querySelector('.reset-btn')?.addEventListener('click', () => {
         currentTypeFilter = 'all';
@@ -87,20 +130,28 @@ function initMap() {
 
 // ==================== FILTRES ====================
 function appliquerFiltres() {
+    console.log("Applique filtres - Campus:", currentCampus, "Type:", currentTypeFilter);
+    
     markersList.forEach(item => {
         let matchCampus = (currentCampus === 'all' || item.projet.campus === currentCampus);
         let matchType = (currentTypeFilter === 'all' || item.projet.type === currentTypeFilter);
         
         if (matchCampus && matchType) {
-            if (!map.hasLayer(item.marker)) item.marker.addTo(map);
+            if (!map.hasLayer(item.marker)) {
+                item.marker.addTo(map);
+                console.log("Ajout marqueur:", item.projet.nom, item.projet.campus);
+            }
         } else {
-            if (map.hasLayer(item.marker)) map.removeLayer(item.marker);
+            if (map.hasLayer(item.marker)) {
+                map.removeLayer(item.marker);
+            }
         }
     });
     mettreAJourStats();
 }
 
 function filtrerParCampus(campus) {
+    console.log("Filtrer par campus:", campus);
     currentCampus = campus;
     appliquerFiltres();
     afficherFiltresTypes();
@@ -109,6 +160,7 @@ function filtrerParCampus(campus) {
 }
 
 function filtrerParType(type) {
+    console.log("Filtrer par type:", type);
     currentTypeFilter = type;
     appliquerFiltres();
     afficherFiltresTypes();
@@ -218,11 +270,15 @@ function afficherListeSousTypes() {
 // ==================== TRAJETS SECTION ====================
 function afficherTrajetsSection() {
     let container = document.getElementById('trajetsSection');
-    if(!container) return;
+    if(!container) {
+        console.warn("Container trajetsSection non trouvé");
+        return;
+    }
     container.innerHTML = '';
     
-    // Golfettes
-    if(typeof trajetsGolfette !== 'undefined' && trajetsGolfette.length > 0) {
+    // Vérifier que les données existent avant d'afficher
+    if(typeof trajetsGolfette !== 'undefined' && trajetsGolfette && trajetsGolfette.length > 0) {
+        console.log("Affichage des golfettes, nombre:", trajetsGolfette.length);
         let card = document.createElement('div');
         card.className = 'type-card';
         card.innerHTML = `
@@ -237,7 +293,7 @@ function afficherTrajetsSection() {
             let item = document.createElement('div');
             item.className = 'sous-type-item';
             item.innerHTML = `
-                <div style="width:32px;height:32px;border-radius:20px;background:${t.couleur};display:flex;align-items:center;justify-content:center;margin-right:12px;color:white;">G</div>
+                <div style="width:32px;height:32px;border-radius:20px;background:${t.couleur};display:flex;align-items:center;justify-content:center;margin-right:12px;color:white;font-weight:bold;">G</div>
                 <div class="sous-type-info"><div class="sous-type-nom">${t.nom}</div></div>
             `;
             item.onclick = () => { effacerTousLesTrajets(); afficherTrajetGolfette(t.id); };
@@ -248,10 +304,13 @@ function afficherTrajetsSection() {
             this.nextElementSibling.classList.toggle('collapsed');
         };
         container.appendChild(card);
+    } else {
+        console.log("Aucune donnée golfette trouvée");
     }
     
-    // Bus
-    if(typeof trajetsBus !== 'undefined' && trajetsBus.length > 0) {
+    // Vérifier les données bus
+    if(typeof trajetsBus !== 'undefined' && trajetsBus && trajetsBus.length > 0) {
+        console.log("Affichage des bus, nombre:", trajetsBus.length);
         let card = document.createElement('div');
         card.className = 'type-card';
         card.innerHTML = `
@@ -266,7 +325,7 @@ function afficherTrajetsSection() {
             let item = document.createElement('div');
             item.className = 'sous-type-item';
             item.innerHTML = `
-                <div style="width:32px;height:32px;border-radius:20px;background:${t.couleur};display:flex;align-items:center;justify-content:center;margin-right:12px;color:white;">B</div>
+                <div style="width:32px;height:32px;border-radius:20px;background:${t.couleur};display:flex;align-items:center;justify-content:center;margin-right:12px;color:white;font-weight:bold;">B</div>
                 <div class="sous-type-info"><div class="sous-type-nom">${t.nom}</div></div>
             `;
             item.onclick = () => { effacerTousLesTrajets(); afficherTrajetBus(t.id); };
@@ -277,47 +336,99 @@ function afficherTrajetsSection() {
             this.nextElementSibling.classList.toggle('collapsed');
         };
         container.appendChild(card);
+    } else {
+        console.log("Aucune donnée bus trouvée");
     }
 }
 
 // ==================== AFFICHAGE TRAJETS SUR CARTE ====================
 function afficherTrajetGolfette(trajetId) {
+    console.log("Afficher trajet golfette:", trajetId);
+    
+    if(typeof trajetsGolfette === 'undefined') {
+        console.error("trajetsGolfette non défini");
+        return;
+    }
+    if(typeof arretsGolfette === 'undefined') {
+        console.error("arretsGolfette non défini");
+        return;
+    }
+    
     if(trajetActuel) map.removeLayer(trajetActuel);
     let trajet = trajetsGolfette.find(t => t.id === trajetId);
-    if(!trajet || typeof arretsGolfette === 'undefined') return;
+    if(!trajet) {
+        console.error("Trajet golfette non trouvé:", trajetId);
+        return;
+    }
+    
+    console.log("Trajet trouvé:", trajet);
+    console.log("Arrets:", trajet.arrets);
     
     let points = [];
     trajet.arrets.forEach(id => {
         let arret = arretsGolfette.find(a => a.id === id);
-        if(arret && arret.coords) points.push(arret.coords);
+        if(arret && arret.coords && arret.coords.length === 2) {
+            points.push(arret.coords);
+        } else {
+            console.warn("Arrêt non trouvé ou coordonnées invalides:", id, arret);
+        }
     });
     
+    console.log("Points collectés:", points.length);
+    
     if(points.length >= 2) {
-        trajetActuel = L.polyline(points, { color: trajet.couleur, weight: 6, opacity: 0.9 }).addTo(map);
+        trajetActuel = L.polyline(points, { color: trajet.couleur, weight: 3, opacity: 0.9 }).addTo(map);
         map.fitBounds(L.latLngBounds(points));
     } else if(points.length === 1) {
         trajetActuel = L.circleMarker(points[0], { color: trajet.couleur, radius: 8 }).addTo(map);
         map.setView(points[0], 16);
+    } else {
+        console.error("Pas assez de points pour tracer le trajet");
     }
 }
 
 function afficherTrajetBus(trajetId) {
+    console.log("Afficher trajet bus:", trajetId);
+    
+    if(typeof trajetsBus === 'undefined') {
+        console.error("trajetsBus non défini");
+        return;
+    }
+    if(typeof arretsBus === 'undefined') {
+        console.error("arretsBus non défini");
+        return;
+    }
+    
     if(trajetBusActuel) map.removeLayer(trajetBusActuel);
     let trajet = trajetsBus.find(t => t.id === trajetId);
-    if(!trajet || typeof arretsBus === 'undefined') return;
+    if(!trajet) {
+        console.error("Trajet bus non trouvé:", trajetId);
+        return;
+    }
+    
+    console.log("Trajet bus trouvé:", trajet);
+    console.log("Arrets bus:", trajet.arrets);
     
     let points = [];
     trajet.arrets.forEach(id => {
         let arret = arretsBus.find(a => a.id === id);
-        if(arret && arret.coords) points.push(arret.coords);
+        if(arret && arret.coords && arret.coords.length === 2) {
+            points.push(arret.coords);
+        } else {
+            console.warn("Arrêt bus non trouvé ou coordonnées invalides:", id, arret);
+        }
     });
     
+    console.log("Points bus collectés:", points.length);
+    
     if(points.length >= 2) {
-        trajetBusActuel = L.polyline(points, { color: trajet.couleur, weight: 6, dashArray: "8,8", opacity: 0.9 }).addTo(map);
+        trajetBusActuel = L.polyline(points, { color: trajet.couleur, weight: 3, dashArray: "8,8", opacity: 0.9 }).addTo(map);
         map.fitBounds(L.latLngBounds(points));
     } else if(points.length === 1) {
         trajetBusActuel = L.circleMarker(points[0], { color: trajet.couleur, radius: 8 }).addTo(map);
         map.setView(points[0], 16);
+    } else {
+        console.error("Pas assez de points pour tracer le trajet bus");
     }
 }
 
@@ -333,8 +444,19 @@ function recentrerBenGuerir() {
 }
 
 function recentrerRabat() {
-    map.setView([33.978971, -6.729941], 17);
+    console.log("=== RECENTRER RABAT ===");
+    let rabatCoords = [33.978971, -6.729941];
+    console.log("Deplacement vers Rabat:", rabatCoords);
+    map.setView(rabatCoords, 17);
     filtrerParCampus('Rabat');
+    
+    setTimeout(() => {
+        let visibleCount = markersList.filter(m => map.hasLayer(m.marker)).length;
+        console.log("Marqueurs visibles a Rabat:", visibleCount);
+        if(visibleCount === 0) {
+            console.warn("AUCUN projet Rabat visible! Vérifiez les coordonnées dans data.js");
+        }
+    }, 500);
 }
 
 function afficherTousCampus() {
@@ -351,16 +473,22 @@ function toggleSidebar() {
 
 // ==================== INITIALISATION ====================
 document.addEventListener('DOMContentLoaded', () => {
+    console.log("DOM chargé, vérification des données...");
+    
     if(typeof projets !== 'undefined') {
+        console.log("projets trouvé, initialisation de la carte");
         initMap();
     } else {
+        console.log("projets non trouvé, attente...");
         let check = setInterval(() => {
             if(typeof projets !== 'undefined') {
+                console.log("projets maintenant disponible");
                 clearInterval(check);
                 initMap();
             }
         }, 100);
     }
+    
     document.getElementById('toggleSidebar')?.addEventListener('click', toggleSidebar);
 });
 
@@ -369,3 +497,5 @@ window.recentrerBenGuerir = recentrerBenGuerir;
 window.recentrerRabat = recentrerRabat;
 window.afficherTousCampus = afficherTousCampus;
 window.toggleSidebar = toggleSidebar;
+window.afficherTrajetGolfette = afficherTrajetGolfette;
+window.afficherTrajetBus = afficherTrajetBus;
