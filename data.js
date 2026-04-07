@@ -9,7 +9,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "ABRIS INSECTE",
         image: "img/insect shelter/1.jpeg",
-        icone: "img/insect shelter/AI.jpg",
+        icone: "img/AI.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -20,7 +20,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "ABRIS INSECTE",
         image: "img/insect shelter/3.jpeg",
-        icone: "img/insect shelter/AI.jpg",
+        icone: "img/AI.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -31,7 +31,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF.jpg",
+        icone: "img/AF_b.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -42,7 +42,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF.jpg",
+        icone: "img/AF_g.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -53,7 +53,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF.jpg",
+        icone: "img/AF_r.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -64,7 +64,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF.jpg",
+        icone: "img/AF_y.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -75,7 +75,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF.jpg",
+        icone: "img/AF_b.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -86,7 +86,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF.jpg",
+        icone: "img/AF_g.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -97,7 +97,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF.jpg",
+        icone: "img/AF_r.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -108,7 +108,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF.jpg",
+        icone: "img/AF_y.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -118,7 +118,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -129,7 +129,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/2.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -140,7 +140,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/3.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -151,7 +151,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/3.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -162,7 +162,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/2.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -173,7 +173,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -184,7 +184,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -195,7 +195,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/2.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -206,7 +206,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/3.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -217,7 +217,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -847,7 +847,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/2.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -858,7 +858,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -869,7 +869,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -880,7 +880,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/2.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -891,7 +891,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/3.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -902,7 +902,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/3.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -913,7 +913,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/2.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -924,7 +924,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -935,8 +935,8 @@ var projets = [
         description: "Des abris à insectes, sous forme de structures en bois conçues pour accueillir des insectes auxiliaires, sont installés sur le campus afin de favoriser la régulation naturelle des nuisibles, de réduire le recours aux pesticides et de contribuer au maintien de la biodiversité des espaces verts de l'UM6P.",
         type: "Biodiversity",
         sousType: "ABRIS INSECTE",
-        image: "img/insect shelter/.jpeg",
-        icone: "img/insect shelter/AI.jpg",
+        image: "img/insect shelter/2.jpeg",
+        icone: "img/AI.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -947,7 +947,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF.jpg",
+        icone: "img/AF_y.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -958,7 +958,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF.jpg",
+        icone: "img/AF_r.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -969,7 +969,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF.jpg",
+        icone: "img/AF_g.jpg",
         campus: "Ben Guerir"
     },
     
@@ -1029,7 +1029,7 @@ var projets = [
         description: "Le Gachipain est un dispositif innovant de sensibilisation au gaspillage alimentaire, permettant aux usagers de déposer le pain non consommé, qui est ensuite collecté et acheminé vers la ferme pour nourrir les poules.",
         type: "Cathring",
         sousType: "Gachipain",
-        image: "img/gachipain/gachipain.png",
+        image: "img/gachipain/gachipain1.jpg",
         icone: "img/GP.jpg",
         campus: "Ben Guerir"
     },
@@ -1040,7 +1040,7 @@ var projets = [
         description: "Le Gachipain est un dispositif innovant de sensibilisation au gaspillage alimentaire, permettant aux usagers de déposer le pain non consommé, qui est ensuite collecté et acheminé vers la ferme pour nourrir les poules.",
         type: "Cathring",
         sousType: "Gachipain",
-        image: "img/gachipain/gachipain.png",
+        image: "img/gachipain/gachipain2.jpg",
         icone: "img/GP.jpg",
         campus: "Ben Guerir"
     },
@@ -1051,7 +1051,7 @@ var projets = [
         description: "Le Gachipain est un dispositif innovant de sensibilisation au gaspillage alimentaire, permettant aux usagers de déposer le pain non consommé, qui est ensuite collecté et acheminé vers la ferme pour nourrir les poules.",
         type: "Cathring",
         sousType: "Gachipain",
-        image: "img/gachipain/gachipain.png",
+        image: "img/gachipain/gachipain1.jpg",
         icone: "img/GP.jpg",
         campus: "Ben Guerir"
     },
@@ -1062,7 +1062,7 @@ var projets = [
         description: "Le Gachipain est un dispositif innovant de sensibilisation au gaspillage alimentaire, permettant aux usagers de déposer le pain non consommé, qui est ensuite collecté et acheminé vers la ferme pour nourrir les poules.",
         type: "Cathring",
         sousType: "Gachipain",
-        image: "img/gachipain/gachipain.png",
+        image: "img/gachipain/gachipain2.jpg",
         icone: "img/GP.jpg",
         campus: "Ben Guerir"
     },
@@ -1073,7 +1073,7 @@ var projets = [
         description: "Une initiative visant à installer un réfrigérateur en libre-service sur le campus, accessible à tous, permettant à chacun de déposer ou de récupérer librement de la nourriture, tout en sensibilisant la communauté UM6P au gaspillage alimentaire.",
         type: "Cathring",
         sousType: "FRIGO SOLIDAIRE",
-        image: "",
+        image: "img/FRIGO/FRIGO.png",
         icone: "img/FS.jpg",
         campus: "Ben Guerir"
     },
@@ -1084,7 +1084,7 @@ var projets = [
         description: "Une initiative visant à installer un réfrigérateur en libre-service sur le campus, accessible à tous, permettant à chacun de déposer ou de récupérer librement de la nourriture, tout en sensibilisant la communauté UM6P au gaspillage alimentaire.",
         type: "Cathring",
         sousType: "FRIGO SOLIDAIRE",
-        image: "",
+        image: "img/FRIGO/FRIGO.png",
         icone: "img/FS.jpg",
         campus: "Ben Guerir"
     },
@@ -1095,7 +1095,7 @@ var projets = [
         description: "Le Gachipain est un dispositif innovant de sensibilisation au gaspillage alimentaire, permettant aux usagers de déposer le pain non consommé, qui est ensuite collecté et acheminé vers la ferme pour nourrir les poules.",
         type: "Cathring",
         sousType: "Gachipain",
-        image: "img/gachipain/gachipain.png",
+        image: "img/gachipain/gachipain2.jpg",
         icone: "img/GP.jpg",
         campus: "Ben Guerir"
     },
@@ -1584,7 +1584,7 @@ var projets = [
         description: "Une initiative durable proposant des plantes issues de la ferme expérimentale à travers un kiosque installé sur le campus, où les plantes sont cultivées dans des gobelets récupérés auprès des cafés du campus, favorisant des pratiques circulaires et une gestion responsable des ressources.",
         type: "Cathring",
         sousType: "GO Plant Shop",
-        image: "",
+        image: "img/GO Plant/go_plant_shop.png",
         icone: "img/GO.jpg",
         campus: "Ben Guerir"
     },
@@ -1595,7 +1595,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1606,7 +1606,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/2.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1617,7 +1617,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/3.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1628,7 +1628,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/3.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1639,7 +1639,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/2.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1650,7 +1650,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1661,7 +1661,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1672,7 +1672,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/2.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1683,7 +1683,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/3.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1694,7 +1694,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/3.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1705,7 +1705,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/2.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1716,7 +1716,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1727,7 +1727,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/3.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1738,7 +1738,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/2.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1749,7 +1749,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1760,7 +1760,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/3.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1771,7 +1771,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/2.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1782,7 +1782,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1793,7 +1793,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1804,7 +1804,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/2.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1815,7 +1815,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/3.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1826,7 +1826,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/3.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1837,7 +1837,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/2.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1848,7 +1848,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1859,7 +1859,7 @@ var projets = [
         description: "Des panneaux d'information sur les plantes du campus sont installés afin de favoriser la découverte de la biodiversité locale et d'offrir une expérience éducative en plein air, permettant à la communauté de mieux connaître et apprécier la richesse de cet écosystème.",
         type: "Biodiversity",
         sousType: "Botanic garden",
-        image: "img/botanic garden/botanicgarden.png",
+        image: "img/botanic garden/1.png",
         icone: "img/BG.jpg",
         campus: "Ben Guerir"
     },
@@ -1992,7 +1992,7 @@ var projets = [
         description:"",
         type: "Energy",
         sousType: "Electric vehicles charge station",
-        image: "img/vehicles charge station/charge_station1.jpeg",
+        image: "img/vehicles charge station/charge_station1.png",
         icone: "img/VCS.jpg",
         campus: "Ben Guerir"
     },
@@ -2003,7 +2003,7 @@ var projets = [
         description:"",
         type: "Energy",
         sousType: "Electric vehicles charge station",
-        image: "img/vehicles charge station/charge_station2.jpeg",
+        image: "img/vehicles charge station/charge_station2.png",
         icone: "img/VCS.jpg",
         campus: "Ben Guerir"
     },
@@ -2014,7 +2014,7 @@ var projets = [
         description:"",
         type: "Energy",
         sousType: "Electric vehicles charge station",
-        image: "img/vehicles charge station/charge_station3.jpeg",
+        image: "img/vehicles charge station/charge_station3.png",
         icone: "img/VCS.jpg",
         campus: "Ben Guerir"
     },
@@ -2025,7 +2025,7 @@ var projets = [
         description:"",
         type: "Energy",
         sousType: "Electric vehicles charge station",
-        image: "img/vehicles charge station/charge_station1.jpeg",
+        image: "img/vehicles charge station/charge_station1.png",
         icone: "img/VCS.jpg",
         campus: "Ben Guerir"
     },
@@ -2040,9 +2040,6 @@ var projets = [
         icone: "img/GCS.jpg",
         campus: "Ben Guerir"
     }
-
-
-
     ,
     {
         id: "BG-182",
@@ -2059,7 +2056,7 @@ var projets = [
         id: "BG-183",
         nom: "Station Navettes",
         coordinates: [32.217, -7.937],
-        description: "L’UM6P met à la disposition de sa communauté 4 navettes quotidiennes entre le campus et la ferme expérimentale pour encourager le covoiturage afin de réduire la congestion du trafic, diminuer les émissions de carbone et promouvoir une mobilité durable.",
+        description: "L'UM6P met à la disposition de sa communauté 4 navettes quotidiennes entre le campus et la ferme expérimentale pour encourager le covoiturage afin de réduire la congestion du trafic, diminuer les émissions de carbone et promouvoir une mobilité durable.",
         type: "Transport",
         sousType: "Station Navettes",
         image: "img/station navettes/station_navettes.png",
@@ -2092,6 +2089,32 @@ var trajetsGolfette = [
     { id: "TRAJET-02", nom: "Ligne 2 - BG", couleur: "#0066b3", arrets: ["GOLF-01", "GOLF-06", "GOLF-07", "GOLF-08"] },
     { id: "TRAJET-03", nom: "Ligne 3 - BG", couleur: "#fd7e14", arrets: ["GOLF-01", "GOLF-06", "GOLF-07", "GOLF-09", "GOLF-10", "GOLF-11", "GOLF-12", "GOLF-13"] }
 ];
+
+
+var arretsBus = [
+    { id: "BUS-01", coords: [32.214110, -7.937251] },
+    { id: "BUS-02", coords: [32.215140, -7.938333] },
+    { id: "BUS-03", coords: [32.217086, -7.935701] },
+    { id: "BUS-04", coords: [32.219834, -7.938491] },
+    { id: "BUS-05", coords: [32.216935, -7.942335] },
+    { id: "BUS-06", coords: [32.213287, -7.938580] },
+    { id: "BUS-07", coords: [32.214183, -7.937371] },
+    { id: "BUS-08", coords: [32.214083, -7.937271] },
+    { id: "BUS-09", coords: [32.211296, -7.940944] },
+    { id: "BUS-10", coords: [32.211322, -7.941260] },
+    { id: "BUS-11", coords: [32.211021, -7.941319] },
+    { id: "BUS-12", coords: [32.210971, -7.940934] },
+    { id: "BUS-13", coords: [32.209275, -7.939573] },
+    { id: "BUS-14", coords: [32.209094, -7.939561] },
+    { id: "BUS-15", coords: [32.209124, -7.939311] },
+    { id: "BUS-16", coords: [32.209124, -7.937991] },
+    { id: "BUS-17", coords: [32.210071, -7.937812] },
+    { id: "BUS-18", coords: [32.210775, -7.937277] },
+    { id: "BUS-19", coords: [32.211550, -7.936980] },
+    { id: "BUS-20", coords: [32.212234, -7.937051] },
+    { id: "BUS-21", coords: [32.213536, -7.937873] }
+];
+
 
 // ========== TRAJETS BUS ==========
 var trajetsBus = [
