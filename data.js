@@ -119,7 +119,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -130,7 +130,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -141,7 +141,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -152,7 +152,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -163,7 +163,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -174,7 +174,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -185,7 +185,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -196,7 +196,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -207,7 +207,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -218,7 +218,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     
@@ -872,7 +872,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -883,7 +883,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -894,7 +894,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -905,7 +905,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -916,7 +916,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -927,7 +927,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -938,7 +938,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -949,7 +949,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1620,7 +1620,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1631,7 +1631,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1642,7 +1642,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1653,7 +1653,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1664,7 +1664,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1675,7 +1675,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1686,7 +1686,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1697,7 +1697,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1708,7 +1708,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1719,7 +1719,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1730,7 +1730,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1741,7 +1741,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1752,7 +1752,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1763,7 +1763,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1774,7 +1774,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1785,7 +1785,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1796,7 +1796,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1807,7 +1807,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1818,7 +1818,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1829,7 +1829,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1840,7 +1840,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1851,7 +1851,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1862,7 +1862,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1873,7 +1873,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1884,7 +1884,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG.jpg",
+        icone: "img/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -2016,7 +2016,7 @@ var projets = [
         description:"",
         type: "Energy",
         sousType: "Electric vehicles charge station",
-        image: "img/vehicles charge station/charge_station1.png",
+        image: "img/vehicles charge station/charge_station1.jpg",
         icone: "img/VCS.jpg",
         campus: "Ben Guerir"
     },
@@ -2027,7 +2027,7 @@ var projets = [
         description:"",
         type: "Energy",
         sousType: "Electric vehicles charge station",
-        image: "img/vehicles charge station/charge_station2.png",
+        image: "img/vehicles charge station/charge_station2.jpg",
         icone: "img/VCS.jpg",
         campus: "Ben Guerir"
     },
@@ -2038,7 +2038,7 @@ var projets = [
         description:"",
         type: "Energy",
         sousType: "Electric vehicles charge station",
-        image: "img/vehicles charge station/charge_station3.png",
+        image: "img/vehicles charge station/charge_station3.jpg",
         icone: "img/VCS.jpg",
         campus: "Ben Guerir"
     },
@@ -2049,7 +2049,7 @@ var projets = [
         description:"",
         type: "Energy",
         sousType: "Electric vehicles charge station",
-        image: "img/vehicles charge station/charge_station4.png",
+        image: "img/vehicles charge station/charge_station4.jpg",
         icone: "img/VCS.jpg",
         campus: "Ben Guerir"
     },
@@ -2090,7 +2090,7 @@ var projets = [
         type: "Waste",
         sousType: "collection points",
         image: "img/collection points/.png",
-        icone: "img/.jpg",
+        icone: "img/CP.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -2101,18 +2101,7 @@ var projets = [
         type: "Waste",
         sousType: "collection points",
         image: "img/collection points/.png",
-        icone: "img/.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-189",
-        nom: "LP RESTAURANT T1",
-        coordinates: [32.218389, -7.937565],
-        description: "",
-        type: "Waste",
-        sousType: "collection points",
-        image: "img/collection points/.png",
-        icone: "img/.jpg",
+        icone: "img/CP.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -2123,7 +2112,7 @@ var projets = [
         type: "Waste",
         sousType: "collection points",
         image: "img/collection points/.png",
-        icone: "img/.jpg",
+        icone: "img/CP.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -2134,7 +2123,7 @@ var projets = [
         type: "Waste",
         sousType: "collection points",
         image: "img/collection points/.png",
-        icone: "img/.jpg",
+        icone: "img/CP.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -2145,7 +2134,7 @@ var projets = [
         type: "Waste",
         sousType: "collection points",
         image: "img/collection points/.png",
-        icone: "img/.jpg",
+        icone: "img/CP.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -2156,7 +2145,7 @@ var projets = [
         type: "Waste",
         sousType: "collection points",
         image: "img/collection points/.png",
-        icone: "img/.jpg",
+        icone: "img/CP.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -2167,7 +2156,7 @@ var projets = [
         type: "Waste",
         sousType: "collection points",
         image: "img/collection points/.png",
-        icone: "img/.jpg",
+        icone: "img/CP.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -2178,7 +2167,7 @@ var projets = [
         type: "Waste",
         sousType: "collection points",
         image: "img/collection points/.png",
-        icone: "img/.jpg",
+        icone: "img/CP.jpg",
         campus: "Ben Guerir"
     }
 

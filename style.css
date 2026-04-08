@@ -344,7 +344,7 @@ body {
 
 .popup-img-wrapper {
     width: 100%;
-    height: 20%;
+    height: 180px;         /* ← Hauteur FIXE en pixels */
     overflow: hidden;
     background: #f0f3ef;
     display: flex;
@@ -356,7 +356,8 @@ body {
 .popup-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;     /* ← Garde les proportions, coupe les bords si besoin */
+    object-position: center; /* ← Centre l'image dans le cadre */
     display: block;
 }
 
