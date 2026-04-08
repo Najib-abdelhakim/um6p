@@ -808,15 +808,39 @@ var projets = [
     // Transport
     {
         id: "BG-073",
-        nom: "Parking Vélos/ trotinettes Electriques",
+        nom: "Parking",
         coordinates: [32.219500, -7.939705],
         description: "Le campus de l'UM6P met à disposition des parkings dédiés équipés de bornes de recharge pour véhicules électriques afin de soutenir une mobilité à faibles émissions. Pour des raisons de sécurité et de gestion du trafic, les motos, vélos et trottinettes ne sont pas autorisés à circuler sur les routes, les voies ou les zones piétonnes du campus. Ils doivent être stationnés uniquement dans les zones désignées, indiquées dans le plan de stationnement du campus. Le campus de Benguerir dispose de 2 espaces de stationnement pour les vélos et les trottinettes électriques, ainsi que d'un parking souterrain réservé aux motos.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Parking Vélos/ trotinettes Electriques",
         image: "img/parking velos/parking_velos.png",
         icone: "img/PV.jpg",
         campus: "Ben Guerir"
     },
+    {
+        id: "BG-196",
+        nom: "Parking",
+        coordinates: [32.212381, -7.941460],
+        description: "Le campus de l'UM6P met à disposition des parkings dédiés équipés de bornes de recharge pour véhicules électriques afin de soutenir une mobilité à faibles émissions. Pour des raisons de sécurité et de gestion du trafic, les motos, vélos et trottinettes ne sont pas autorisés à circuler sur les routes, les voies ou les zones piétonnes du campus. Ils doivent être stationnés uniquement dans les zones désignées, indiquées dans le plan de stationnement du campus. Le campus de Benguerir dispose de 2 espaces de stationnement pour les vélos et les trottinettes électriques, ainsi que d'un parking souterrain réservé aux motos.",
+        type: "Ecomobility",
+        sousType: "Parking Vélos/ trotinettes Electriques",
+        image: "img/parking velos/parking_velos.png",
+        icone: "img/PV.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-197",
+        nom: "Parking SOUS-SOL",
+        coordinates: [32.212939, -7.942323],
+        description: "Le campus de l'UM6P met à disposition des parkings dédiés équipés de bornes de recharge pour véhicules électriques afin de soutenir une mobilité à faibles émissions. Pour des raisons de sécurité et de gestion du trafic, les motos, vélos et trottinettes ne sont pas autorisés à circuler sur les routes, les voies ou les zones piétonnes du campus. Ils doivent être stationnés uniquement dans les zones désignées, indiquées dans le plan de stationnement du campus. Le campus de Benguerir dispose de 2 espaces de stationnement pour les vélos et les trottinettes électriques, ainsi que d'un parking souterrain réservé aux motos.",
+        type: "Ecomobility",
+        sousType: "Parking Vélos/ trotinettes Electriques",
+        image: "img/parking velos/parking_velos.png",
+        icone: "img/PV.jpg",
+        campus: "Ben Guerir"
+    },
+
+
     // Biodiversité - Suite
     {
         id: "BG-075",
@@ -1868,7 +1892,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [32.2163800, -7.9388884],
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -1879,7 +1903,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [32.2169360, -7.9378672],
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -1890,7 +1914,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [32.217619, -7.937109],
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -1901,7 +1925,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [32.216055, -7.939914],
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -1912,7 +1936,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [32.216139, -7.939069],
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -1923,7 +1947,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [32.214466, -7.942004],
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -1934,7 +1958,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [32.213831, -7.939753],
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -1945,7 +1969,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [32.218939, -7.940762],
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -1957,7 +1981,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [32.219472, -7.940066],
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -1968,7 +1992,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [32.219762, -7.939701],
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -1979,7 +2003,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [32.218473, -7.938007],
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -2051,30 +2075,143 @@ var projets = [
         icone: "img/GCS.jpg",
         campus: "Ben Guerir"
     }
+    
+    
+    
+    
+    
+    
     ,
     {
         id: "BG-187",
+        nom: "LP R9",
+        coordinates: [32.214863, -7.936957],
+        description: "",
+        type: "Waste",
+        sousType: "collection points",
+        image: "img/collection points/.png",
+        icone: "img/.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-188",
+        nom: "LP R3",
+        coordinates: [32.21594856443914, -7.934926379056035],
+        description: "",
+        type: "Waste",
+        sousType: "collection points",
+        image: "img/collection points/.png",
+        icone: "img/.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-189",
+        nom: "LP RESTAURANT T1",
+        coordinates: [32.218389, -7.937565],
+        description: "",
+        type: "Waste",
+        sousType: "collection points",
+        image: "img/collection points/.png",
+        icone: "img/.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-190",
+        nom: "LP HEBERGEMENTS",
+        coordinates: [32.218615, -7.940190],
+        description: "",
+        type: "Waste",
+        sousType: "collection points",
+        image: "img/collection points/.png",
+        icone: "img/.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-191",
+        nom: "LP STUDENT CENTER",
+        coordinates: [32.215916, -7.942151],
+        description: "",
+        type: "Waste",
+        sousType: "collection points",
+        image: "img/collection points/.png",
+        icone: "img/.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-192",
+        nom: "LP RIAD CENTER",
+        coordinates: [32.213228, -7.940233],
+        description: "",
+        type: "Waste",
+        sousType: "collection points",
+        image: "img/collection points/.png",
+        icone: "img/.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-193",
+        nom: "LP HEBERGEMENT CCI",
+        coordinates: [32.219276, -7.941308],
+        description: "",
+        type: "Waste",
+        sousType: "collection points",
+        image: "img/collection points/.png",
+        icone: "img/.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-194",
+        nom: "LP CUISINE CCI",
+        coordinates: [32.218557, -7.940869],
+        description: "",
+        type: "Waste",
+        sousType: "collection points",
+        image: "img/collection points/.png",
+        icone: "img/.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-195",
+        nom: "LP CUISINE CCI",
+        coordinates: [32.219297, -7.939861],
+        description: "",
+        type: "Waste",
+        sousType: "collection points",
+        image: "img/collection points/.png",
+        icone: "img/.jpg",
+        campus: "Ben Guerir"
+    }
+
+
+
+
+
+
+
+
+    ,
+    {
+        id: "BG-198",
         nom: "BUS Electrique",
         coordinates: [32.216, -7.938],
         description: "Les bus électriques fonctionnent du lundi au vendredi pendant les heures de travail dans le cadre d’une initiative structurée visant à organiser et optimiser la mobilité interne à travers le campus. Des arrêts désignés ont été soigneusement définis et sont clairement indiqués par une signalisation dédiée sur les deux campus, garantissant une orientation facile et un transport accessible pour tous les usagers.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "BUS",
         image: "img/bus/bus.png",
         icone: "img/bus.jpg",
         campus: "Ben Guerir"
     },
     {
-        id: "BG-188",
+        id: "BG-199",
         nom: "Station Navettes",
         coordinates: [32.217, -7.937],
         description: "L'UM6P met à la disposition de sa communauté 4 navettes quotidiennes entre le campus et la ferme expérimentale pour encourager le covoiturage afin de réduire la congestion du trafic, diminuer les émissions de carbone et promouvoir une mobilité durable.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Station Navettes",
         image: "img/station navettes/station_navettes.png",
         icone: "img/SN.jpg",
         campus: "Ben Guerir"
     },
-    // ... TOUS VOS PROJETS BEN GUERIR ICI ...
     
     // ==================== CAMPUS RABAT ====================
     
@@ -2368,7 +2505,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [33.980751, -6.730145],
         description: "UM6P offers over 20 free electric golf cart shuttles to help the community move efficiently across campus. This service promotes convenient, low-emission mobility while reducing the need for individual vehicle use.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -2379,7 +2516,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [33.979463, -6.727598],
         description: "UM6P offers over 20 free electric golf cart shuttles to help the community move efficiently across campus. This service promotes convenient, low-emission mobility while reducing the need for individual vehicle use.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -2390,7 +2527,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [33.980430, -6.726783],
         description: "UM6P offers over 20 free electric golf cart shuttles to help the community move efficiently across campus. This service promotes convenient, low-emission mobility while reducing the need for individual vehicle use.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -2400,7 +2537,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [33.982352, -6.728712],
         description: "UM6P offers over 20 free electric golf cart shuttles to help the community move efficiently across campus. This service promotes convenient, low-emission mobility while reducing the need for individual vehicle use.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -2410,7 +2547,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [33.981596, -6.727332],
         description: "UM6P offers over 20 free electric golf cart shuttles to help the community move efficiently across campus. This service promotes convenient, low-emission mobility while reducing the need for individual vehicle use.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -2420,7 +2557,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [33.979736, -6.730643],
         description: "UM6P offers over 20 free electric golf cart shuttles to help the community move efficiently across campus. This service promotes convenient, low-emission mobility while reducing the need for individual vehicle use.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
@@ -2430,7 +2567,7 @@ var projets = [
         nom: "Golfette",
         coordinates: [33.978873, -6.728991],
         description: "UM6P offers over 20 free electric golf cart shuttles to help the community move efficiently across campus. This service promotes convenient, low-emission mobility while reducing the need for individual vehicle use.",
-        type: "Transport",
+        type: "Ecomobility",
         sousType: "Golfette",
         image: "img/golfette/golfette.png",
         icone: "img/G.jpg",
