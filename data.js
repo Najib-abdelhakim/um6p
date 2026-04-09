@@ -363,7 +363,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -374,7 +374,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -385,7 +385,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -396,7 +396,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -407,7 +407,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -418,7 +418,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -429,7 +429,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -440,7 +440,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -451,7 +451,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -462,7 +462,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -473,7 +473,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -484,7 +484,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -495,7 +495,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -506,7 +506,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -517,7 +517,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -528,7 +528,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -539,7 +539,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -550,7 +550,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -561,7 +561,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -572,7 +572,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -583,7 +583,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -594,7 +594,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -605,7 +605,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -616,7 +616,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -627,7 +627,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
         {
@@ -1123,7 +1123,7 @@ var projets = [
         type: "Buildings",
         Informations_complémentaires:"· 55,000 m² of laboratories across 9 buildings</br>· 50–78% energy savings (vs ASHRAE 90.1) </br>· 45–47% reduction in water consumption</br>· ~50% of energy needs covered by renewable energy</br>· ~63% open spaces, including 46% landscaped areas",
         sousType: "Bâtiment Certifié LEED BD+C Certified",
-        image: "img/Bâtiment Certifié LEED BD+C Certified/1.png",
+        image: "img/Bâtiment Certifié LEED BD+C Certified/1.jpg",
         icone: "img/Bâtiment Certifié LEED BD+C Certified/2.jpg",
         campus: "Ben Guerir"
     },
@@ -2239,7 +2239,7 @@ var projets = [
         description: "Bassin à ciel ouvert d'une capacité de 5 000 m³, utilisé pour stocker l'eau traitée provenant de la station de traitement des eaux usées avant son utilisation pour l'arrosage des espaces verts du campus.",
         type: "Water",
         sousType: "Water key infrastructure",
-        image: "img/Water infrastructure/2.png",
+        image: "img/Water infrastructure/2.jpg",
         icone: "img/Water infrastructure/water.jpg",
         campus: "Ben Guerir"
     },
@@ -2300,8 +2300,8 @@ var projets = [
         description: "Photovoltaic installation",
         type: "Energy",
         sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
+        image: "img/Photovoltaique/1.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Rabat"
     },
     {
@@ -2311,8 +2311,8 @@ var projets = [
         description: "Photovoltaic installation",
         type: "Energy",
         sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
+        image: "img/Photovoltaique/1.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Rabat"
     },
     {
@@ -2322,8 +2322,8 @@ var projets = [
         description: "Photovoltaic installation",
         type: "Energy",
         sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
+        image: "img/Photovoltaique/1.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Rabat"
     },
     {
@@ -2333,8 +2333,8 @@ var projets = [
         description: "Photovoltaic installation",
         type: "Energy",
         sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
+        image: "img/Photovoltaique/1.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Rabat"
     },
     {
@@ -2344,8 +2344,8 @@ var projets = [
         description: "Photovoltaic installation",
         type: "Energy",
         sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
+        image: "img/Photovoltaique/1.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Rabat"
     },
     {
@@ -2355,8 +2355,8 @@ var projets = [
         description: "Photovoltaic installation",
         type: "Energy",
         sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
+        image: "img/Photovoltaique/1.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Rabat"
     },
     {
@@ -2366,8 +2366,8 @@ var projets = [
         description: "Photovoltaic installation",
         type: "Energy",
         sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
+        image: "img/Photovoltaique/1.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Rabat"
     },
     {
@@ -2377,8 +2377,8 @@ var projets = [
         description: "Photovoltaic installation",
         type: "Energy",
         sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
+        image: "img/Photovoltaique/1.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Rabat"
     },
     {
@@ -2388,8 +2388,8 @@ var projets = [
         description: "Photovoltaic installation",
         type: "Energy",
         sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
+        image: "img/Photovoltaique/1.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Rabat"
     },
     {
@@ -2399,8 +2399,8 @@ var projets = [
         description: "Photovoltaic installation",
         type: "Energy",
         sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
+        image: "img/Photovoltaique/1.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Rabat"
     },
     {
@@ -2410,8 +2410,8 @@ var projets = [
         description: "Photovoltaic installation",
         type: "Energy",
         sousType: "Photovoltaique/Thermoélectrique",
-        image: "https://cdn-icons-png.flaticon.com/512/2941/2941535.png",
-        icone: "img/IPT.jpg",
+        image: "img/Photovoltaique/1.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Rabat"
     },
     
@@ -2583,8 +2583,8 @@ var projets = [
         description: "",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1jpg",
+        icone: "img/golfette/G.jpg",
         campus: "Rabat"
     },
     {
@@ -2594,8 +2594,8 @@ var projets = [
         description: "",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.jpg",
+        icone: "img/golfette/G.jpg",
         campus: "Rabat"
     },
     {
@@ -2605,8 +2605,8 @@ var projets = [
         description: "",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.jpg",
+        icone: "img/golfette/G.jpg",
         campus: "Rabat"
     },{
         id: "RB-029",
@@ -2615,8 +2615,8 @@ var projets = [
         description: "",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.jpg",
+        icone: "img/golfette/G.jpg",
         campus: "Rabat"
     },{
         id: "RB-030",
@@ -2625,8 +2625,8 @@ var projets = [
         description: "",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.png",
+        icone: "img/golfette/G.jpg",
         campus: "Rabat"
     },{
         id: "RB-031",
@@ -2635,8 +2635,8 @@ var projets = [
         description: "",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.png",
+        icone: "img/golfette/G.jpg",
         campus: "Rabat"
     },{
         id: "RB-032",
@@ -2645,8 +2645,8 @@ var projets = [
         description: "",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.png",
+        icone: "img/golfette/G.jpg",
         campus: "Rabat"
     }
 ];
