@@ -1,4 +1,3 @@
-// ==================== DONNEES PROJETS ====================
 var projets = [
     // ==================== CAMPUS BEN GUERIR ====================
         {
@@ -9,7 +8,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "ABRIS INSECTE",
         image: "img/insect shelter/1.jpeg",
-        icone: "img/AI.jpg",
+        icone: "img/insect shelter/AI.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -20,7 +19,18 @@ var projets = [
         type: "Biodiversity",
         sousType: "ABRIS INSECTE",
         image: "img/insect shelter/3.jpeg",
-        icone: "img/AI.jpg",
+        icone: "img/insect shelter/AI.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-085",
+        nom: "ABRIS INSECTE",
+        coordinates: [32.214927, -7.942174],
+        description: "Insect shelters, designed as wooden structures to host beneficial insects, are installed across the campus to promote natural pest regulation, reduce the use of pesticides, and contribute to maintaining the biodiversity of UM6P's green spaces.",
+        type: "Biodiversity",
+        sousType: "ABRIS INSECTE",
+        image: "img/insect shelter/2.jpeg",
+        icone: "img/insect shelter/AI.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -31,7 +41,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF_b.jpg",
+        icone: "img/avifaune/AF_b.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -42,7 +52,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF_g.jpg",
+        icone: "img/avifaune/AF_g.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -53,7 +63,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF_r.jpg",
+        icone: "img/avifaune/AF_r.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -64,7 +74,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF_y.jpg",
+        icone: "img/avifaune/AF_y.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -75,7 +85,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF_b.jpg",
+        icone: "img/avifaune/AF_b.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -86,7 +96,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF_g.jpg",
+        icone: "img/avifaune/AF_g.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -97,7 +107,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF_r.jpg",
+        icone: "img/avifaune/AF_r.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -108,9 +118,44 @@ var projets = [
         type: "Biodiversity",
         sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
-        icone: "img/AF_y.jpg",
+        icone: "img/avifaune/AF_y.jpg",
         campus: "Ben Guerir"
     },
+    
+    {
+        id: "BG-086",
+        nom: "AVIFAUNE",
+        coordinates: [32.218142, -7.937695],
+        description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
+        type: "Biodiversity",
+        sousType: "AVIFAUNE",
+        image: "img/avifaune/avifaune.png",
+        icone: "img/avifaune/AF_y.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-087",
+        nom: "AVIFAUNE",
+        coordinates: [32.218457, -7.937153],
+        description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
+        type: "Biodiversity",
+        sousType: "AVIFAUNE",
+        image: "img/avifaune/avifaune.png",
+        icone: "img/avifaune/AF_r.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-088",
+        nom: "AVIFAUNE",
+        coordinates: [32.216122, -7.936044],
+        description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
+        type: "Biodiversity",
+        sousType: "AVIFAUNE",
+        image: "img/avifaune/avifaune.png",
+        icone: "img/avifaune/AF_g.jpg",
+        campus: "Ben Guerir"
+    },
+    
     {
         id: "BG-011",
         nom: "Botanic garden",
@@ -119,7 +164,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -130,7 +175,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -141,7 +186,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -152,7 +197,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -163,7 +208,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -174,7 +219,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -185,7 +230,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -196,7 +241,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -207,7 +252,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
+        icone: "img/botanic garden/BG2.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -218,7 +263,856 @@ var projets = [
         type: "Biodiversity",
         sousType: "Botanic garden",
         image: "img/botanic garden/1.png",
+        icone: "img/botanic garden/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+        {
+        id: "BG-077",
+        nom: "Botanic garden",
+        coordinates: [32.214880, -7.940977],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/2.png",
+        icone: "img/botanic garden/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-078",
+        nom: "Botanic garden",
+        coordinates: [32.214524, -7.940601],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/botanic garden/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-079",
+        nom: "Botanic garden",
+        coordinates: [32.217563, -7.938670],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/botanic garden/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-080",
+        nom: "Botanic garden",
+        coordinates: [32.215330, -7.938469],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/2.png",
+        icone: "img/botanic garden/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-081",
+        nom: "Botanic garden",
+        coordinates: [32.216307, -7.937058],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/3.png",
+        icone: "img/botanic garden/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-082",
+        nom: "Botanic garden",
+        coordinates: [32.216975, -7.935973],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/3.png",
+        icone: "img/botanic garden/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-083",
+        nom: "Botanic garden",
+        coordinates: [32.219492, -7.940063],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/2.png",
+        icone: "img/botanic garden/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-084",
+        nom: "Botanic garden",
+        coordinates: [32.219740, -7.939566],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/botanic garden/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+
+    {
+        id: "BG-146",
+        nom: "Botanic garden",
+        coordinates: [32.215367, -7.940962],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/1.png",
         icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-147",
+        nom: "Botanic garden",
+        coordinates: [32.215258, -7.940871],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/2.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-148",
+        nom: "Botanic garden",
+        coordinates: [32.214968, -7.941247],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/3.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-149",
+        nom: "Botanic garden",
+        coordinates: [32.215054, -7.941392],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/3.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-150",
+        nom: "Botanic garden",
+        coordinates: [32.215272, -7.940666 ],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/2.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-151",
+        nom: "Botanic garden",
+        coordinates: [32.215151, -7.940572 ],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-152",
+        nom: "Botanic garden",
+        coordinates: [32.215524, -7.940913 ],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-153",
+        nom: "Botanic garden",
+        coordinates: [32.215636, -7.941035 ],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/2.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-154",
+        nom: "Botanic garden",
+        coordinates: [32.214771, -7.940144 ],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/3.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-155",
+        nom: "Botanic garden",
+        coordinates: [32.214533, -7.939902 ],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/3.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-156",
+        nom: "Botanic garden",
+        coordinates: [32.214444, -7.939804 ],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/2.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-157",
+        nom: "Botanic garden",
+        coordinates: [32.214307, -7.939670 ],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-158",
+        nom: "Botanic garden",
+        coordinates: [32.213914, -7.939266 ],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/3.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-159",
+        nom: "Botanic garden",
+        coordinates: [32.213633, -7.938982 ],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/2.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-160",
+        nom: "Botanic garden",
+        coordinates: [32.213332, -7.938657 ],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-161",
+        nom: "Botanic garden",
+        coordinates: [32.215134, -7.940314 ],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/3.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-162",
+        nom: "Botanic garden",
+        coordinates: [32.214702, -7.939979 ],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/2.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-163",
+        nom: "Botanic garden",
+        coordinates: [32.214601, -7.939775 ],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-164",
+        nom: "Botanic garden",
+        coordinates: [32.214438, -7.939595 ],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-165",
+        nom: "Botanic garden",
+        coordinates: [32.214890, -7.940526],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/2.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-166",
+        nom: "Botanic garden",
+        coordinates: [32.214834, -7.940493],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/3.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-167",
+        nom: "Botanic garden",
+        coordinates: [32.214681, -7.940794],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/3.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-168",
+        nom: "Botanic garden",
+        coordinates: [32.214625, -7.940761],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/2.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-169",
+        nom: "Botanic garden",
+        coordinates: [32.214461, -7.941115],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-170",
+        nom: "Botanic garden",
+        coordinates: [32.214395, -7.941053],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/BG2.jpg",
+        campus: "Ben Guerir"
+    },
+        {
+        id: "BG-075",
+        nom: "Coxibio",
+        coordinates: [32.219383, -7.938441],
+        description: "A biological control program that replaces chemical pesticides with biological control solutions in UM6P's green spaces.",
+        type: "Biodiversity",
+        sousType: "Coxibio",
+        image: "img/coxibio/coxibio.png",
+        icone: "img/coxibio/CB.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-076",
+        nom: "Coxibio",
+        coordinates: [32.218331, -7.936263],
+        description: "A biological control program that replaces chemical pesticides with biological control solutions in UM6P's green spaces.",
+        type: "Biodiversity",
+        sousType: "Coxibio",
+        image: "img/coxibio/coxibio.png",
+        icone: "img/coxibio/CB.jpg",
+        campus: "Ben Guerir"
+    },
+// Biological pest control
+    {
+        id: "BG-103",
+        nom: "Biological pest control",
+        coordinates: [32.217824, -7.936503],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/1.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-104",
+        nom: "Biological pest control",
+        coordinates: [32.217535, -7.936927],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/2.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-105",
+        nom: "Biological pest control",
+        coordinates: [32.217493, -7.937107],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/3.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-106",
+        nom: "Biological pest control",
+        coordinates: [32.217614, -7.937233],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/4.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-107",
+        nom: "Biological pest control",
+        coordinates: [32.217375, -7.937542],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/5.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-108",
+        nom: "Biological pest control",
+        coordinates: [32.217256, -7.937417],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/6.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-109",
+        nom: "Biological pest control",
+        coordinates: [32.217516, -7.937359],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/7.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-110",
+        nom: "Biological pest control",
+        coordinates: [32.217483, -7.937422],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/1.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-111",
+        nom: "Biological pest control",
+        coordinates: [32.217395, -7.937235],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/2.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-112",
+        nom: "Biological pest control",
+        coordinates: [32.217353, -7.937286],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/3.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-113",
+        nom: "Biological pest control",
+        coordinates: [32.217171, -7.937535],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/4.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-114",
+        nom: "Biological pest control",
+        coordinates: [32.217295, -7.937659],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/5.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-115",
+        nom: "Biological pest control",
+        coordinates: [32.217151, -7.937849],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/6.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-116",
+        nom: "Biological pest control",
+        coordinates: [32.217032, -7.937723],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/7.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-117",
+        nom: "Biological pest control",
+        coordinates: [32.217109, -7.937903],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/1.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-118",
+        nom: "Biological pest control",
+        coordinates: [32.216967, -7.938093],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/2.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-119",
+        nom: "Biological pest control",
+        coordinates: [32.21699, -7.93778],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/3.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-120",
+        nom: "Biological pest control",
+        coordinates: [32.216852, -7.937968],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/4.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-121",
+        nom: "Biological pest control",
+        coordinates: [32.216927, -7.938154],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/5.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-122",
+        nom: "Biological pest control",
+        coordinates: [32.216787, -7.938341],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/6.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-123",
+        nom: "Biological pest control",
+        coordinates: [32.216806, -7.938029],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/7.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-124",
+        nom: "Biological pest control",
+        coordinates: [32.216669, -7.938216],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/1.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-125",
+        nom: "Biological pest control",
+        coordinates: [32.216627, -7.938275],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/2.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-126",
+        nom: "Biological pest control",
+        coordinates: [32.216487, -7.938456],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/3.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-127",
+        nom: "Biological pest control",
+        coordinates: [32.216751, -7.938399],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/4.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-128",
+        nom: "Biological pest control",
+        coordinates: [32.216607, -7.938592],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/5.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-129",
+        nom: "Biological pest control",
+        coordinates: [32.216562, -7.938645],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/6.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-130",
+        nom: "Biological pest control",
+        coordinates: [32.216424, -7.938836],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/7.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-131",
+        nom: "Biological pest control",
+        coordinates: [32.216379, -7.938886],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/1.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-132",
+        nom: "Biological pest control",
+        coordinates: [32.216244, -7.939078],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/2.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-133",
+        nom: "Biological pest control",
+        coordinates: [32.2163591, -7.938529],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/3.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-134",
+        nom: "Biological pest control",
+        coordinates: [32.2160601, -7.9384673],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/4.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-135",
+        nom: "Biological pest control",
+        coordinates: [32.216162, -7.938021],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/5.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-136",
+        nom: "Biological pest control",
+        coordinates: [32.216547, -7.9375],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/6.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-137",
+        nom: "Biological pest control",
+        coordinates: [32.216903, -7.937022],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/7.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-138",
+        nom: "Biological pest control",
+        coordinates: [32.217329, -7.936814],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/1.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-139",
+        nom: "Biological pest control",
+        coordinates: [32.217825, -7.937328],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/2.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-140",
+        nom: "Biological pest control",
+        coordinates: [32.217892, -7.937735],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/3.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-141",
+        nom: "Biological pest control",
+        coordinates: [32.217522, -7.938233],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/4.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-142",
+        nom: "Biological pest control",
+        coordinates: [32.2171562467238, -7.938716764266681],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/5.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-143",
+        nom: "Biological pest control",
+        coordinates: [32.216798, -7.939216],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/6.jpg",
+        icone: "img/Biological pest control/BC.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-144",
+        nom: "Biological pest control",
+        coordinates: [32.216426, -7.939312],
+        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
+        type: "Biodiversity",
+        sousType: "Biological pest control",
+        image: "img/Biological pest control/7.jpg",
+        icone: "img/Biological pest control/BC.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -588,9 +1482,161 @@ var projets = [
         icone: "img/Certified LEED O+M Silver/icon2.jpg",
         campus: "Ben Guerir"
     },
-
-
-    // Énergie - Photovoltaïque
+    {
+        id: "BG-100",
+        nom: "Newrest",
+        coordinates: [32.218100, -7.937055],
+        description: "An initiative to install a self-service fridge on campus, accessible to all, allowing anyone to freely deposit or take food at any time while raising awareness within the UM6P community about food waste.",
+        type: "Cathring",
+        sousType: "FRIGO SOLIDAIRE",
+        image: "img/FRIGO/FRIGO.png",
+        icone: "img/FRIGO/FS.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-101",
+        nom: "CCI",
+        coordinates: [32.218825, -7.941018],
+        description: "An initiative to install a self-service fridge on campus, accessible to all, allowing anyone to freely deposit or take food at any time while raising awareness within the UM6P community about food waste.",
+        type: "Cathring",
+        sousType: "FRIGO SOLIDAIRE",
+        image: "img/FRIGO/FRIGO.png",
+        icone: "img/FRIGO/FS.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-096",
+        nom: "Newrest",
+        coordinates: [32.218100, -7.937055],
+        description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
+        type: "Cathring",
+        sousType: "Gachipain",
+        image: "img/gachipain/gachipain1.jpg",
+        icone: "img/gachipain/GP.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-097",
+        nom: "CCI",
+        coordinates: [32.218825, -7.941018],
+        description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
+        type: "Cathring",
+        sousType: "Gachipain",
+        image: "img/gachipain/gachipain2.jpg",
+        icone: "img/gachipain/GP.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-098",
+        nom: "SHBM",
+        coordinates: [32.21295863581021, -7.939902075944716],
+        description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
+        type: "Cathring",
+        sousType: "Gachipain",
+        image: "img/gachipain/gachipain1.jpg",
+        icone: "img/gachipain/GP.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-099",
+        nom: "MODULAIRE",
+        coordinates: [32.21563445144424, -7.933360256439344],
+        description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
+        type: "Cathring",
+        sousType: "Gachipain",
+        image: "img/gachipain/gachipain2.jpg",
+        icone: "img/gachipain/GP.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "RG-110",
+        nom: "HILTON",
+        coordinates: [32.214349, -7.938645],
+        description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
+        type: "Cathring",
+        sousType: "Gachipain",
+        image: "img/gachipain/gachipain2.jpg",
+        icone: "img/gachipain/GP.jpg",
+        campus: "Ben Guerir"
+    },
+        {
+        id: "BG-145",
+        nom: "GO Plant Shop",
+        coordinates: [32.2164095, -7.9385290],
+        description: "A sustainable initiative offering plants from the experimental farm through an on-campus kiosk, where plants are grown in reused cups collected from campus cafés, promoting circular practices and resource efficiency.",
+        type: "Cathring",
+        sousType: "GO Plant Shop",
+        image: "img/GO Plant/go_plant_shop.png",
+        icone: "img/GO Plant/GO.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-182",
+        nom: "Electric vehicles charge station",
+        coordinates: [32.2144798, -7.9404018],
+        description:"",
+        type: "Energy",
+        sousType: "Electric vehicles charge station",
+        image: "img/vehicles charge station/charge_station1.jpg",
+        icone: "img/vehicles charge station/VCS.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-183",
+        nom: "Electric vehicles charge station",
+        coordinates: [32.2130167, -7.9400099],
+        description:"",
+        type: "Energy",
+        sousType: "Electric vehicles charge station",
+        image: "img/vehicles charge station/charge_station2.jpg",
+        icone: "img/vehicles charge station/VCS.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-184",
+        nom: "Electric vehicles charge station",
+        coordinates: [32.2122703, -7.9407703],
+        description:"",
+        type: "Energy",
+        sousType: "Electric vehicles charge station",
+        image: "img/vehicles charge station/charge_station3.jpg",
+        icone: "img/vehicles charge station/VCS.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-185",
+        nom: "Electric vehicles charge station",
+        coordinates: [32.2133514, -7.9419595],
+        description:"",
+        type: "Energy",
+        sousType: "Electric vehicles charge station",
+        image: "img/vehicles charge station/charge_station4.jpg",
+        icone: "img/vehicles charge station/VCS.jpg",
+        campus: "Ben Guerir"
+    },
+        {
+        id: "BG-186",
+        nom: "Golfette charge station",
+        coordinates: [32.2175643, -7.9372737],
+        description:"",
+        type: "Energy",
+        sousType: "Golfette charge station",
+        image: "img/Golfette charge station/charge_station1.png",
+        icone: "img/Golfette charge station/GCS.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-186",
+        nom: "Golfette charge station",
+        coordinates: [32.2164254, -7.9382990],
+        description:"",
+        type: "Energy",
+        sousType: "Golfette charge station",
+        image: "img/Golfette charge station/charge_station2.png",
+        icone: "img/Golfette charge station/GCS.jpg",
+        campus: "Ben Guerir"
+    },
+    //  Photovoltaïque
     {
         id: "BG-048",
         nom: "Pôle Science & Technology",
@@ -600,7 +1646,7 @@ var projets = [
         Informations_complémentaires: "• 9 % de couverture photovoltaïque en 2025<br>• 1 782 kWc de puissance installée<br>• 567,53 MWh produits en 2025<br>• ~2 570 MWh/an de potentiel de production ",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/1.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -612,7 +1658,7 @@ var projets = [
         Informations_complémentaires: "• 10% de couverture photovoltaïque en 2025<br>• 729,3 kWc de puissance photovoltaïque installée<br>• 377,95 MWh produits en 2025 (photovoltaïque) <br>•~1 380 MWh/an de potentiel de production (Photovoltaique) <br>• 250 panneaux solaires thermiques installés<br>• ~600 MWh/an de production d'énergie solaire thermique<br>• 420 kW de puissance solaire thermique<br>• 585 m² de surface de capteurs Solaire thermique<br>• ~45 m³/jour de production d'eau chaude<br>• 250 kW de puissance des systèmes d'appoint (PAC) ",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/2.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -624,7 +1670,7 @@ var projets = [
         Informations_complémentaires: "• 10% de couverture photovoltaïque en 2025<br>• 729,3 kWc de puissance photovoltaïque installée<br>• 377,95 MWh produits en 2025 (photovoltaïque) <br>•~1 380 MWh/an de potentiel de production (Photovoltaique) <br>• 250 panneaux solaires thermiques installés<br>• ~600 MWh/an de production d'énergie solaire thermique<br>• 420 kW de puissance solaire thermique<br>• 585 m² de surface de capteurs Solaire thermique<br>• ~45 m³/jour de production d'eau chaude<br>• 250 kW de puissance des systèmes d'appoint (PAC) ",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/2.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -636,7 +1682,7 @@ var projets = [
         Informations_complémentaires: "• 10% de couverture photovoltaïque en 2025<br>• 729,3 kWc de puissance photovoltaïque installée<br>• 377,95 MWh produits en 2025 (photovoltaïque) <br>•~1 380 MWh/an de potentiel de production (Photovoltaique) <br>• 250 panneaux solaires thermiques installés<br>• ~600 MWh/an de production d'énergie solaire thermique<br>• 420 kW de puissance solaire thermique<br>• 585 m² de surface de capteurs Solaire thermique<br>• ~45 m³/jour de production d'eau chaude<br>• 250 kW de puissance des systèmes d'appoint (PAC) ",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/2.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -648,7 +1694,7 @@ var projets = [
         Informations_complémentaires: "• 10% de couverture photovoltaïque en 2025<br>• 729,3 kWc de puissance photovoltaïque installée<br>• 377,95 MWh produits en 2025 (photovoltaïque) <br>•~1 380 MWh/an de potentiel de production (Photovoltaique) <br>• 250 panneaux solaires thermiques installés<br>• ~600 MWh/an de production d'énergie solaire thermique<br>• 420 kW de puissance solaire thermique<br>• 585 m² de surface de capteurs Solaire thermique<br>• ~45 m³/jour de production d'eau chaude<br>• 250 kW de puissance des systèmes d'appoint (PAC) ",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/2.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -660,7 +1706,7 @@ var projets = [
         Informations_complémentaires: "• 10% de couverture photovoltaïque en 2025<br>• 729,3 kWc de puissance photovoltaïque installée<br>• 377,95 MWh produits en 2025 (photovoltaïque) <br>•~1 380 MWh/an de potentiel de production (Photovoltaique) <br>• 250 panneaux solaires thermiques installés<br>• ~600 MWh/an de production d'énergie solaire thermique<br>• 420 kW de puissance solaire thermique<br>• 585 m² de surface de capteurs Solaire thermique<br>• ~45 m³/jour de production d'eau chaude<br>• 250 kW de puissance des systèmes d'appoint (PAC) ",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/2.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -672,7 +1718,7 @@ var projets = [
         Informations_complémentaires: "• 13 % de couverture photovoltaïque en 2025<br>• 326,40 kWc de puissance photovoltaïque installée<br>• 293,73 MWh produits en 2025 (photovoltaïque)<br>• ~436 MWh/an de potentiel de production (Photovoltaique)<br>• 6 capteurs solaires thermiques installés<br>• ~19 700 kWh/an de production d'énergie solaire thermique",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/3.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -684,7 +1730,7 @@ var projets = [
         Informations_complémentaires: "• 5 % de couverture photovoltaïque en 2025<br> •64,6 kWc de puissance photovoltaïque installée<br>• 54,77 MWh produits en 2025<br>• ~102 MWh/an de potentiel de production (Photovoltaique)",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/4.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -696,7 +1742,7 @@ var projets = [
         Informations_complémentaires: "• 16 % de couverture photovoltaïque en 2025<br>• 87,6 kWc de puissance photovoltaïque installée<br>• 75,44 MWh produits en 2025 (photovoltaïque)<br>• ~126 MWh/an de potentiel de production (Photovoltaique)<br>• 2 capteurs solaires thermiques installés<br>• ~4 000 kWh/an de production d'énergie solaire thermique",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/5.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -708,7 +1754,7 @@ var projets = [
         Informations_complémentaires: "• 5 % de couverture photovoltaïque en 2025<br>• 71,06 kWc de puissance photovoltaïque installée<br>• 24,12 MWh produits en 2025 (photovoltaïque)<br>• ~105 MWh/an de potentiel de production (Photovoltaique)<br>• 35 panneaux solaires thermiques installés<br>• 210 m² de surface de capteurs Solaire thermique<br>• 70 kW de puissance des systèmes d'appoint (PAC) (COP 2,57)<br>• ~88 MWh/an de production d'énergie solaire thermique",       
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/6.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -720,7 +1766,7 @@ var projets = [
         Informations_complémentaires: "• 12 % de couverture photovoltaïque en 2025<br>• 428 kWc de puissance photovoltaïque installée<br>• 141,32 MWh produits en 2025 (photovoltaïque)<br>• ~736,8 MWh/an de potentiel de production (Photovoltaique)<br>• 57 capteurs solaires thermiques installés<br>• ~9,25 MWh/an de production d'énergie solaire thermique",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/7.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -732,7 +1778,7 @@ var projets = [
         sousType: "Photovoltaique/Thermoélectrique",
         Informations_complémentaires: "• 16 % de couverture photovoltaïque en 2025<br>• 63 kWc de puissance photovoltaïque installée<br>• 77,5 MWh produits en 2025 (photovoltaïque)<br>• capteurs solaires thermiques installés",
         image: "img/Photovoltaique/8.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -744,7 +1790,7 @@ var projets = [
         Informations_complémentaires: "• 15 capteurs solaires thermiques installés",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/9.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -756,7 +1802,7 @@ var projets = [
         Informations_complémentaires: "• 30 capteurs solaires thermiques installés<br>• ~60 MWh/an de production d'énergie solaire thermique",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/10.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -768,7 +1814,7 @@ var projets = [
         Informations_complémentaires: "• 70 capteurs solaires thermiques installés",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/11.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -780,7 +1826,7 @@ var projets = [
         Informations_complémentaires: "• 70 capteurs solaires thermiques installés",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/11.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -792,7 +1838,7 @@ var projets = [
         Informations_complémentaires: "• 240 capteurs solaires thermiques installés ",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/12.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },{
         id: "BG-058",
@@ -803,7 +1849,7 @@ var projets = [
         Informations_complémentaires: "• 240 capteurs solaires thermiques installés ",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/12.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },{
         id: "BG-058",
@@ -814,7 +1860,7 @@ var projets = [
         Informations_complémentaires: "• 240 capteurs solaires thermiques installés ",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/12.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },{
         id: "BG-058",
@@ -825,7 +1871,7 @@ var projets = [
         Informations_complémentaires: "• 240 capteurs solaires thermiques installés ",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/12.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -837,7 +1883,7 @@ var projets = [
         Informations_complémentaires:"•	80 capteurs solaires thermiques installés",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/13.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -849,7 +1895,7 @@ var projets = [
         Informations_complémentaires:"• 10 capteurs solaires thermiques installés",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/14.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -861,7 +1907,7 @@ var projets = [
         Informations_complémentaires:"• 60 capteurs solaires thermiques installés",
         sousType: "Photovoltaique/Thermoélectrique",
         image: "img/Photovoltaique/15.jpg",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -872,215 +1918,20 @@ var projets = [
         type: "Energy",
         Informations_complémentaires:"•	80 capteurs solaires thermiques installés",
         sousType: "Photovoltaique/Thermoélectrique",
-        icone: "img/IPT.jpg",
+        icone: "img/Photovoltaique/IPT.jpg",
         image: "img/Photovoltaique/16.jpg",
         campus: "Ben Guerir"
     },
-    
-    // Transport
-    {
-        id: "BG-073",
-        nom: "Parking",
-        coordinates: [32.219500, -7.939705],
-        description: "UM6P campus provides dedicated parking with electric vehicle charging stations to support low-emission transportation. For safety and traffic management, motorcycles, bicycles, and scooters are not allowed to circulate on campus roads, pathways, or pedestrian areas. They must be parked only in designated areas indicated in the campus parking plan. The Benguerir campus provides 2 parking spaces for bikes and electric scooters, and 1 underground parking space fort motorcycles.",
-        type: "Ecomobility",
-        sousType: "Parking Vélos/ trotinettes Electriques",
-        image: "img/parking velos/parking_velos.png",
-        icone: "img/PV.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-196",
-        nom: "Parking",
-        coordinates: [32.212381, -7.941460],
-        description: "UM6P campus provides dedicated parking with electric vehicle charging stations to support low-emission transportation. For safety and traffic management, motorcycles, bicycles, and scooters are not allowed to circulate on campus roads, pathways, or pedestrian areas. They must be parked only in designated areas indicated in the campus parking plan. The Benguerir campus provides 2 parking spaces for bikes and electric scooters, and 1 underground parking space fort motorcycles.",
-        type: "Ecomobility",
-        sousType: "Parking Vélos/ trotinettes Electriques",
-        image: "img/parking velos/parking_velos.png",
-        icone: "img/PV.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-197",
-        nom: "Parking SOUS-SOL",
-        coordinates: [32.212939, -7.942323],
-        description: "UM6P campus provides dedicated parking with electric vehicle charging stations to support low-emission transportation. For safety and traffic management, motorcycles, bicycles, and scooters are not allowed to circulate on campus roads, pathways, or pedestrian areas. They must be parked only in designated areas indicated in the campus parking plan. The Benguerir campus provides 2 parking spaces for bikes and electric scooters, and 1 underground parking space fort motorcycles.",
-        type: "Ecomobility",
-        sousType: "Parking Vélos/ trotinettes Electriques",
-        image: "img/parking velos/parking_velos.png",
-        icone: "img/PV.jpg",
-        campus: "Ben Guerir"
-    },
-
-
-    // Biodiversité - Suite
-    {
-        id: "BG-075",
-        nom: "Coxibio",
-        coordinates: [32.219383, -7.938441],
-        description: "A biological control program that replaces chemical pesticides with biological control solutions in UM6P's green spaces.",
-        type: "Biodiversity",
-        sousType: "Coxibio",
-        image: "img/coxibio/coxibio.png",
-        icone: "img/CB.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-076",
-        nom: "Coxibio",
-        coordinates: [32.218331, -7.936263],
-        description: "A biological control program that replaces chemical pesticides with biological control solutions in UM6P's green spaces.",
-        type: "Biodiversity",
-        sousType: "Coxibio",
-        image: "img/coxibio/coxibio.png",
-        icone: "img/CB.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-077",
-        nom: "Botanic garden",
-        coordinates: [32.214880, -7.940977],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-078",
-        nom: "Botanic garden",
-        coordinates: [32.214524, -7.940601],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-079",
-        nom: "Botanic garden",
-        coordinates: [32.217563, -7.938670],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-080",
-        nom: "Botanic garden",
-        coordinates: [32.215330, -7.938469],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-081",
-        nom: "Botanic garden",
-        coordinates: [32.216307, -7.937058],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-082",
-        nom: "Botanic garden",
-        coordinates: [32.216975, -7.935973],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-083",
-        nom: "Botanic garden",
-        coordinates: [32.219492, -7.940063],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-084",
-        nom: "Botanic garden",
-        coordinates: [32.219740, -7.939566],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-085",
-        nom: "ABRIS INSECTE",
-        coordinates: [32.214927, -7.942174],
-        description: "Insect shelters, designed as wooden structures to host beneficial insects, are installed across the campus to promote natural pest regulation, reduce the use of pesticides, and contribute to maintaining the biodiversity of UM6P's green spaces.",
-        type: "Biodiversity",
-        sousType: "ABRIS INSECTE",
-        image: "img/insect shelter/2.jpeg",
-        icone: "img/AI.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-086",
-        nom: "AVIFAUNE",
-        coordinates: [32.218142, -7.937695],
-        description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
-        type: "Biodiversity",
-        sousType: "AVIFAUNE",
-        image: "img/avifaune/avifaune.png",
-        icone: "img/AF_y.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-087",
-        nom: "AVIFAUNE",
-        coordinates: [32.218457, -7.937153],
-        description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
-        type: "Biodiversity",
-        sousType: "AVIFAUNE",
-        image: "img/avifaune/avifaune.png",
-        icone: "img/AF_r.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-088",
-        nom: "AVIFAUNE",
-        coordinates: [32.216122, -7.936044],
-        description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
-        type: "Biodiversity",
-        sousType: "AVIFAUNE",
-        image: "img/avifaune/avifaune.png",
-        icone: "img/AF_g.jpg",
-        campus: "Ben Guerir"
-    },
-    
-    // Water
-
-    // Waste Management
-    {
-        id: "BG-091",
-        nom: "Waste sorting center",
-        coordinates: [32.2183375, -7.9376412],
-        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
-        type: "Waste",
-        sousType: "Waste sorting center",
-        image: "",
-        icone: "img/WS.jpg",
+        {
+        id: "BG-102",
+        nom: "Tree solaire",
+        coordinates: [32.215414834965586, -7.940867619202576],
+        description: "The UM6P Solar Tree is a renewable energy solution that combines design, comfort, and environmental responsibility. Inspired by the shape of a tree, this structure is solar-powered and offers a pleasant shaded area, while also providing charging points for devices via USB ports and 220V outlets. It also incorporates modern public lighting and offers an inclusive space accessible to people with reduced mobility.",
+        Informations_complémentaires: "• Daily production: 2200 Wh/day<br>• Total power: 600 Wp<br>• 10 panels<br>• 10 LED lamps and 10 spots<br>• Autonomy: 16 hours continuous operation",        
+        type: "Energy",
+        sousType: "Tree solaire",
+        image: "img/tree_solaire/treesalaire.png",
+        icone: "img/tree_solaire/TS.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1091,7 +1942,7 @@ var projets = [
         type: "Waste",
         sousType: "Clothes recycling collect",
         image: "img/Clothes recycling collect/1.jpeg",
-        icone: "img/CR.jpg",
+        icone: "img/Clothes recycling collect/CR.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1102,7 +1953,7 @@ var projets = [
         type: "Waste",
         sousType: "Clothes recycling collect",
         image: "img/Clothes recycling collect/1.jpeg",
-        icone: "img/CR.jpg",
+        icone: "img/Clothes recycling collect/CR.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1113,850 +1964,139 @@ var projets = [
         type: "Waste",
         sousType: "Clothes recycling collect",
         image: "img/Clothes recycling collect/1.jpeg",
-        icone: "img/CR.jpg",
-        campus: "Ben Guerir"
-    },
-    
-    // Restauration
-    {
-        id: "BG-096",
-        nom: "Newrest",
-        coordinates: [32.218100, -7.937055],
-        description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
-        type: "Cathring",
-        sousType: "Gachipain",
-        image: "img/gachipain/gachipain1.jpg",
-        icone: "img/GP.jpg",
+        icone: "img/Clothes recycling collect/CR.jpg",
         campus: "Ben Guerir"
     },
     {
-        id: "BG-097",
-        nom: "CCI",
-        coordinates: [32.218825, -7.941018],
-        description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
-        type: "Cathring",
-        sousType: "Gachipain",
-        image: "img/gachipain/gachipain2.jpg",
-        icone: "img/GP.jpg",
+        id: "BG-187",
+        nom: "LP R9",
+        coordinates: [32.214863, -7.936957],
+        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
+        type: "Waste",
+        sousType: "Collection Points",
+        image: "img/collection points/.png",
+        icone: "img/collection points/CP.jpg",
         campus: "Ben Guerir"
     },
     {
-        id: "BG-098",
-        nom: "SHBM",
-        coordinates: [32.21295863581021, -7.939902075944716],
-        description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
-        type: "Cathring",
-        sousType: "Gachipain",
-        image: "img/gachipain/gachipain1.jpg",
-        icone: "img/GP.jpg",
+        id: "BG-188",
+        nom: "LP R3",
+        coordinates: [32.21594856443914, -7.934926379056035],
+        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
+        type: "Waste",
+        sousType: "Collection Points",
+        image: "img/collection points/.png",
+        icone: "img/collection points/CP.jpg",
         campus: "Ben Guerir"
     },
     {
-        id: "BG-099",
-        nom: "MODULAIRE",
-        coordinates: [32.21563445144424, -7.933360256439344],
-        description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
-        type: "Cathring",
-        sousType: "Gachipain",
-        image: "img/gachipain/gachipain2.jpg",
-        icone: "img/GP.jpg",
+        id: "BG-190",
+        nom: "LP HEBERGEMENTS",
+        coordinates: [32.218615, -7.940190],
+        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
+        type: "Waste",
+        sousType: "Collection Points",
+        image: "img/collection points/.png",
+        icone: "img/collection points/CP.jpg",
         campus: "Ben Guerir"
     },
     {
-        id: "BG-100",
-        nom: "Newrest",
-        coordinates: [32.218100, -7.937055],
-        description: "An initiative to install a self-service fridge on campus, accessible to all, allowing anyone to freely deposit or take food at any time while raising awareness within the UM6P community about food waste.",
-        type: "Cathring",
-        sousType: "FRIGO SOLIDAIRE",
-        image: "img/FRIGO/FRIGO.png",
-        icone: "img/FS.jpg",
+        id: "BG-191",
+        nom: "LP STUDENT CENTER",
+        coordinates: [32.215916, -7.942151],
+        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
+        type: "Waste",
+        sousType: "Collection Points",
+        image: "img/collection points/.png",
+        icone: "img/collection points/CP.jpg",
         campus: "Ben Guerir"
     },
     {
-        id: "BG-101",
-        nom: "CCI",
-        coordinates: [32.218825, -7.941018],
-        description: "An initiative to install a self-service fridge on campus, accessible to all, allowing anyone to freely deposit or take food at any time while raising awareness within the UM6P community about food waste.",
-        type: "Cathring",
-        sousType: "FRIGO SOLIDAIRE",
-        image: "img/FRIGO/FRIGO.png",
-        icone: "img/FS.jpg",
+        id: "BG-192",
+        nom: "LP RIAD CENTER",
+        coordinates: [32.213228, -7.940233],
+        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
+        type: "Waste",
+        sousType: "Collection Points",
+        image: "img/collection points/.png",
+        icone: "img/collection points/CP.jpg",
         campus: "Ben Guerir"
     },
     {
-        id: "RG-110",
-        nom: "HILTON",
-        coordinates: [32.214349, -7.938645],
-        description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
-        type: "Cathring",
-        sousType: "Gachipain",
-        image: "img/gachipain/gachipain2.jpg",
-        icone: "img/GP.jpg",
+        id: "BG-193",
+        nom: "LP HEBERGEMENT CCI",
+        coordinates: [32.219276, -7.941308],
+        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
+        type: "Waste",
+        sousType: "Collection Points",
+        image: "img/collection points/.png",
+        icone: "img/collection points/CP.jpg",
         campus: "Ben Guerir"
     },
-    
-    // Energy - Tree solaire
     {
-        id: "BG-102",
-        nom: "Tree solaire",
-        coordinates: [32.215414834965586, -7.940867619202576],
-        description: "The UM6P Solar Tree is a renewable energy solution that combines design, comfort, and environmental responsibility. Inspired by the shape of a tree, this structure is solar-powered and offers a pleasant shaded area, while also providing charging points for devices via USB ports and 220V outlets. It also incorporates modern public lighting and offers an inclusive space accessible to people with reduced mobility.",
-        Informations_complémentaires: "• Daily production: 2200 Wh/day<br>• Total power: 600 Wp<br>• 10 panels<br>• 10 LED lamps and 10 spots<br>• Autonomy: 16 hours continuous operation",        
-        type: "Energy",
-        sousType: "Tree solaire",
-        image: "img/tree_solaire/treesalaire.png",
-        icone: "img/TS.jpg",
+        id: "BG-194",
+        nom: "LP CUISINE CCI",
+        coordinates: [32.218557, -7.940869],
+        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
+        type: "Waste",
+        sousType: "Collection Points",
+        image: "img/collection points/.png",
+        icone: "img/collection points/CP.jpg",
         campus: "Ben Guerir"
     },
-    
-    // Biological pest control
     {
-        id: "BG-103",
-        nom: "Biological pest control",
-        coordinates: [32.217824, -7.936503],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
+        id: "BG-195",
+        nom: "LP CUISINE CCI",
+        coordinates: [32.219297, -7.939861],
+        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
+        type: "Waste",
+        sousType: "Collection Points",
+        image: "img/collection points/.png",
+        icone: "img/collection points/CP.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-091",
+        nom: "Waste sorting center",
+        coordinates: [32.2183375, -7.9376412],
+        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
+        type: "Waste",
+        sousType: "Waste sorting center",
         image: "",
-        icone: "img/BC.jpg",
+        icone: "img/Waste sorting center/WS.jpg",
         campus: "Ben Guerir"
     },
     {
-        id: "BG-104",
-        nom: "Biological pest control",
-        coordinates: [32.217535, -7.936927],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
+        id: "BG-073",
+        nom: "Parking",
+        coordinates: [32.219500, -7.939705],
+        description: "UM6P campus provides dedicated parking with electric vehicle charging stations to support low-emission transportation. For safety and traffic management, motorcycles, bicycles, and scooters are not allowed to circulate on campus roads, pathways, or pedestrian areas. They must be parked only in designated areas indicated in the campus parking plan. The Benguerir campus provides 2 parking spaces for bikes and electric scooters, and 1 underground parking space fort motorcycles.",
+        type: "Ecomobility",
+        sousType: "Parking Vélos/ trotinettes Electriques",
+        image: "img/parking velos/parking_velos.png",
+        icone: "img/parking velos/TE.jpg",
         campus: "Ben Guerir"
     },
     {
-        id: "BG-105",
-        nom: "Biological pest control",
-        coordinates: [32.217493, -7.937107],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
+        id: "BG-196",
+        nom: "Parking",
+        coordinates: [32.212381, -7.941460],
+        description: "UM6P campus provides dedicated parking with electric vehicle charging stations to support low-emission transportation. For safety and traffic management, motorcycles, bicycles, and scooters are not allowed to circulate on campus roads, pathways, or pedestrian areas. They must be parked only in designated areas indicated in the campus parking plan. The Benguerir campus provides 2 parking spaces for bikes and electric scooters, and 1 underground parking space fort motorcycles.",
+        type: "Ecomobility",
+        sousType: "Parking Vélos/ trotinettes Electriques",
+        image: "img/parking velos/parking_velos.png",
+        icone: "img/parking velos/TE.jpg",
         campus: "Ben Guerir"
     },
     {
-        id: "BG-106",
-        nom: "Biological pest control",
-        coordinates: [32.217614, -7.937233],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-107",
-        nom: "Biological pest control",
-        coordinates: [32.217375, -7.937542],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-108",
-        nom: "Biological pest control",
-        coordinates: [32.217256, -7.937417],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-109",
-        nom: "Biological pest control",
-        coordinates: [32.217516, -7.937359],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-110",
-        nom: "Biological pest control",
-        coordinates: [32.217483, -7.937422],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-111",
-        nom: "Biological pest control",
-        coordinates: [32.217395, -7.937235],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-112",
-        nom: "Biological pest control",
-        coordinates: [32.217353, -7.937286],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-113",
-        nom: "Biological pest control",
-        coordinates: [32.217171, -7.937535],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-114",
-        nom: "Biological pest control",
-        coordinates: [32.217295, -7.937659],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-115",
-        nom: "Biological pest control",
-        coordinates: [32.217151, -7.937849],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-116",
-        nom: "Biological pest control",
-        coordinates: [32.217032, -7.937723],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-117",
-        nom: "Biological pest control",
-        coordinates: [32.217109, -7.937903],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-118",
-        nom: "Biological pest control",
-        coordinates: [32.216967, -7.938093],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-119",
-        nom: "Biological pest control",
-        coordinates: [32.21699, -7.93778],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-120",
-        nom: "Biological pest control",
-        coordinates: [32.216852, -7.937968],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-121",
-        nom: "Biological pest control",
-        coordinates: [32.216927, -7.938154],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-122",
-        nom: "Biological pest control",
-        coordinates: [32.216787, -7.938341],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-123",
-        nom: "Biological pest control",
-        coordinates: [32.216806, -7.938029],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-124",
-        nom: "Biological pest control",
-        coordinates: [32.216669, -7.938216],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-125",
-        nom: "Biological pest control",
-        coordinates: [32.216627, -7.938275],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-126",
-        nom: "Biological pest control",
-        coordinates: [32.216487, -7.938456],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-127",
-        nom: "Biological pest control",
-        coordinates: [32.216751, -7.938399],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-128",
-        nom: "Biological pest control",
-        coordinates: [32.216607, -7.938592],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-129",
-        nom: "Biological pest control",
-        coordinates: [32.216562, -7.938645],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-130",
-        nom: "Biological pest control",
-        coordinates: [32.216424, -7.938836],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-131",
-        nom: "Biological pest control",
-        coordinates: [32.216379, -7.938886],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-132",
-        nom: "Biological pest control",
-        coordinates: [32.216244, -7.939078],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-133",
-        nom: "Biological pest control",
-        coordinates: [32.2163591, -7.938529],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-134",
-        nom: "Biological pest control",
-        coordinates: [32.2160601, -7.9384673],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-135",
-        nom: "Biological pest control",
-        coordinates: [32.216162, -7.938021],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-136",
-        nom: "Biological pest control",
-        coordinates: [32.216547, -7.9375],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-137",
-        nom: "Biological pest control",
-        coordinates: [32.216903, -7.937022],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-138",
-        nom: "Biological pest control",
-        coordinates: [32.217329, -7.936814],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-139",
-        nom: "Biological pest control",
-        coordinates: [32.217825, -7.937328],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-140",
-        nom: "Biological pest control",
-        coordinates: [32.217892, -7.937735],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-141",
-        nom: "Biological pest control",
-        coordinates: [32.217522, -7.938233],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-142",
-        nom: "Biological pest control",
-        coordinates: [32.2171562467238, -7.938716764266681],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-143",
-        nom: "Biological pest control",
-        coordinates: [32.216798, -7.939216],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-144",
-        nom: "Biological pest control",
-        coordinates: [32.216426, -7.939312],
-        description: "UM6P is committed to a healthy campus by partnering with a specialized public hygiene company. The program includes deratization, disinfection, and disinsectization, using bait traps to humanely capture rodents while protecting other species and the environment.",
-        type: "Biodiversity",
-        sousType: "Biological pest control",
-        image: "",
-        icone: "img/BC.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-145",
-        nom: "GO Plant Shop",
-        coordinates: [32.2164095, -7.9385290],
-        description: "A sustainable initiative offering plants from the experimental farm through an on-campus kiosk, where plants are grown in reused cups collected from campus cafés, promoting circular practices and resource efficiency.",
-        type: "Cathring",
-        sousType: "GO Plant Shop",
-        image: "img/GO Plant/go_plant_shop.png",
-        icone: "img/GO.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-146",
-        nom: "Botanic garden",
-        coordinates: [32.215367, -7.940962],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-147",
-        nom: "Botanic garden",
-        coordinates: [32.215258, -7.940871],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-148",
-        nom: "Botanic garden",
-        coordinates: [32.214968, -7.941247],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-149",
-        nom: "Botanic garden",
-        coordinates: [32.215054, -7.941392],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-150",
-        nom: "Botanic garden",
-        coordinates: [32.215272, -7.940666 ],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-151",
-        nom: "Botanic garden",
-        coordinates: [32.215151, -7.940572 ],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-152",
-        nom: "Botanic garden",
-        coordinates: [32.215524, -7.940913 ],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-153",
-        nom: "Botanic garden",
-        coordinates: [32.215636, -7.941035 ],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-154",
-        nom: "Botanic garden",
-        coordinates: [32.214771, -7.940144 ],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-155",
-        nom: "Botanic garden",
-        coordinates: [32.214533, -7.939902 ],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-156",
-        nom: "Botanic garden",
-        coordinates: [32.214444, -7.939804 ],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-157",
-        nom: "Botanic garden",
-        coordinates: [32.214307, -7.939670 ],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-158",
-        nom: "Botanic garden",
-        coordinates: [32.213914, -7.939266 ],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-159",
-        nom: "Botanic garden",
-        coordinates: [32.213633, -7.938982 ],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-160",
-        nom: "Botanic garden",
-        coordinates: [32.213332, -7.938657 ],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-161",
-        nom: "Botanic garden",
-        coordinates: [32.215134, -7.940314 ],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-162",
-        nom: "Botanic garden",
-        coordinates: [32.214702, -7.939979 ],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-163",
-        nom: "Botanic garden",
-        coordinates: [32.214601, -7.939775 ],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-164",
-        nom: "Botanic garden",
-        coordinates: [32.214438, -7.939595 ],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-165",
-        nom: "Botanic garden",
-        coordinates: [32.214890, -7.940526],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-166",
-        nom: "Botanic garden",
-        coordinates: [32.214834, -7.940493],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-167",
-        nom: "Botanic garden",
-        coordinates: [32.214681, -7.940794],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/3.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-168",
-        nom: "Botanic garden",
-        coordinates: [32.214625, -7.940761],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/2.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-169",
-        nom: "Botanic garden",
-        coordinates: [32.214461, -7.941115],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-170",
-        nom: "Botanic garden",
-        coordinates: [32.214395, -7.941053],
-        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
-        type: "Biodiversity",
-        sousType: "Botanic garden",
-        image: "img/botanic garden/1.png",
-        icone: "img/BG2.jpg",
+        id: "BG-197",
+        nom: "Parking SOUS-SOL",
+        coordinates: [32.212939, -7.942323],
+        description: "UM6P campus provides dedicated parking with electric vehicle charging stations to support low-emission transportation. For safety and traffic management, motorcycles, bicycles, and scooters are not allowed to circulate on campus roads, pathways, or pedestrian areas. They must be parked only in designated areas indicated in the campus parking plan. The Benguerir campus provides 2 parking spaces for bikes and electric scooters, and 1 underground parking space fort motorcycles.",
+        type: "Ecomobility",
+        sousType: "Parking Vélos/ trotinettes Electriques",
+        image: "img/parking velos/parking_velos.png",
+        icone: "img/parking velos/TE.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1966,8 +2106,8 @@ var projets = [
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.jpg",
+        icone: "img/golfette/G.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1977,8 +2117,8 @@ var projets = [
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.jpg",
+        icone: "img/golfette/G.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1988,8 +2128,8 @@ var projets = [
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.jpg",
+        icone: "img/golfette/G.jpg",
         campus: "Ben Guerir"
     },
         {
@@ -1999,8 +2139,8 @@ var projets = [
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.jpg",
+        icone: "img/golfette/G.jpg",
         campus: "Ben Guerir"
     },
         {
@@ -2010,8 +2150,8 @@ var projets = [
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.jpg",
+        icone: "img/golfette/G.jpg",
         campus: "Ben Guerir"
     },
         {
@@ -2021,8 +2161,8 @@ var projets = [
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.jpg",
+        icone: "img/golfette/G.jpg",
         campus: "Ben Guerir"
     },
         {
@@ -2032,8 +2172,8 @@ var projets = [
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.jpg",
+        icone: "img/golfette/G.jpg",
         campus: "Ben Guerir"
     },
         {
@@ -2043,8 +2183,8 @@ var projets = [
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.jpg",
+        icone: "img/golfette/G.jpg",
         campus: "Ben Guerir"
     }
     ,
@@ -2055,8 +2195,8 @@ var projets = [
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.jpg",
+        icone: "img/golfette/G.jpg",
         campus: "Ben Guerir"
     },
         {
@@ -2066,8 +2206,8 @@ var projets = [
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
+        image: "img/golfette/1.jpg",
+        icone: "img/golfette/G.jpg",
         campus: "Ben Guerir"
     },
       {
@@ -2077,169 +2217,8 @@ var projets = [
         description: "L'UM6P propose plus de 20 navettes électriques de type voiturette de golf gratuites pour aider la communauté à se déplacer efficacement sur le campus. Ce service favorise une mobilité pratique et à faibles émissions, tout en réduisant le recours aux véhicules individuels.",
         type: "Ecomobility",
         sousType: "Golfette",
-        image: "img/golfette/golfette.png",
-        icone: "img/G.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-182",
-        nom: "Electric vehicles charge station",
-        coordinates: [32.2144798, -7.9404018],
-        description:"",
-        type: "Energy",
-        sousType: "Electric vehicles charge station",
-        image: "img/vehicles charge station/charge_station1.jpg",
-        icone: "img/VCS.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-183",
-        nom: "Electric vehicles charge station",
-        coordinates: [32.2130167, -7.9400099],
-        description:"",
-        type: "Energy",
-        sousType: "Electric vehicles charge station",
-        image: "img/vehicles charge station/charge_station2.jpg",
-        icone: "img/VCS.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-184",
-        nom: "Electric vehicles charge station",
-        coordinates: [32.2122703, -7.9407703],
-        description:"",
-        type: "Energy",
-        sousType: "Electric vehicles charge station",
-        image: "img/vehicles charge station/charge_station3.jpg",
-        icone: "img/VCS.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-185",
-        nom: "Electric vehicles charge station",
-        coordinates: [32.2133514, -7.9419595],
-        description:"",
-        type: "Energy",
-        sousType: "Electric vehicles charge station",
-        image: "img/vehicles charge station/charge_station4.jpg",
-        icone: "img/VCS.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-186",
-        nom: "Golfette charge station",
-        coordinates: [32.2175643, -7.9372737],
-        description:"",
-        type: "Energy",
-        sousType: "Golfette charge station",
-        image: "img/Golfette charge station/charge_station1.png",
-        icone: "img/GCS.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-186",
-        nom: "Golfette charge station",
-        coordinates: [32.2164254, -7.9382990],
-        description:"",
-        type: "Energy",
-        sousType: "Golfette charge station",
-        image: "img/Golfette charge station/charge_station2.png",
-        icone: "img/GCS.jpg",
-        campus: "Ben Guerir"
-    }
-    
-    
-    
-    
-    
-    
-    ,
-    {
-        id: "BG-187",
-        nom: "LP R9",
-        coordinates: [32.214863, -7.936957],
-        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
-        type: "Waste",
-        sousType: "collection points",
-        image: "img/collection points/.png",
-        icone: "img/CP.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-188",
-        nom: "LP R3",
-        coordinates: [32.21594856443914, -7.934926379056035],
-        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
-        type: "Waste",
-        sousType: "collection points",
-        image: "img/collection points/.png",
-        icone: "img/CP.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-190",
-        nom: "LP HEBERGEMENTS",
-        coordinates: [32.218615, -7.940190],
-        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
-        type: "Waste",
-        sousType: "collection points",
-        image: "img/collection points/.png",
-        icone: "img/CP.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-191",
-        nom: "LP STUDENT CENTER",
-        coordinates: [32.215916, -7.942151],
-        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
-        type: "Waste",
-        sousType: "collection points",
-        image: "img/collection points/.png",
-        icone: "img/CP.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-192",
-        nom: "LP RIAD CENTER",
-        coordinates: [32.213228, -7.940233],
-        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
-        type: "Waste",
-        sousType: "collection points",
-        image: "img/collection points/.png",
-        icone: "img/CP.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-193",
-        nom: "LP HEBERGEMENT CCI",
-        coordinates: [32.219276, -7.941308],
-        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
-        type: "Waste",
-        sousType: "collection points",
-        image: "img/collection points/.png",
-        icone: "img/CP.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-194",
-        nom: "LP CUISINE CCI",
-        coordinates: [32.218557, -7.940869],
-        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
-        type: "Waste",
-        sousType: "collection points",
-        image: "img/collection points/.png",
-        icone: "img/CP.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-195",
-        nom: "LP CUISINE CCI",
-        coordinates: [32.219297, -7.939861],
-        description: "Waste management at UM6P relies on 8 collection and sorting points across the campus.<br>A dedicated collection and disposal circuit ensures efficient waste management while preventing any spillage.",
-        type: "Waste",
-        sousType: "collection points",
-        image: "img/collection points/.png",
-        icone: "img/CP.jpg",
+        image: "img/golfette/1.jpg",
+        icone: "img/golfette/G.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -2250,7 +2229,7 @@ var projets = [
         type: "Water",
         sousType: "Water key infrastructure",
         image: "img/Water infrastructure/1.png",
-        icone: "img/water.jpg",
+        icone: "img/Water infrastructure/water.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -2261,7 +2240,7 @@ var projets = [
         type: "Water",
         sousType: "Water key infrastructure",
         image: "img/Water infrastructure/2.png",
-        icone: "img/water.jpg",
+        icone: "img/Water infrastructure/water.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -2272,7 +2251,7 @@ var projets = [
         type: "Water",
         sousType: "Water key infrastructure",
         image: "img/Water infrastructure/3.png",
-        icone: "img/water.jpg",
+        icone: "img/Water infrastructure/water.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -2283,18 +2262,9 @@ var projets = [
         type: "Water",
         sousType: "Water key infrastructure",
         image: "img/Water infrastructure/4.png",
-        icone: "img/water.jpg",
+        icone: "img/Water infrastructure/water.jpg",
         campus: "Ben Guerir"
-    }
-
-
-
-
-
-
-
-
-    ,
+    },
     {
         id: "BG-198",
         nom: "BUS Electrique",
@@ -2303,7 +2273,7 @@ var projets = [
         type: "Ecomobility",
         sousType: "BUS",
         image: "img/bus/bus.png",
-        icone: "img/bus.jpg",
+        icone: "img/bus/bus.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -2314,7 +2284,7 @@ var projets = [
         type: "Ecomobility",
         sousType: "Station Navettes",
         image: "img/station navettes/station_navettes.png",
-        icone: "img/SN.jpg",
+        icone: "img/station navettes/SN.jpg",
         campus: "Ben Guerir"
     },
     
