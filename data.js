@@ -2246,7 +2246,7 @@ var projets = [
         id: "BG-196",
         nom: "Systeme de treatment d'eau potable (STEP)",
         coordinates: [32.217417, -7.934140],
-        description: "Système qui permet de traiter et de recycler les eaux usées du campus, notamment celles provenant des hébergements 1 et 3, afin de les réutiliser pour l’arrosage des espaces verts. En moyenne, 15 à 20 m³ d'eau sont traités chaque jour.",
+        description: "Système qui permet de traiter et de recycler les eaux usées du campus, notamment celles provenant des hébergements 1 et 3, afin de les réutiliser pour l'arrosage des espaces verts. En moyenne, 15 à 20 m³ d'eau sont traités chaque jour.",
         type: "Water",
         sousType: "Water key infrastructure",
         image: "img/Water infrastructure/1.png",
@@ -2268,7 +2268,7 @@ var projets = [
         id: "BG-198",
         nom: "Réservoir de collecte des eaux pluviales",
         coordinates: [32.215828, -7.943146],
-        description: "Réservoir d’une capacité de 1 000 m³ qui récupère l’eau de pluie provenant des toits et des surfaces dures du campus (routes, zones pavées), pour la stocker et la réutiliser, notamment pour l'arrosage des espaces verts.",
+        description: "Réservoir d'une capacité de 1 000 m³ qui récupère l'eau de pluie provenant des toits et des surfaces dures du campus (routes, zones pavées), pour la stocker et la réutiliser, notamment pour l'arrosage des espaces verts.",
         type: "Water",
         sousType: "Water key infrastructure",
         image: "img/Water infrastructure/3.png",
@@ -2279,7 +2279,7 @@ var projets = [
         id: "BG-199",
         nom: "Bassin d'infiltration des eaux pluviales",
         coordinates: [32.212487, -7.941799],
-        description: "Bassin permettant d’absorber l’excédent d’eau de pluie dans le sol lorsque le réservoir de stockage est plein, contribuant à limiter le ruissellement et à recharger les nappes souterraines.",
+        description: "Bassin permettant d'absorber l'excédent d'eau de pluie dans le sol lorsque le réservoir de stockage est plein, contribuant à limiter le ruissellement et à recharger les nappes souterraines.",
         type: "Water",
         sousType: "Water key infrastructure",
         image: "img/Water infrastructure/4.png",
@@ -2318,6 +2318,8 @@ var projets = [
         campus: "Ben Guerir"
     },
     
+
+
     // ==================== CAMPUS RABAT ====================
     
 
