@@ -7,6 +7,8 @@ let trajetActuel = null;
 let trajetBusActuel = null;
 
 // ==================== FONCTION POPUP ====================
+// ==================== FONCTION POPUP MODIFIEE ====================
+// TOUTES les images sont affichees en HAUT (banniere), meme les grandes
 function creerMarqueurAvecInfos(projet) {
     let iconUrl = projet.icone && projet.icone !== "" ? projet.icone : 'https://cdn-icons-png.flaticon.com/512/2991/2991231.png';
     let customIcon = L.divIcon({
@@ -42,7 +44,7 @@ function creerMarqueurAvecInfos(projet) {
     // INFOS COMPLEMENTAIRES
     let complementHtml = '';
     if (projet.Informations_complémentaires && projet.Informations_complémentaires.trim() !== "") {
-        complementHtml = `<div class="popup-footer"><div class="info-complementaire"><strong>Technical details:</strong><br>${projet.Informations_complémentaires}</div></div>`;
+        complementHtml = `<div class="popup-footer"><div class="info-complementaire"><strong>Details techniques :</strong><br>${projet.Informations_complémentaires}</div></div>`;
     }
     
     // TEXTE CONTENT
@@ -66,51 +68,18 @@ function creerMarqueurAvecInfos(projet) {
         return marker;
     }
     
-    // Avec image
-    let img = new Image();
-    img.onload = function() {
-        let imgWidth = this.width;
-        let imgHeight = this.height;
-        let useTopLayout = (imgWidth <= 850 && imgHeight <= 550);
-        let popupContent = '';
-        
-        if (useTopLayout) {
-            popupContent = `
-                <div class="popup-layout-vertical">
-                    <div class="popup-image-top">
-                        <img src="${projet.image}" alt="${projet.nom || 'Image'}">
-                    </div>
-                    <div class="popup-content-text">
-                        ${textContent}
-                    </div>
-                </div>
-            `;
-        } else {
-            popupContent = `
-                <div class="popup-layout-horizontal">
-                    <div class="popup-image-left">
-                        <img src="${projet.image}" alt="${projet.nom || 'Image'}">
-                    </div>
-                    <div class="popup-content-text">
-                        ${textContent}
-                    </div>
-                </div>
-            `;
-        }
-        marker.bindPopup(popupContent, { maxWidth: 450, minWidth: 350 });
-    };
-    
-    img.onerror = function() {
-        let popupContent = `
-            <div class="popup-content-text" style="padding:15px;">
+    // TOUTES LES IMAGES SONT EN HAUT - layout vertical uniquement
+    let popupContent = `
+        <div class="popup-layout-vertical">
+            <div class="popup-image-top">
+                <img src="${projet.image}" alt="${projet.nom || 'Image'}">
+            </div>
+            <div class="popup-content-text">
                 ${textContent}
             </div>
-        `;
-        marker.bindPopup(popupContent, { maxWidth: 450, minWidth: 350 });
-    };
-    
-    img.src = projet.image;
-    if (img.complete) img.onload();
+        </div>
+    `;
+    marker.bindPopup(popupContent, { maxWidth: 450, minWidth: 350 });
     
     return marker;
 }
