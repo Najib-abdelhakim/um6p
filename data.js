@@ -24,133 +24,122 @@ var projets = [
         campus: "Ben Guerir"
     },
     {
-        id: "BG-085",
-        nom: "INSECT SHELTER",
-        coordinates: [32.214927, -7.942174],
-        description: "Insect shelters, designed as wooden structures to host beneficial insects, are installed across the campus to promote natural pest regulation, reduce the use of pesticides, and contribute to maintaining the biodiversity of UM6P's green spaces.",
-        type: "Biodiversity",
-        sousType: "INSECT SHELTER",
-        image: "img/insect shelter/2.jpeg",
-        icone: "img/insect shelter/AI.jpg",
-        campus: "Ben Guerir"
-    },
-    {
         id: "BG-003",
-        nom: "BIRD SHELTERS",
+        nom: "AVIFAUNE",
         coordinates: [32.217691, -7.936624],
         description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
         type: "Biodiversity",
-        sousType: "BIRD SHELTERS",
+        sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
         icone: "img/avifaune/AF_b.jpg",
         campus: "Ben Guerir"
     },
     {
         id: "BG-004",
-        nom: "BIRD SHELTERS",
+        nom: "AVIFAUNE",
         coordinates: [32.217552, -7.936842],
         description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
         type: "Biodiversity",
-        sousType: "BIRD SHELTERS",
+        sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
         icone: "img/avifaune/AF_g.jpg",
         campus: "Ben Guerir"
     },
     {
         id: "BG-005",
-        nom: "BIRD SHELTERS",
+        nom: "AVIFAUNE",
         coordinates: [32.218370, -7.938379],
         description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
         type: "Biodiversity",
-        sousType: "BIRD SHELTERS",
+        sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
         icone: "img/avifaune/AF_r.jpg",
         campus: "Ben Guerir"
     },
     {
         id: "BG-006",
-        nom: "BIRD SHELTERS",
+        nom: "AVIFAUNE",
         coordinates: [32.218126, -7.938776],
         description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
         type: "Biodiversity",
-        sousType: "BIRD SHELTERS",
+        sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
         icone: "img/avifaune/AF_y.jpg",
         campus: "Ben Guerir"
     },
     {
         id: "BG-007",
-        nom: "BIRD SHELTERS",
+        nom: "AVIFAUNE",
         coordinates: [32.217683, -7.939281],
         description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
         type: "Biodiversity",
-        sousType: "BIRD SHELTERS",
+        sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
         icone: "img/avifaune/AF_b.jpg",
         campus: "Ben Guerir"
     },
     {
         id: "BG-008",
-        nom: "BIRD SHELTERS",
+        nom: "AVIFAUNE",
         coordinates: [32.218645, -7.937441],
         description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
         type: "Biodiversity",
-        sousType: "BIRD SHELTERS",
+        sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
         icone: "img/avifaune/AF_g.jpg",
         campus: "Ben Guerir"
     },
     {
         id: "BG-009",
-        nom: "BIRD SHELTERS",
+        nom: "AVIFAUNE",
         coordinates: [32.220265, -7.939769],
         description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
         type: "Biodiversity",
-        sousType: "BIRD SHELTERS",
+        sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
         icone: "img/avifaune/AF_r.jpg",
         campus: "Ben Guerir"
     },
     {
         id: "BG-010",
-        nom: "BIRD SHELTERS",
+        nom: "AVIFAUNE",
         coordinates: [32.219632, -7.939860],
         description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
         type: "Biodiversity",
-        sousType: "BIRD SHELTERS",
+        sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
         icone: "img/avifaune/AF_y.jpg",
         campus: "Ben Guerir"
     },
     {
         id: "BG-086",
-        nom: "BIRD SHELTERS",
+        nom: "AVIFAUNE",
         coordinates: [32.218142, -7.937695],
         description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
         type: "Biodiversity",
-        sousType: "BIRD SHELTERS",
+        sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
         icone: "img/avifaune/AF_y.jpg",
         campus: "Ben Guerir"
     },
     {
         id: "BG-087",
-        nom: "BIRD SHELTERS",
+        nom: "AVIFAUNE",
         coordinates: [32.218457, -7.937153],
         description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
         type: "Biodiversity",
-        sousType: "BIRD SHELTERS",
+        sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
         icone: "img/avifaune/AF_r.jpg",
         campus: "Ben Guerir"
     },
     {
         id: "BG-088",
-        nom: "BIRD SHELTERS",
+        nom: "AVIFAUNE",
         coordinates: [32.216122, -7.936044],
         description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
         type: "Biodiversity",
-        sousType: "BIRD SHELTERS",
+        sousType: "AVIFAUNE",
         image: "img/avifaune/avifaune.png",
         icone: "img/avifaune/AF_g.jpg",
         campus: "Ben Guerir"
@@ -1368,6 +1357,7 @@ var projets = [
 // Catering
     {
         id: "BG-100",
+        nom: "SOLIDARITY FRIDGE",
         coordinates: [32.218100, -7.937055],
         description: "An initiative to install a self-service fridge on campus, accessible to all, allowing anyone to freely deposit or take food at any time while raising awareness within the UM6P community about food waste.",
         type: "Catering",
@@ -1378,6 +1368,7 @@ var projets = [
     },
     {
         id: "BG-101",
+        nom: "SOLIDARITY FRIDGE",
         coordinates: [32.218825, -7.941018],
         description: "An initiative to install a self-service fridge on campus, accessible to all, allowing anyone to freely deposit or take food at any time while raising awareness within the UM6P community about food waste.",
         type: "Catering",
@@ -1388,6 +1379,7 @@ var projets = [
     },
     {
         id: "BG-096",
+        nom: "Gachipain",
         coordinates: [32.218100, -7.937055],
         description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
         type: "Catering",
@@ -1398,6 +1390,7 @@ var projets = [
     },
     {
         id: "BG-097",
+        nom: "Gachipain",
         coordinates: [32.218825, -7.941018],
         description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
         type: "Catering",
@@ -1408,6 +1401,7 @@ var projets = [
     },
     {
         id: "BG-098",
+        nom: "Gachipain",
         coordinates: [32.21295863581021, -7.939902075944716],
         description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
         type: "Catering",
@@ -1418,6 +1412,7 @@ var projets = [
     },
     {
         id: "BG-099",
+        nom: "Gachipain",
         coordinates: [32.21563445144424, -7.933360256439344],
         description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
         type: "Catering",
@@ -1428,6 +1423,7 @@ var projets = [
     },
     {
         id: "RG-110",
+        nom: "Gachipain",
         coordinates: [32.214349, -7.938645],
         description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
         type: "Catering",
@@ -2624,7 +2620,17 @@ var arretsBus = [
 ];
 
 //        BUS ROUTES
+//          GOLF CART ROUTES - COULEURS FLUO / RADIOACTIVES
+var trajetsGolfette = [
+    { id: "TRAJET-01", nom: "Line-1-BG", couleur: "#00FF00", arrets: ["GOLF-01", "GOLF-02", "GOLF-04", "GOLF-05", "GOLF-06"] },      // VERT FLUO
+    { id: "TRAJET-02", nom: "Line-2-BG", couleur: "#00FFFF", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-09"] },                  // CYAN FLUO
+    { id: "TRAJET-03", nom: "Line-3-BG", couleur: "#FF00FF", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-10", "GOLF-11", "GOLF-12", "GOLF-13", "GOLF-14"] }, // MAGENTA FLUO
+    { id: "TRAJET-04", nom: "Line-1-RB", couleur: "#FF4500", arrets: ["GOL-1", "GOL-2", "GOL-4", "GOL-5", "GOL-6", "GOL-7", "GOL-8", "GOL-9", "GOL-10", "GOL-11", "GOL-12", "GOL-13", "GOL-14", "GOL-15"] }, // ORANGE FLUO
+    { id: "TRAJET-05", nom: "Line-2-RB", couleur: "#FF1493", arrets: ["GOL-16", "GOL-17", "GOL-18", "GOL-19", "GOL-20", "GOL-21", "GOL-22", "GOL-23", "GOL-16"] }, // ROSE FLUO
+];
+
+//          BUS ROUTES - COULEURS FLUO
 var trajetsBus = [
-    { id: "BUS-T1", nom: "Line-1-BG", couleur: "#ff0000", arrets: ["BUS-01", "BUS-02", "BUS-03", "BUS-04", "BUS-05", "BUS-06", "BUS-07", "BUS-08", "BUS-09", "BUS-10", "BUS-11", "BUS-12", "BUS-13", "BUS-14", "BUS-15", "BUS-16", "BUS-17", "BUS-18", "BUS-19", "BUS-20", "BUS-21"] },
-    { id: "BUS-T2", nom: "Line-1-RA", couleur: "#0000ff", arrets: ["BUS-RB-01", "BUS-RB-02", "BUS-RB-03"] }
+    { id: "BUS-T1", nom: "Line-1-BG", couleur: "#FF0000", arrets: ["BUS-01", "BUS-02", "BUS-03", "BUS-04", "BUS-05", "BUS-06", "BUS-07", "BUS-08", "BUS-09", "BUS-10", "BUS-11", "BUS-12", "BUS-13", "BUS-14", "BUS-15", "BUS-16", "BUS-17", "BUS-18", "BUS-19", "BUS-20", "BUS-21"] }, // ROUGE FLUO
+    { id: "BUS-T2", nom: "Line-1-RA", couleur: "#1E90FF", arrets: ["BUS-RB-01", "BUS-RB-02", "BUS-RB-03"] }, // BLEU FLUO
 ];
