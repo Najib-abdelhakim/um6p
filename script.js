@@ -253,7 +253,7 @@ function afficherFiltresTypes() {
     });
     
     let typesArray = Array.from(typesUniques).sort();
-    let html = '<button class="type-filter-btn active" data-type="all">All types</button>';
+    let html = '<button class="type-filter-btn active" data-type="all">All</button>';
     typesArray.forEach(type => {
         html += `<button class="type-filter-btn" data-type="${type}">${type}</button>`;
     });
@@ -336,7 +336,7 @@ function afficherTrajetsSection() {
         card.className = 'type-card';
         card.innerHTML = `
             <div class="type-header" style="background:#3c9e62">
-                <span class="type-nom">GOLF CART ROUTES</span>
+                <span class="type-nom">GOLF CART Pathway</span>
                 <span class="toggle-icon">▼</span>
             </div>
             <div class="type-content" id="golfetteContent"></div>
@@ -365,7 +365,7 @@ function afficherTrajetsSection() {
         card.className = 'type-card';
         card.innerHTML = `
             <div class="type-header" style="background:#2c7a4d">
-                <span class="type-nom">BUS ROUTES</span>
+                <span class="type-nom">BUS Pathway</span>
                 <span class="toggle-icon">▼</span>
             </div>
             <div class="type-content" id="busContent"></div>

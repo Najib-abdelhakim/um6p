@@ -1955,7 +1955,7 @@ var projets = [
         description: "UM6P campus provides dedicated parking with electric vehicle charging stations to support low-emission transportation. For safety and traffic management, motorcycles, bicycles, and scooters are not allowed to circulate on campus roads, pathways, or pedestrian areas. They must be parked only in designated areas indicated in the campus parking plan. The Ben Guerir campus provides 2 parking spaces for bikes and electric scooters, and 1 underground parking space for motorcycles.",
         type: "Ecomobility",
         sousType: "Bicycle / Electric Scooter Parking",
-        image: "img/parking velos/parking_velos.png",
+        image: "img/parking velos/1.jpeg",
         icone: "img/parking velos/TE.jpg",
         campus: "Ben Guerir"
     },
@@ -1966,7 +1966,7 @@ var projets = [
         description: "UM6P campus provides dedicated parking with electric vehicle charging stations to support low-emission transportation. For safety and traffic management, motorcycles, bicycles, and scooters are not allowed to circulate on campus roads, pathways, or pedestrian areas. They must be parked only in designated areas indicated in the campus parking plan. The Ben Guerir campus provides 2 parking spaces for bikes and electric scooters, and 1 underground parking space for motorcycles.",
         type: "Ecomobility",
         sousType: "Bicycle / Electric Scooter Parking",
-        image: "img/parking velos/parking_velos.png",
+        image: "img/parking velos/2.jpeg",
         icone: "img/parking velos/TE.jpg",
         campus: "Ben Guerir"
     },
@@ -1977,7 +1977,7 @@ var projets = [
         description: "UM6P campus provides dedicated parking with electric vehicle charging stations to support low-emission transportation. For safety and traffic management, motorcycles, bicycles, and scooters are not allowed to circulate on campus roads, pathways, or pedestrian areas. They must be parked only in designated areas indicated in the campus parking plan. The Ben Guerir campus provides 2 parking spaces for bikes and electric scooters, and 1 underground parking space for motorcycles.",
         type: "Ecomobility",
         sousType: "Bicycle / Electric Scooter Parking",
-        image: "img/parking velos/parking_velos.png",
+        image: "img/parking velos/4.jpeg",
         icone: "img/parking velos/TE.jpg",
         campus: "Ben Guerir"
     },
@@ -2151,11 +2151,22 @@ var projets = [
     {
         id: "BG-198",
         nom: "ELECTRIC BUS",
-        coordinates: [32.216, -7.938],
+        coordinates: [32.2182204, -7.9368141],
         description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
         type: "Ecomobility",
         sousType: "BUS",
         image: "img/bus/bus.png",
+        icone: "img/bus/bus.jpg",
+        campus: "Ben Guerir"
+    },
+        {
+        id: "BG-198",
+        nom: "ELECTRIC BUS",
+        coordinates: [32.2193479, -7.9379838],
+        description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
+        type: "Ecomobility",
+        sousType: "BUS",
+        image: "img/bus/1.jpeg",
         icone: "img/bus/bus.jpg",
         campus: "Ben Guerir"
     },
