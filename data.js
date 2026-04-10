@@ -2619,18 +2619,17 @@ var arretsBus = [
     { id: "BUS-RB-03", coords: [33.982339, -6.7244645] }
 ];
 
-//        BUS ROUTES
-//          GOLF CART ROUTES - COULEURS FLUO / RADIOACTIVES
+// ========== TRAJETS GOLFETTES - COULEURS ULTRA FLUO / NEON ==========
 var trajetsGolfette = [
-    { id: "TRAJET-01", nom: "Line-1-BG", couleur: "#00FF00", arrets: ["GOLF-01", "GOLF-02", "GOLF-04", "GOLF-05", "GOLF-06"] },      // VERT FLUO
-    { id: "TRAJET-02", nom: "Line-2-BG", couleur: "#00FFFF", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-09"] },                  // CYAN FLUO
-    { id: "TRAJET-03", nom: "Line-3-BG", couleur: "#FF00FF", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-10", "GOLF-11", "GOLF-12", "GOLF-13", "GOLF-14"] }, // MAGENTA FLUO
-    { id: "TRAJET-04", nom: "Line-1-RB", couleur: "#FF4500", arrets: ["GOL-1", "GOL-2", "GOL-4", "GOL-5", "GOL-6", "GOL-7", "GOL-8", "GOL-9", "GOL-10", "GOL-11", "GOL-12", "GOL-13", "GOL-14", "GOL-15"] }, // ORANGE FLUO
-    { id: "TRAJET-05", nom: "Line-2-RB", couleur: "#FF1493", arrets: ["GOL-16", "GOL-17", "GOL-18", "GOL-19", "GOL-20", "GOL-21", "GOL-22", "GOL-23", "GOL-16"] }, // ROSE FLUO
+    { id: "TRAJET-01", nom: "Line-1-BG", couleur: "#39FF14", arrets: ["GOLF-01", "GOLF-02", "GOLF-04", "GOLF-05", "GOLF-06"] },      // NEON GREEN
+    { id: "TRAJET-02", nom: "Line-2-BG", couleur: "#00FFFF", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-09"] },                  // NEON CYAN
+    { id: "TRAJET-03", nom: "Line-3-BG", couleur: "#FF00FF", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-10", "GOLF-11", "GOLF-12", "GOLF-13", "GOLF-14"] }, // NEON MAGENTA
+    { id: "TRAJET-04", nom: "Line-1-RB", couleur: "#FF5E00", arrets: ["GOL-1", "GOL-2", "GOL-4", "GOL-5", "GOL-6", "GOL-7", "GOL-8", "GOL-9", "GOL-10", "GOL-11", "GOL-12", "GOL-13", "GOL-14", "GOL-15"] }, // NEON ORANGE
+    { id: "TRAJET-05", nom: "Line-2-RB", couleur: "#fbff10", arrets: ["GOL-16", "GOL-17", "GOL-18", "GOL-19", "GOL-20", "GOL-21", "GOL-22", "GOL-23", "GOL-16"] }, // NEON HOT PINK
 ];
 
-//          BUS ROUTES - COULEURS FLUO
+// ========== TRAJETS BUS - COULEURS ULTRA FLUO / NEON ==========
 var trajetsBus = [
-    { id: "BUS-T1", nom: "Line-1-BG", couleur: "#FF0000", arrets: ["BUS-01", "BUS-02", "BUS-03", "BUS-04", "BUS-05", "BUS-06", "BUS-07", "BUS-08", "BUS-09", "BUS-10", "BUS-11", "BUS-12", "BUS-13", "BUS-14", "BUS-15", "BUS-16", "BUS-17", "BUS-18", "BUS-19", "BUS-20", "BUS-21"] }, // ROUGE FLUO
-    { id: "BUS-T2", nom: "Line-1-RA", couleur: "#1E90FF", arrets: ["BUS-RB-01", "BUS-RB-02", "BUS-RB-03"] }, // BLEU FLUO
+    { id: "BUS-T1", nom: "Line-1-BG", couleur: "#ff0000", arrets: ["BUS-01", "BUS-02", "BUS-03", "BUS-04", "BUS-05", "BUS-06", "BUS-07", "BUS-08", "BUS-09", "BUS-10", "BUS-11", "BUS-12", "BUS-13", "BUS-14", "BUS-15", "BUS-16", "BUS-17", "BUS-18", "BUS-19", "BUS-20", "BUS-21"] }, // NEON RED
+    { id: "BUS-T2", nom: "Line-1-RA", couleur: "#0800ff", arrets: ["BUS-RB-01", "BUS-RB-02", "BUS-RB-03"] }, // NEON DEEP BLUE
 ];

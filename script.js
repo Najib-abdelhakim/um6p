@@ -7,8 +7,6 @@ let trajetActuel = null;
 let trajetBusActuel = null;
 
 // ==================== FONCTION POPUP ====================
-// ==================== FONCTION POPUP MODIFIEE ====================
-// TOUTES les images sont affichees en HAUT (banniere), meme les grandes
 function creerMarqueurAvecInfos(projet) {
     let iconUrl = projet.icone && projet.icone !== "" ? projet.icone : 'https://cdn-icons-png.flaticon.com/512/2991/2991231.png';
     let customIcon = L.divIcon({
@@ -358,7 +356,7 @@ function afficherTrajetsSection() {
     }
 }
 
-// ==================== DISPLAY ROUTES ====================
+// ==================== DISPLAY ROUTES AVEC CONTOUR BLANC ====================
 function afficherTrajetGolfette(trajetId) {
     if(typeof trajetsGolfette === 'undefined' || typeof arretsGolfette === 'undefined') return;
     if(trajetActuel) map.removeLayer(trajetActuel);
@@ -375,7 +373,26 @@ function afficherTrajetGolfette(trajetId) {
     });
     
     if(points.length >= 2) {
-        trajetActuel = L.polyline(points, { color: trajet.couleur, weight: 4, opacity: 0.9 }).addTo(map);
+        // CONTOUR BLANC (plus epais)
+        let contourBlanc = L.polyline(points, { 
+            color: "#FFFFFF", 
+            weight: 6, 
+            opacity: 0.95,
+            lineCap: 'round',
+            lineJoin: 'round'
+        }).addTo(map);
+        
+        // TRAIT PRINCIPAL COULEUR (par dessus)
+        let traitCouleur = L.polyline(points, { 
+            color: trajet.couleur, 
+            weight: 2, 
+            opacity: 1,
+            lineCap: 'round',
+            lineJoin: 'round'
+        }).addTo(map);
+        
+        // Grouper les deux pour pouvoir les supprimer ensemble
+        trajetActuel = L.layerGroup([contourBlanc, traitCouleur]).addTo(map);
         map.fitBounds(L.latLngBounds(points));
     }
 }
@@ -396,7 +413,27 @@ function afficherTrajetBus(trajetId) {
     });
     
     if(points.length >= 2) {
-        trajetBusActuel = L.polyline(points, { color: trajet.couleur, weight: 4, dashArray: "8,8", opacity: 0.9 }).addTo(map);
+        // CONTOUR BLANC (plus epais)
+        let contourBlanc = L.polyline(points, { 
+            color: "#FFFFFF", 
+            weight: 6, 
+            opacity: 0.95,
+            lineCap: 'round',
+            lineJoin: 'round'
+        }).addTo(map);
+        
+        // TRAIT PRINCIPAL COULEUR (par dessus) avec pointilles
+        let traitCouleur = L.polyline(points, { 
+            color: trajet.couleur, 
+            weight: 2, 
+            opacity: 1,
+            dashArray: "8,8",
+            lineCap: 'round',
+            lineJoin: 'round'
+        }).addTo(map);
+        
+        // Grouper les deux pour pouvoir les supprimer ensemble
+        trajetBusActuel = L.layerGroup([contourBlanc, traitCouleur]).addTo(map);
         map.fitBounds(L.latLngBounds(points));
     }
 }
