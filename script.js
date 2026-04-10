@@ -42,7 +42,7 @@ function creerMarqueurAvecInfos(projet) {
     // INFOS COMPLEMENTAIRES
     let complementHtml = '';
     if (projet.Informations_complémentaires && projet.Informations_complémentaires.trim() !== "") {
-        complementHtml = `<div class="popup-footer"><div class="info-complementaire"><strong>Details techniques :</strong><br>${projet.Informations_complémentaires}</div></div>`;
+        complementHtml = `<div class="popup-footer"><div class="info-complementaire"><strong>Technical details:</strong><br>${projet.Informations_complémentaires}</div></div>`;
     }
     
     // TEXTE CONTENT
@@ -118,24 +118,24 @@ function creerMarqueurAvecInfos(projet) {
 // ==================== INITIALISATION ====================
 function initMap() {
     if (typeof projets === 'undefined') {
-        console.error("ERREUR: Données projets non chargées!");
+        console.error("ERROR: Project data not loaded!");
         return;
     }
     
-    console.log("=== INIT MAP - GOOGLE HYBRIDE ===");
-    console.log("Total projets:", projets.length);
+    console.log("=== INIT MAP - GOOGLE HYBRID ===");
+    console.log("Total projects:", projets.length);
     
-    // Créer la carte avec Google Maps Hybride (GRATUIT, sans clé API)
+    // Create map with Google Maps Hybrid
     map = L.map('map').setView([32.221017, -7.935687], 16);
     
-    // GOOGLE MAPS HYBRIDE - Satellite + Noms de rues
+    // GOOGLE MAPS HYBRID - Satellite + Street names
     L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
         attribution: '&copy; <a href="https://maps.google.com">Google Maps</a> | UM6P Green Map',
         maxZoom: 20,
         subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
     }).addTo(map);
     
-    // Ajouter tous les marqueurs
+    // Add all markers
     projets.forEach(proj => {
         if(proj.coordinates && proj.coordinates.length === 2 && 
            proj.coordinates[0] !== 32 && proj.coordinates[1] !== -7) {
@@ -152,7 +152,7 @@ function initMap() {
         }
     });
     
-    console.log("Total marqueurs créés:", markersList.length);
+    console.log("Total markers created:", markersList.length);
     
     appliquerFiltres();
     afficherFiltresTypes();
@@ -160,11 +160,11 @@ function initMap() {
     afficherTrajetsSection();
     mettreAJourStats();
     
-    // Contrôles campus
+    // Campus controls
     let campusDiv = document.getElementById('campusControls');
     if(campusDiv) {
         campusDiv.innerHTML = `
-            <button class="campus-btn" id="btnAll">Tous</button>
+            <button class="campus-btn" id="btnAll">All</button>
             <button class="campus-btn" id="btnBG">Ben Guerir</button>
             <button class="campus-btn" id="btnRabat">Rabat</button>
         `;
@@ -173,7 +173,7 @@ function initMap() {
         document.getElementById('btnRabat').onclick = () => recentrerRabat();
     }
     
-    // Bouton reset
+    // Reset button
     document.getElementById('resetFilters')?.addEventListener('click', () => {
         currentTypeFilter = 'all';
         currentCampus = 'all';
@@ -187,7 +187,7 @@ function initMap() {
     });
 }
 
-// ==================== FILTRES ====================
+// ==================== FILTERS ====================
 function appliquerFiltres() {
     markersList.forEach(item => {
         let matchCampus = (currentCampus === 'all' || item.projet.campus === currentCampus);
@@ -237,10 +237,10 @@ function mettreAJourStats() {
     let countSpan = document.getElementById('projetCount');
     let campusSpan = document.getElementById('campusName');
     if(countSpan) countSpan.textContent = getTotalProjetsCount();
-    if(campusSpan) campusSpan.textContent = currentCampus === 'all' ? 'Tous' : currentCampus;
+    if(campusSpan) campusSpan.textContent = currentCampus === 'all' ? 'All' : currentCampus;
 }
 
-// ==================== FILTRES TYPES ====================
+// ==================== TYPE FILTERS ====================
 function afficherFiltresTypes() {
     let container = document.getElementById('typesFilters');
     if(!container) return;
@@ -253,7 +253,7 @@ function afficherFiltresTypes() {
     });
     
     let typesArray = Array.from(typesUniques).sort();
-    let html = '<button class="type-filter-btn active" data-type="all">Tous types</button>';
+    let html = '<button class="type-filter-btn active" data-type="all">All types</button>';
     typesArray.forEach(type => {
         html += `<button class="type-filter-btn" data-type="${type}">${type}</button>`;
     });
@@ -269,7 +269,7 @@ function afficherFiltresTypes() {
     });
 }
 
-// ==================== SOUS-TYPES ====================
+// ==================== SUB-TYPES ====================
 function afficherListeSousTypes() {
     let container = document.getElementById('sousTypesList');
     if(!container) return;
@@ -299,11 +299,12 @@ function afficherListeSousTypes() {
         let item = document.createElement('div');
         item.className = 'sous-type-item';
         item.setAttribute('data-soustype', nom);
+        let projectText = data.count > 1 ? 'projects' : 'project';
         item.innerHTML = `
             <img src="${data.icone || 'https://cdn-icons-png.flaticon.com/512/2991/2991231.png'}" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2991/2991231.png'">
             <div class="sous-type-info">
                 <div class="sous-type-nom">${nom}</div>
-                <div class="sous-type-count">${data.count} projet${data.count > 1 ? 's' : ''}</div>
+                <div class="sous-type-count">${data.count} ${projectText}</div>
             </div>
         `;
         item.addEventListener('click', () => {
@@ -323,19 +324,19 @@ function afficherListeSousTypes() {
     }
 }
 
-// ==================== TRAJETS SECTION ====================
+// ==================== ROUTES SECTION ====================
 function afficherTrajetsSection() {
     let container = document.getElementById('trajetsSection');
     if(!container) return;
     container.innerHTML = '';
     
-    // Golfettes
+    // Golf carts
     if(typeof trajetsGolfette !== 'undefined' && trajetsGolfette && trajetsGolfette.length > 0) {
         let card = document.createElement('div');
         card.className = 'type-card';
         card.innerHTML = `
             <div class="type-header" style="background:#3c9e62">
-                <span class="type-nom">NAVETTES GOLFETTES</span>
+                <span class="type-nom">GOLF CART ROUTES</span>
                 <span class="toggle-icon">▼</span>
             </div>
             <div class="type-content" id="golfetteContent"></div>
@@ -358,13 +359,13 @@ function afficherTrajetsSection() {
         container.appendChild(card);
     }
     
-    // Bus
+    // Buses
     if(typeof trajetsBus !== 'undefined' && trajetsBus && trajetsBus.length > 0) {
         let card = document.createElement('div');
         card.className = 'type-card';
         card.innerHTML = `
             <div class="type-header" style="background:#2c7a4d">
-                <span class="type-nom">TRAJETS BUS</span>
+                <span class="type-nom">BUS ROUTES</span>
                 <span class="toggle-icon">▼</span>
             </div>
             <div class="type-content" id="busContent"></div>
@@ -388,7 +389,7 @@ function afficherTrajetsSection() {
     }
 }
 
-// ==================== AFFICHAGE TRAJETS ====================
+// ==================== DISPLAY ROUTES ====================
 function afficherTrajetGolfette(trajetId) {
     if(typeof trajetsGolfette === 'undefined' || typeof arretsGolfette === 'undefined') return;
     if(trajetActuel) map.removeLayer(trajetActuel);
@@ -436,7 +437,7 @@ function effacerTousLesTrajets() {
     if(trajetBusActuel) { map.removeLayer(trajetBusActuel); trajetBusActuel = null; }
 }
 
-// ==================== ACTIONS CAMPUS ====================
+// ==================== CAMPUS ACTIONS ====================
 function recentrerBenGuerir() {
     map.setView([32.221017, -7.935687], 16);
     filtrerParCampus('Ben Guerir');
@@ -459,9 +460,9 @@ function toggleSidebar() {
     btn.innerHTML = sidebar.classList.contains('collapsed') ? '▶' : '◀';
 }
 
-// ==================== INITIALISATION ====================
+// ==================== INITIALIZATION ====================
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("DOM charge - Google Hybride Map");
+    console.log("DOM loaded - Google Hybrid Map");
     
     if(typeof projets !== 'undefined') {
         initMap();
