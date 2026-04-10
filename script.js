@@ -11,88 +11,144 @@ function creerMarqueurAvecInfos(projet) {
     let iconUrl = projet.icone && projet.icone !== "" ? projet.icone : 'https://cdn-icons-png.flaticon.com/512/2991/2991231.png';
     let customIcon = L.divIcon({
         className: 'custom-marker',
-        html: `<img src="${iconUrl}" style="width:48px;height:48px;border-radius:50%;border:3px solid white;box-shadow:0 4px 12px rgba(0,0,0,0.3);background:white;padding:5px;object-fit:cover;">`,
-        iconSize: [48, 48],
-        popupAnchor: [0, -28]
+        html: `<img src="${iconUrl}" style="width:38px;height:38px;border-radius:50%;border:3px solid white;box-shadow:0 2px 8px rgba(0,0,0,0.3);background:white;padding:3px;object-fit:cover;">`,
+        iconSize: [38, 38],
+        popupAnchor: [0, -20]
     });
     
     let marker = L.marker(projet.coordinates, { icon: customIcon });
     
-    let imageHtml = '';
-    if (projet.image && projet.image !== "") {
-        imageHtml = `<div class="popup-img-wrapper"><img src="${projet.image}" class="popup-img" alt="${projet.nom}"></div>`;
-    } else {
-        imageHtml = `<div class="popup-img-wrapper"><img src="https://cdn-icons-png.flaticon.com/512/2941/2941535.png" class="popup-img" style="padding:20px;"></div>`;
+    // BADGE (type · campus)
+    let badgeHtml = '';
+    if ((projet.type && projet.type.trim() !== "") || (projet.campus && projet.campus.trim() !== "")) {
+        let typePart = (projet.type && projet.type.trim() !== "") ? projet.type : "";
+        let campusPart = (projet.campus && projet.campus.trim() !== "") ? projet.campus : "";
+        let separator = (typePart && campusPart) ? " · " : "";
+        badgeHtml = `<div class="popup-badge">${typePart}${separator}${campusPart}</div>`;
     }
     
-    let complementHtml = "";
+    // TITRE
+    let titleHtml = '';
+    if (projet.nom && projet.nom.trim() !== "") {
+        titleHtml = `<h3>${projet.nom}</h3>`;
+    }
+    
+    // DESCRIPTION
+    let descriptionHtml = '';
+    if (projet.description && projet.description.trim() !== "") {
+        descriptionHtml = `<div class="popup-description">${projet.description}</div>`;
+    }
+    
+    // INFOS COMPLEMENTAIRES
+    let complementHtml = '';
     if (projet.Informations_complémentaires && projet.Informations_complémentaires.trim() !== "") {
-        complementHtml += `<div class="info-complementaire"><strong>Details techniques :</strong><br>${projet.Informations_complémentaires}</div>`;
+        complementHtml = `<div class="popup-footer"><div class="info-complementaire"><strong>Details techniques :</strong><br>${projet.Informations_complémentaires}</div></div>`;
     }
     
-    let popupContent = `
-        <div>
-            ${imageHtml}
-            <div class="popup-content">
-                <div class="popup-badge">${projet.type} · ${projet.campus}</div>
-                <h3>${projet.nom}</h3>
-                <div class="popup-description">${projet.description || "Aucune description"}</div>
-                ${complementHtml}
-            </div>
-        </div>
+    // TEXTE CONTENT
+    let textContent = `
+        ${titleHtml}
+        ${badgeHtml}
+        ${descriptionHtml}
+        ${complementHtml}
     `;
     
-    marker.bindPopup(popupContent, { maxWidth: 450, minWidth: 320 });
+    let hasImage = (projet.image && projet.image.trim() !== "" && !projet.image.includes('flaticon'));
+    
+    // Si pas d'image, afficher directement le texte
+    if (!hasImage) {
+        let popupContent = `
+            <div class="popup-content-text" style="padding:15px;">
+                ${textContent}
+            </div>
+        `;
+        marker.bindPopup(popupContent, { maxWidth: 450, minWidth: 350 });
+        return marker;
+    }
+    
+    // Avec image
+    let img = new Image();
+    img.onload = function() {
+        let imgWidth = this.width;
+        let imgHeight = this.height;
+        let useTopLayout = (imgWidth <= 850 && imgHeight <= 550);
+        let popupContent = '';
+        
+        if (useTopLayout) {
+            popupContent = `
+                <div class="popup-layout-vertical">
+                    <div class="popup-image-top">
+                        <img src="${projet.image}" alt="${projet.nom || 'Image'}">
+                    </div>
+                    <div class="popup-content-text">
+                        ${textContent}
+                    </div>
+                </div>
+            `;
+        } else {
+            popupContent = `
+                <div class="popup-layout-horizontal">
+                    <div class="popup-image-left">
+                        <img src="${projet.image}" alt="${projet.nom || 'Image'}">
+                    </div>
+                    <div class="popup-content-text">
+                        ${textContent}
+                    </div>
+                </div>
+            `;
+        }
+        marker.bindPopup(popupContent, { maxWidth: 450, minWidth: 350 });
+    };
+    
+    img.onerror = function() {
+        let popupContent = `
+            <div class="popup-content-text" style="padding:15px;">
+                ${textContent}
+            </div>
+        `;
+        marker.bindPopup(popupContent, { maxWidth: 450, minWidth: 350 });
+    };
+    
+    img.src = projet.image;
+    if (img.complete) img.onload();
+    
     return marker;
 }
 
 // ==================== INITIALISATION ====================
 function initMap() {
     if (typeof projets === 'undefined') {
-        console.error("ERREUR: Données projets non chargées! Vérifiez que data.js est chargé avant script.js");
+        console.error("ERREUR: Données projets non chargées!");
         return;
     }
     
-    console.log("=== INIT MAP ===");
+    console.log("=== INIT MAP - GOOGLE HYBRIDE ===");
     console.log("Total projets:", projets.length);
-    console.log("Projets Ben Guerir:", projets.filter(p => p.campus === "Ben Guerir").length);
-    console.log("Projets Rabat:", projets.filter(p => p.campus === "Rabat").length);
     
-    // Vérifier les données des trajets
-    console.log("=== VERIFICATION DONNEES TRAJETS ===");
-    console.log("trajetsGolfette existe?", typeof trajetsGolfette !== 'undefined');
-    console.log("trajetsBus existe?", typeof trajetsBus !== 'undefined');
-    console.log("arretsGolfette existe?", typeof arretsGolfette !== 'undefined');
-    console.log("arretsBus existe?", typeof arretsBus !== 'undefined');
+    // Créer la carte avec Google Maps Hybride (GRATUIT, sans clé API)
+    map = L.map('map').setView([32.221017, -7.935687], 16);
     
-    if(typeof trajetsGolfette !== 'undefined') {
-        console.log("Nombre de trajets golfette:", trajetsGolfette.length);
-        console.log("Trajets golfette:", trajetsGolfette);
-    }
-    if(typeof trajetsBus !== 'undefined') {
-        console.log("Nombre de trajets bus:", trajetsBus.length);
-        console.log("Trajets bus:", trajetsBus);
-    }
-    
-    // Afficher les coordonnées Rabat pour vérifier
-    let rabatProjets = projets.filter(p => p.campus === "Rabat");
-    if(rabatProjets.length > 0) {
-        console.log("Premier projet Rabat:", rabatProjets[0].nom, rabatProjets[0].coordinates);
-    }
-    
-    map = L.map('map').setView([32.221017, -7.935687], 15);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
-        attribution: '© OpenStreetMap'
+    // GOOGLE MAPS HYBRIDE - Satellite + Noms de rues
+    L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
+        attribution: '&copy; <a href="https://maps.google.com">Google Maps</a> | UM6P Green Map',
+        maxZoom: 20,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
     }).addTo(map);
     
+    // Ajouter tous les marqueurs
     projets.forEach(proj => {
-        // Vérifier que les coordonnées sont valides
-        if(proj.coordinates && proj.coordinates.length === 2) {
+        if(proj.coordinates && proj.coordinates.length === 2 && 
+           proj.coordinates[0] !== 32 && proj.coordinates[1] !== -7) {
+            if(proj.coordinates[0] > 30 && proj.coordinates[0] < 35) {
+                let marker = creerMarqueurAvecInfos(proj);
+                marker.addTo(map);
+                markersList.push({ marker: marker, projet: proj });
+            }
+        } else if(proj.coordinates && proj.coordinates.length === 2 && 
+                  proj.coordinates[0] !== 32 && proj.coordinates[1] !== -7) {
             let marker = creerMarqueurAvecInfos(proj);
             marker.addTo(map);
             markersList.push({ marker: marker, projet: proj });
-        } else {
-            console.warn("Coordonnées invalides pour:", proj.nom, proj.coordinates);
         }
     });
     
@@ -117,21 +173,22 @@ function initMap() {
         document.getElementById('btnRabat').onclick = () => recentrerRabat();
     }
     
-    document.querySelector('.reset-btn')?.addEventListener('click', () => {
+    // Bouton reset
+    document.getElementById('resetFilters')?.addEventListener('click', () => {
         currentTypeFilter = 'all';
+        currentCampus = 'all';
         appliquerFiltres();
         afficherFiltresTypes();
         afficherListeSousTypes();
         effacerTousLesTrajets();
         document.querySelectorAll('.type-filter-btn').forEach(btn => btn.classList.remove('active'));
         document.querySelector('.type-filter-btn[data-type="all"]')?.classList.add('active');
+        mettreAJourStats();
     });
 }
 
 // ==================== FILTRES ====================
 function appliquerFiltres() {
-    console.log("Applique filtres - Campus:", currentCampus, "Type:", currentTypeFilter);
-    
     markersList.forEach(item => {
         let matchCampus = (currentCampus === 'all' || item.projet.campus === currentCampus);
         let matchType = (currentTypeFilter === 'all' || item.projet.type === currentTypeFilter);
@@ -139,7 +196,6 @@ function appliquerFiltres() {
         if (matchCampus && matchType) {
             if (!map.hasLayer(item.marker)) {
                 item.marker.addTo(map);
-                console.log("Ajout marqueur:", item.projet.nom, item.projet.campus);
             }
         } else {
             if (map.hasLayer(item.marker)) {
@@ -151,7 +207,6 @@ function appliquerFiltres() {
 }
 
 function filtrerParCampus(campus) {
-    console.log("Filtrer par campus:", campus);
     currentCampus = campus;
     appliquerFiltres();
     afficherFiltresTypes();
@@ -160,7 +215,6 @@ function filtrerParCampus(campus) {
 }
 
 function filtrerParType(type) {
-    console.log("Filtrer par type:", type);
     currentTypeFilter = type;
     appliquerFiltres();
     afficherFiltresTypes();
@@ -194,7 +248,7 @@ function afficherFiltresTypes() {
     let typesUniques = new Set();
     projets.forEach(projet => {
         if (currentCampus === 'all' || projet.campus === currentCampus) {
-            if(projet.type) typesUniques.add(projet.type);
+            if(projet.type && projet.type.trim() !== "") typesUniques.add(projet.type);
         }
     });
     
@@ -227,14 +281,16 @@ function afficherListeSousTypes() {
         if ((currentCampus !== 'all' && projet.campus !== currentCampus)) return;
         if ((currentTypeFilter !== 'all' && projet.type !== currentTypeFilter)) return;
         
-        if (!sousTypesMap.has(projet.sousType)) {
-            sousTypesMap.set(projet.sousType, {
-                nom: projet.sousType,
-                icone: projet.icone,
-                count: 0
-            });
+        if (projet.sousType && projet.sousType.trim() !== "") {
+            if (!sousTypesMap.has(projet.sousType)) {
+                sousTypesMap.set(projet.sousType, {
+                    nom: projet.sousType,
+                    icone: projet.icone,
+                    count: 0
+                });
+            }
+            sousTypesMap.get(projet.sousType).count++;
         }
-        sousTypesMap.get(projet.sousType).count++;
     });
     
     let sorted = Array.from(sousTypesMap.entries()).sort((a, b) => a[0].localeCompare(b[0]));
@@ -270,15 +326,11 @@ function afficherListeSousTypes() {
 // ==================== TRAJETS SECTION ====================
 function afficherTrajetsSection() {
     let container = document.getElementById('trajetsSection');
-    if(!container) {
-        console.warn("Container trajetsSection non trouvé");
-        return;
-    }
+    if(!container) return;
     container.innerHTML = '';
     
-    // Vérifier que les données existent avant d'afficher
+    // Golfettes
     if(typeof trajetsGolfette !== 'undefined' && trajetsGolfette && trajetsGolfette.length > 0) {
-        console.log("Affichage des golfettes, nombre:", trajetsGolfette.length);
         let card = document.createElement('div');
         card.className = 'type-card';
         card.innerHTML = `
@@ -304,13 +356,10 @@ function afficherTrajetsSection() {
             this.nextElementSibling.classList.toggle('collapsed');
         };
         container.appendChild(card);
-    } else {
-        console.log("Aucune donnée golfette trouvée");
     }
     
-    // Vérifier les données bus
+    // Bus
     if(typeof trajetsBus !== 'undefined' && trajetsBus && trajetsBus.length > 0) {
-        console.log("Affichage des bus, nombre:", trajetsBus.length);
         let card = document.createElement('div');
         card.className = 'type-card';
         card.innerHTML = `
@@ -336,99 +385,49 @@ function afficherTrajetsSection() {
             this.nextElementSibling.classList.toggle('collapsed');
         };
         container.appendChild(card);
-    } else {
-        console.log("Aucune donnée bus trouvée");
     }
 }
 
-// ==================== AFFICHAGE TRAJETS SUR CARTE ====================
+// ==================== AFFICHAGE TRAJETS ====================
 function afficherTrajetGolfette(trajetId) {
-    console.log("Afficher trajet golfette:", trajetId);
-    
-    if(typeof trajetsGolfette === 'undefined') {
-        console.error("trajetsGolfette non défini");
-        return;
-    }
-    if(typeof arretsGolfette === 'undefined') {
-        console.error("arretsGolfette non défini");
-        return;
-    }
-    
+    if(typeof trajetsGolfette === 'undefined' || typeof arretsGolfette === 'undefined') return;
     if(trajetActuel) map.removeLayer(trajetActuel);
-    let trajet = trajetsGolfette.find(t => t.id === trajetId);
-    if(!trajet) {
-        console.error("Trajet golfette non trouvé:", trajetId);
-        return;
-    }
     
-    console.log("Trajet trouvé:", trajet);
-    console.log("Arrets:", trajet.arrets);
+    let trajet = trajetsGolfette.find(t => t.id === trajetId);
+    if(!trajet) return;
     
     let points = [];
     trajet.arrets.forEach(id => {
         let arret = arretsGolfette.find(a => a.id === id);
         if(arret && arret.coords && arret.coords.length === 2) {
             points.push(arret.coords);
-        } else {
-            console.warn("Arrêt non trouvé ou coordonnées invalides:", id, arret);
         }
     });
     
-    console.log("Points collectés:", points.length);
-    
     if(points.length >= 2) {
-        trajetActuel = L.polyline(points, { color: trajet.couleur, weight: 3, opacity: 0.9 }).addTo(map);
+        trajetActuel = L.polyline(points, { color: trajet.couleur, weight: 4, opacity: 0.9 }).addTo(map);
         map.fitBounds(L.latLngBounds(points));
-    } else if(points.length === 1) {
-        trajetActuel = L.circleMarker(points[0], { color: trajet.couleur, radius: 8 }).addTo(map);
-        map.setView(points[0], 16);
-    } else {
-        console.error("Pas assez de points pour tracer le trajet");
     }
 }
 
 function afficherTrajetBus(trajetId) {
-    console.log("Afficher trajet bus:", trajetId);
-    
-    if(typeof trajetsBus === 'undefined') {
-        console.error("trajetsBus non défini");
-        return;
-    }
-    if(typeof arretsBus === 'undefined') {
-        console.error("arretsBus non défini");
-        return;
-    }
-    
+    if(typeof trajetsBus === 'undefined' || typeof arretsBus === 'undefined') return;
     if(trajetBusActuel) map.removeLayer(trajetBusActuel);
-    let trajet = trajetsBus.find(t => t.id === trajetId);
-    if(!trajet) {
-        console.error("Trajet bus non trouvé:", trajetId);
-        return;
-    }
     
-    console.log("Trajet bus trouvé:", trajet);
-    console.log("Arrets bus:", trajet.arrets);
+    let trajet = trajetsBus.find(t => t.id === trajetId);
+    if(!trajet) return;
     
     let points = [];
     trajet.arrets.forEach(id => {
         let arret = arretsBus.find(a => a.id === id);
         if(arret && arret.coords && arret.coords.length === 2) {
             points.push(arret.coords);
-        } else {
-            console.warn("Arrêt bus non trouvé ou coordonnées invalides:", id, arret);
         }
     });
     
-    console.log("Points bus collectés:", points.length);
-    
     if(points.length >= 2) {
-        trajetBusActuel = L.polyline(points, { color: trajet.couleur, weight: 3, dashArray: "8,8", opacity: 0.9 }).addTo(map);
+        trajetBusActuel = L.polyline(points, { color: trajet.couleur, weight: 4, dashArray: "8,8", opacity: 0.9 }).addTo(map);
         map.fitBounds(L.latLngBounds(points));
-    } else if(points.length === 1) {
-        trajetBusActuel = L.circleMarker(points[0], { color: trajet.couleur, radius: 8 }).addTo(map);
-        map.setView(points[0], 16);
-    } else {
-        console.error("Pas assez de points pour tracer le trajet bus");
     }
 }
 
@@ -439,24 +438,13 @@ function effacerTousLesTrajets() {
 
 // ==================== ACTIONS CAMPUS ====================
 function recentrerBenGuerir() {
-    map.setView([32.221017, -7.935687], 15);
+    map.setView([32.221017, -7.935687], 16);
     filtrerParCampus('Ben Guerir');
 }
 
 function recentrerRabat() {
-    console.log("=== RECENTRER RABAT ===");
-    let rabatCoords = [33.978971, -6.729941];
-    console.log("Deplacement vers Rabat:", rabatCoords);
-    map.setView(rabatCoords, 17);
+    map.setView([33.978971, -6.729941], 17);
     filtrerParCampus('Rabat');
-    
-    setTimeout(() => {
-        let visibleCount = markersList.filter(m => map.hasLayer(m.marker)).length;
-        console.log("Marqueurs visibles a Rabat:", visibleCount);
-        if(visibleCount === 0) {
-            console.warn("AUCUN projet Rabat visible! Vérifiez les coordonnées dans data.js");
-        }
-    }, 500);
 }
 
 function afficherTousCampus() {
@@ -473,16 +461,13 @@ function toggleSidebar() {
 
 // ==================== INITIALISATION ====================
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("DOM chargé, vérification des données...");
+    console.log("DOM charge - Google Hybride Map");
     
     if(typeof projets !== 'undefined') {
-        console.log("projets trouvé, initialisation de la carte");
         initMap();
     } else {
-        console.log("projets non trouvé, attente...");
         let check = setInterval(() => {
             if(typeof projets !== 'undefined') {
-                console.log("projets maintenant disponible");
                 clearInterval(check);
                 initMap();
             }
@@ -497,5 +482,3 @@ window.recentrerBenGuerir = recentrerBenGuerir;
 window.recentrerRabat = recentrerRabat;
 window.afficherTousCampus = afficherTousCampus;
 window.toggleSidebar = toggleSidebar;
-window.afficherTrajetGolfette = afficherTrajetGolfette;
-window.afficherTrajetBus = afficherTrajetBus;
