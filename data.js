@@ -2145,6 +2145,62 @@ var projets = [
         campus: "Ben Guerir"
     },
     {
+        id: "BG-199",
+        nom: "DRESS FOR SUCCESS",
+        coordinates: [32.217780809217516, -7.936651597531083],
+        description: "A solidarity-based initiative led by the Sustainable Development Office (SDO) in collaboration with the Career Center. It aims to support students by providing access to professional clothing for interviews and career opportunities.",
+        type: "DD LOCAL",
+        sousType: "DRESS FOR SUCCESS",
+        image: "img/DRESS FOR SUCCESS/1.jpg",
+        icone: "img/DRESS FOR SUCCESS/icon.jpg",
+        campus: "Ben Guerir"
+    },{
+        id: "BG-199",
+        nom: "Ecovision",
+        coordinates: [32.217780809217516, -7.936651597531083],
+        description: "An initiative to raise awareness on sustainability through curated documentary screenings, highlighting environmental and social challenges while inspiring reflection and action toward a more sustainable future. ",
+        type: "DD LOCAL",
+        sousType: "Ecovision",
+        image: "img/Ecovision/1.jpg",
+        icone: "img/Ecovision/icon.jpg",
+        campus: "Ben Guerir"
+    },{
+        id: "BG-199",
+        nom: "Gourde et mug",
+        coordinates: [32.217780809217516, -7.936651597531083],
+        description: "This initiative provides reusable mugs to the UM6P community, offering an eco-friendly alternative to plastic bottles while encouraging waste reduction and promoting a sustainable lifestyle on campus. ",
+        type: "DD LOCAL",
+        sousType: "Gourde et mug",
+        image: "img/Gourde et mug/1.jpg",
+        icone: "img/Gourde et mug/icon.jpg",
+        campus: "Ben Guerir"
+    },{
+        id: "BG-199",
+        nom: "Step To Go Green",
+        coordinates: [32.217780809217516, -7.936651597531083],
+        description: "A pioneering initiative that refurbishes faulty laptops from the university's IT department and provides them to students in need, offering them a second life and supporting educational access.",
+        type: "DD LOCAL",
+        sousType: "Step To Go Green",
+        image: "img/Step To Go Green/1.jpeg",
+        icone: "img/Step To Go Green/icon.jpg",
+        campus: "Ben Guerir"
+    },{
+        id: "BG-199",
+        nom: "SDM",
+        coordinates: [32.217780809217516, -7.936651597531083],
+        description: "Sustainable Development Makers program is a flagship initiative of the Sustainable Development Office designed to empower students to become active contributors to sustainability on campus and beyond. By bringing together students from diverse academic backgrounds, the program fosters collaboration, leadership, and hands-on engagement around key environmental and social challenges. Through capacity-building, peer-led actions, and community-oriented projects, SDMs translate sustainability principles into concrete initiatives, strengthening a culture of responsibility and collective impact within the UM6P ecosystem.",
+        type: "DD LOCAL",
+        sousType: "SDM",
+        image: "img/SDM/1.jpg",
+        icone: "img/SDM/icon.jpg",
+        campus: "Ben Guerir"
+    },
+
+
+
+
+
+    {
         id: "BG-198",
         nom: "ELECTRIC BUS",
         coordinates: [32.2182204, -7.9368141],
