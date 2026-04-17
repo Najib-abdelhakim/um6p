@@ -1930,7 +1930,6 @@ var projets = [
         icone: "img/Waste sorting center/WS.jpg",
         campus: "Ben Guerir"
     },
-
 // Ecomobility
     {
         id: "BG-073",
@@ -2184,11 +2183,6 @@ var projets = [
         icone: "img/SDM/icon.jpg",
         campus: "Ben Guerir"
     },
-
-
-
-
-
     {
         id: "BG-198",
         nom: "ELECTRIC BUS",
