@@ -42,7 +42,7 @@ function creerMarqueurAvecInfos(projet) {
     // INFOS COMPLEMENTAIRES
     let complementHtml = '';
     if (projet.Informations_complémentaires && projet.Informations_complémentaires.trim() !== "") {
-        complementHtml = `<div class="popup-footer"><div class="info-complementaire"><strong>Details techniques :</strong><br>${projet.Informations_complémentaires}</div></div>`;
+        complementHtml = `<div class="popup-footer"><div class="info-complementaire"><strong>Additional details :</strong><br>${projet.Informations_complémentaires}</div></div>`;
     }
     
     // TEXTE CONTENT
