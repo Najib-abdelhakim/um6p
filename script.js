@@ -6,19 +6,58 @@ let currentTypeFilter = 'all';
 let trajetActuel = null;
 let trajetBusActuel = null;
 
-// ==================== FONCTION POPUP ====================
+// ==================== FONCTION POUR DÉFINIR LA COULEUR DE RAYONNEMENT ====================
+function getGlowColor(type) {
+    const glowColors = {
+        'Water': 'rgba(0, 150, 255, 0.7)',
+        'Engagement In Action': 'rgba(255, 100, 0, 0.7)',
+        'Waste': 'rgba(50, 205, 50, 0.7)',
+        'Biodiversity': 'rgba(34, 139, 34, 0.7)',
+        'Energy': 'rgba(255, 215, 0, 0.7)',
+        'Ecomobility': 'rgba(0, 206, 209, 0.7)',
+        'Buildings': 'rgba(138, 43, 226, 0.7)',
+        'Catering': 'rgba(255, 140, 0, 0.7)'
+    };
+    
+    if (type && glowColors[type]) return glowColors[type];
+    return 'rgba(255, 255, 0, 0.5)';
+}
+
+// ==================== FONCTION POPUP AVEC RAYONNEMENT ====================
 function creerMarqueurAvecInfos(projet) {
     let iconUrl = projet.icone && projet.icone !== "" ? projet.icone : 'https://cdn-icons-png.flaticon.com/512/2991/2991231.png';
+    let glowColor = getGlowColor(projet.type);
+    let markerId = projet.id || Math.random().toString(36);
+    
     let customIcon = L.divIcon({
         className: 'custom-marker',
-        html: `<img src="${iconUrl}" style="width:38px;height:38px;border-radius:50%;border:3px solid white;box-shadow:0 2px 8px rgba(0,0,0,0.3);background:white;padding:3px;object-fit:cover;">`,
-        iconSize: [38, 38],
-        popupAnchor: [0, -20]
+        html: `
+            <div class="marker-container" data-id="${markerId}">
+                <div class="marker-glow" style="background: radial-gradient(circle, ${glowColor} 0%, ${glowColor.replace('0.7', '0.3')} 40%, rgba(255,255,255,0) 80%);"></div>
+                <div class="marker-pulse" style="background: radial-gradient(circle, ${glowColor.replace('0.7', '0.4')} 0%, rgba(255,255,0,0) 100%);"></div>
+                <img src="${iconUrl}" class="marker-image" style="width:42px;height:42px;border-radius:50%;border:3px solid white;box-shadow:0 2px 12px rgba(0,0,0,0.4);background:white;padding:3px;object-fit:cover;position:relative;z-index:2;">
+            </div>
+        `,
+        iconSize: [80, 80],
+        popupAnchor: [0, -40],
+        className: 'glow-marker'
     });
     
     let marker = L.marker(projet.coordinates, { icon: customIcon });
     
-    // BADGE (type · campus)
+    const isPriority = (projet.type === 'Water' || projet.type === 'Engagement In Action' || projet.type === 'Waste');
+    if (isPriority) {
+        setTimeout(() => {
+            const container = document.querySelector(`.marker-container[data-id="${markerId}"]`);
+            if (container) {
+                const pulseDiv = container.querySelector('.marker-pulse');
+                if (pulseDiv) pulseDiv.style.animation = 'pulse 1.5s infinite';
+                const glowDiv = container.querySelector('.marker-glow');
+                if (glowDiv) glowDiv.style.animation = 'glowPulse 2s infinite';
+            }
+        }, 100);
+    }
+    
     let badgeHtml = '';
     if ((projet.type && projet.type.trim() !== "") || (projet.campus && projet.campus.trim() !== "")) {
         let typePart = (projet.type && projet.type.trim() !== "") ? projet.type : "";
@@ -27,59 +66,67 @@ function creerMarqueurAvecInfos(projet) {
         badgeHtml = `<div class="popup-badge">${typePart}${separator}${campusPart}</div>`;
     }
     
-    // TITRE
     let titleHtml = '';
-    if (projet.nom && projet.nom.trim() !== "") {
-        titleHtml = `<h3>${projet.nom}</h3>`;
-    }
+    if (projet.nom && projet.nom.trim() !== "") titleHtml = `<h3>${projet.nom}</h3>`;
     
-    // DESCRIPTION
     let descriptionHtml = '';
-    if (projet.description && projet.description.trim() !== "") {
-        descriptionHtml = `<div class="popup-description">${projet.description}</div>`;
-    }
+    if (projet.description && projet.description.trim() !== "") descriptionHtml = `<div class="popup-description">${projet.description}</div>`;
     
-    // INFOS COMPLEMENTAIRES
     let complementHtml = '';
     if (projet.Informations_complémentaires && projet.Informations_complémentaires.trim() !== "") {
         complementHtml = `<div class="popup-footer"><div class="info-complementaire"><strong>Additional details :</strong><br>${projet.Informations_complémentaires}</div></div>`;
     }
     
-    // TEXTE CONTENT
-    let textContent = `
-        ${titleHtml}
-        ${badgeHtml}
-        ${descriptionHtml}
-        ${complementHtml}
-    `;
-    
+    let textContent = `${titleHtml}${badgeHtml}${descriptionHtml}${complementHtml}`;
     let hasImage = (projet.image && projet.image.trim() !== "" && !projet.image.includes('flaticon'));
     
-    // Si pas d'image, afficher directement le texte
     if (!hasImage) {
-        let popupContent = `
-            <div class="popup-content-text" style="padding:15px;">
-                ${textContent}
-            </div>
-        `;
-        marker.bindPopup(popupContent, { maxWidth: 450, minWidth: 350 });
+        marker.bindPopup(`<div class="popup-content-text" style="padding:15px;">${textContent}</div>`, { maxWidth: 450, minWidth: 350 });
         return marker;
     }
     
-    // TOUTES LES IMAGES SONT EN HAUT - layout vertical uniquement
-    let popupContent = `
+    marker.bindPopup(`
         <div class="popup-layout-vertical">
-            <div class="popup-image-top">
-                <img src="${projet.image}" alt="${projet.nom || 'Image'}">
-            </div>
-            <div class="popup-content-text">
-                ${textContent}
-            </div>
+            <div class="popup-image-top"><img src="${projet.image}" alt="${projet.nom || 'Image'}"></div>
+            <div class="popup-content-text">${textContent}</div>
         </div>
-    `;
-    marker.bindPopup(popupContent, { maxWidth: 450, minWidth: 350 });
+    `, { maxWidth: 450, minWidth: 350 });
     
     return marker;
+}
+
+// ==================== FONCTION POUR AMÉLIORER LA VISIBILITÉ ====================
+function ameliorerVisibiliteMarqueurs() {
+    markersList.forEach(item => {
+        if (item.marker._icon) {
+            item.marker._icon.addEventListener('mouseenter', () => {
+                const glowDiv = item.marker._icon.querySelector('.marker-glow');
+                if (glowDiv) {
+                    glowDiv.style.transform = 'scale(1.3)';
+                    glowDiv.style.opacity = '0.9';
+                }
+            });
+            item.marker._icon.addEventListener('mouseleave', () => {
+                const glowDiv = item.marker._icon.querySelector('.marker-glow');
+                if (glowDiv) {
+                    glowDiv.style.transform = 'scale(1)';
+                    glowDiv.style.opacity = '0.7';
+                }
+            });
+        }
+    });
+}
+
+// ==================== FONCTION POUR AFFICHER TOUS LES MARQUEURS ====================
+function afficherTousLesMarqueurs() {
+    markersList.forEach(item => {
+        if (!map.hasLayer(item.marker)) {
+            item.marker.addTo(map);
+        }
+    });
+    currentTypeFilter = 'all';
+    currentCampus = 'all';
+    mettreAJourStats();
 }
 
 // ==================== INITIALISATION ====================
@@ -89,20 +136,17 @@ function initMap() {
         return;
     }
     
-    console.log("=== INIT MAP - GOOGLE HYBRID ===");
+    console.log("=== INIT MAP - GOOGLE HYBRID WITH GLOW EFFECTS ===");
     console.log("Total projects:", projets.length);
     
-    // Create map with Google Maps Hybrid
-    map = L.map('map').setView([32.221017, -7.935687], 16);
+    map = L.map('map').setView([31.862835361667987, -6.849775828544829], 5);
     
-    // GOOGLE MAPS HYBRID - Satellite + Street names
     L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
         attribution: '&copy; <a href="https://maps.google.com">Google Maps</a> | UM6P Green Map',
         maxZoom: 20,
         subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
     }).addTo(map);
     
-    // Add all markers
     projets.forEach(proj => {
         if(proj.coordinates && proj.coordinates.length === 2 && 
            proj.coordinates[0] !== 32 && proj.coordinates[1] !== -7) {
@@ -127,17 +171,26 @@ function initMap() {
     afficherTrajetsSection();
     mettreAJourStats();
     
-    // Campus controls
+    setTimeout(() => {
+        ameliorerVisibiliteMarqueurs();
+    }, 500);
+    
+    // Campus controls avec les 6 boutons
     let campusDiv = document.getElementById('campusControls');
     if(campusDiv) {
         campusDiv.innerHTML = `
-            <button class="campus-btn" id="btnAll">All</button>
-            <button class="campus-btn" id="btnBG">Ben Guerir</button>
-            <button class="campus-btn" id="btnRabat">Rabat</button>
+            <button class="campus-btn" id="btnBG" style="background: linear-gradient(135deg, #bc4d29, #d74a2b); color: white;">Ben Guerir</button>
+            <button class="campus-btn" id="btnRabat" style="background: linear-gradient(135deg, #808080, #696969); color: white;">Rabat</button>
+            <button class="campus-btn" id="btnGEP" style="background: linear-gradient(135deg, #a4c840, #61873d); color: white;">GEP</button>
+            <button class="campus-btn" id="btnAITTC" style="background: linear-gradient(135deg, #17a2b8, #00bcd4); color: white;">AITTC</button>
+            <button class="campus-btn" id="btnACARI" style="background: linear-gradient(135deg,  #bc9d75, #e6cfaf); color: #4a3728;">ACARI Laayoune</button>
         `;
-        document.getElementById('btnAll').onclick = () => afficherTousCampus();
+        
         document.getElementById('btnBG').onclick = () => recentrerBenGuerir();
         document.getElementById('btnRabat').onclick = () => recentrerRabat();
+        document.getElementById('btnGEP').onclick = () => recentrerGEP();
+        document.getElementById('btnAITTC').onclick = () => recentrerAITTC();
+        document.getElementById('btnACARI').onclick = () => recentrerACARI();
     }
     
     // Reset button
@@ -220,18 +273,60 @@ function afficherFiltresTypes() {
     });
     
     let typesArray = Array.from(typesUniques).sort();
-    let html = '<button class="type-filter-btn active" data-type="all">All</button>';
+    
+    // COULEURS FLUO / NEON pour chaque thème quand actif
+    const themeActiveColors = {
+        'Biodiversity': '#34a56f',        // Vert
+        'Buildings': '#9b59b6',            // Violet
+        'Ecomobility': '#00bcd4',          // Cyan
+        'Energy': '#f1c40f',               // Jaune
+        'Engagement In Action': '#e67e22',  // Orange
+        'Waste': '#2ecc71',                // Vert clair
+        'Water': '#3498db'                 // Bleu
+    };
+    
+    let html = '';
+    
+    // Bouton ALL - reste vert foncé quand actif
+    let isAllActive = (currentTypeFilter === 'all');
+    html += `<button class="type-filter-btn ${isAllActive ? 'active' : ''}" data-type="all" style="background: ${isAllActive ? '#2c7a4d' : '#e8f3ec'}; color: ${isAllActive ? 'white' : '#1e5a3a'}; border: 1px solid #c5e0cf; transition: all 0.3s ease;">All</button>`;
+    
+    // Les autres boutons
     typesArray.forEach(type => {
-        html += `<button class="type-filter-btn" data-type="${type}">${type}</button>`;
+        let isActive = (currentTypeFilter === type);
+        let activeColor = themeActiveColors[type] || '#2c7a4d';
+        
+        html += `<button class="type-filter-btn ${isActive ? 'active' : ''}" data-type="${type}" style="background: ${isActive ? activeColor : '#e8f3ec'}; color: ${isActive ? 'white' : '#1e5a3a'}; border: 1px solid #c5e0cf; transition: all 0.3s ease;">${type}</button>`;
     });
     
     container.innerHTML = html;
     
     document.querySelectorAll('.type-filter-btn').forEach(btn => {
         btn.addEventListener('click', () => {
-            document.querySelectorAll('.type-filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            filtrerParType(btn.getAttribute('data-type'));
+            let selectedType = btn.getAttribute('data-type');
+            
+            // Mettre à jour tous les boutons
+            document.querySelectorAll('.type-filter-btn').forEach(b => {
+                let type = b.getAttribute('data-type');
+                
+                if (selectedType === type) {
+                    b.classList.add('active');
+                    if (type === 'all') {
+                        b.style.background = '#2c7a4d';
+                        b.style.color = 'white';
+                    } else {
+                        let activeColor = themeActiveColors[type] || '#2c7a4d';
+                        b.style.background = activeColor;
+                        b.style.color = 'white';
+                    }
+                } else {
+                    b.classList.remove('active');
+                    b.style.background = '#e8f3ec';
+                    b.style.color = '#1e5a3a';
+                }
+            });
+            
+            filtrerParType(selectedType);
         });
     });
 }
@@ -297,7 +392,6 @@ function afficherTrajetsSection() {
     if(!container) return;
     container.innerHTML = '';
     
-    // Golf carts
     if(typeof trajetsGolfette !== 'undefined' && trajetsGolfette && trajetsGolfette.length > 0) {
         let card = document.createElement('div');
         card.className = 'type-card';
@@ -326,7 +420,6 @@ function afficherTrajetsSection() {
         container.appendChild(card);
     }
     
-    // Buses
     if(typeof trajetsBus !== 'undefined' && trajetsBus && trajetsBus.length > 0) {
         let card = document.createElement('div');
         card.className = 'type-card';
@@ -356,7 +449,7 @@ function afficherTrajetsSection() {
     }
 }
 
-// ==================== DISPLAY ROUTES AVEC CONTOUR BLANC ====================
+// ==================== DISPLAY ROUTES ====================
 function afficherTrajetGolfette(trajetId) {
     if(typeof trajetsGolfette === 'undefined' || typeof arretsGolfette === 'undefined') return;
     if(trajetActuel) map.removeLayer(trajetActuel);
@@ -373,25 +466,8 @@ function afficherTrajetGolfette(trajetId) {
     });
     
     if(points.length >= 2) {
-        // CONTOUR BLANC (plus epais)
-        let contourBlanc = L.polyline(points, { 
-            color: "#FFFFFF", 
-            weight: 6, 
-            opacity: 0.95,
-            lineCap: 'round',
-            lineJoin: 'round'
-        }).addTo(map);
-        
-        // TRAIT PRINCIPAL COULEUR (par dessus)
-        let traitCouleur = L.polyline(points, { 
-            color: trajet.couleur, 
-            weight: 2, 
-            opacity: 1,
-            lineCap: 'round',
-            lineJoin: 'round'
-        }).addTo(map);
-        
-        // Grouper les deux pour pouvoir les supprimer ensemble
+        let contourBlanc = L.polyline(points, { color: "#FFFFFF", weight: 6, opacity: 0.95, lineCap: 'round', lineJoin: 'round' }).addTo(map);
+        let traitCouleur = L.polyline(points, { color: trajet.couleur, weight: 2, opacity: 1, lineCap: 'round', lineJoin: 'round' }).addTo(map);
         trajetActuel = L.layerGroup([contourBlanc, traitCouleur]).addTo(map);
         map.fitBounds(L.latLngBounds(points));
     }
@@ -413,26 +489,8 @@ function afficherTrajetBus(trajetId) {
     });
     
     if(points.length >= 2) {
-        // CONTOUR BLANC (plus epais)
-        let contourBlanc = L.polyline(points, { 
-            color: "#FFFFFF", 
-            weight: 6, 
-            opacity: 0.95,
-            lineCap: 'round',
-            lineJoin: 'round'
-        }).addTo(map);
-        
-        // TRAIT PRINCIPAL COULEUR (par dessus) avec pointilles
-        let traitCouleur = L.polyline(points, { 
-            color: trajet.couleur, 
-            weight: 2, 
-            opacity: 1,
-            dashArray: "8,8",
-            lineCap: 'round',
-            lineJoin: 'round'
-        }).addTo(map);
-        
-        // Grouper les deux pour pouvoir les supprimer ensemble
+        let contourBlanc = L.polyline(points, { color: "#FFFFFF", weight: 6, opacity: 0.95, lineCap: 'round', lineJoin: 'round' }).addTo(map);
+        let traitCouleur = L.polyline(points, { color: trajet.couleur, weight: 2, opacity: 1, dashArray: "8,8", lineCap: 'round', lineJoin: 'round' }).addTo(map);
         trajetBusActuel = L.layerGroup([contourBlanc, traitCouleur]).addTo(map);
         map.fitBounds(L.latLngBounds(points));
     }
@@ -445,18 +503,48 @@ function effacerTousLesTrajets() {
 
 // ==================== CAMPUS ACTIONS ====================
 function recentrerBenGuerir() {
-    map.setView([32.221017, -7.935687], 16);
+    map.setView([32.2162514740, -7.9394896113], 16);
     filtrerParCampus('Ben Guerir');
 }
 
 function recentrerRabat() {
-    map.setView([33.978971, -6.729941], 17);
+    map.setView([33.98077935537, -6.72924130237], 17);
     filtrerParCampus('Rabat');
 }
 
 function afficherTousCampus() {
     map.setView([32.9, -7.0], 8);
     filtrerParCampus('all');
+}
+
+function recentrerGEP() {
+    let gepProject = projets.find(p => p.campus === 'GEP' && p.coordinates);
+    if(gepProject && gepProject.coordinates) {
+        map.setView(gepProject.coordinates, 16);
+    } else {
+        map.setView([32.221600083, -7.92746093660], 17);
+    }
+    filtrerParCampus('GEP');
+}
+
+function recentrerAITTC() {
+    let aittcProject = projets.find(p => p.campus === 'AITTC' && p.coordinates);
+    if(aittcProject && aittcProject.coordinates) {
+        map.setView(aittcProject.coordinates, 16);
+    } else {
+        map.setView([32.2191598586631, -7.89091311143900], 18);
+    }
+    filtrerParCampus('AITTC');
+}
+
+function recentrerACARI() {
+    let acariProject = projets.find(p => p.campus === 'ACARI Laayoune' && p.coordinates);
+    if(acariProject && acariProject.coordinates) {
+        map.setView(acariProject.coordinates, 13);
+    } else {
+        map.setView([27.17847371770062, -13.383737074369604], 18);
+    }
+    filtrerParCampus('ACARI Laayoune');
 }
 
 function toggleSidebar() {
@@ -468,7 +556,7 @@ function toggleSidebar() {
 
 // ==================== INITIALIZATION ====================
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("DOM loaded - Google Hybrid Map");
+    console.log("DOM loaded - Google Hybrid Map with Glow Effects");
     
     if(typeof projets !== 'undefined') {
         initMap();
@@ -484,8 +572,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('toggleSidebar')?.addEventListener('click', toggleSidebar);
 });
 
-// Exports
 window.recentrerBenGuerir = recentrerBenGuerir;
 window.recentrerRabat = recentrerRabat;
 window.afficherTousCampus = afficherTousCampus;
 window.toggleSidebar = toggleSidebar;
+window.afficherTousLesMarqueurs = afficherTousLesMarqueurs;
+window.recentrerGEP = recentrerGEP;
+window.recentrerAITTC = recentrerAITTC;
+window.recentrerACARI = recentrerACARI;

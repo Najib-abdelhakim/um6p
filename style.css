@@ -508,3 +508,165 @@ body {
 .leaflet-overlay-pane svg path[stroke="#00BFFF"] {
     filter: drop-shadow(0 0 8px #00BFFF) drop-shadow(0 0 15px #00BFFF);
 }
+
+
+/* ==================== AJOUT : EFFET DE RAYONNEMENT POUR LES ICÔNES ==================== */
+
+/* Conteneur du marqueur avec rayonnement */
+.marker-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.marker-glow {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.marker-pulse {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.marker-image {
+    position: relative;
+    z-index: 2;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+/* Animations de pulsation */
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes glowPulse {
+    0% {
+        opacity: 0.6;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+    100% {
+        opacity: 0.6;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Effet au survol */
+.marker-container:hover .marker-image {
+    transform: scale(1.15);
+}
+
+.marker-container:hover .marker-glow {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Adaptation pour mobile */
+@media (max-width: 800px) {
+    .marker-glow, .marker-pulse {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .marker-image {
+        width: 32px !important;
+        height: 32px !important;
+    }
+    
+    .marker-container {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+/* Style pour les boutons de contrôle */
+.campus-controls {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    z-index: 900;
+    display: flex;
+    gap: 12px;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(8px);
+    padding: 8px 16px;
+    border-radius: 50px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.campus-btn {
+    background: #2c7a4d;
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.campus-btn:hover {
+    background: #165a36;
+    transform: scale(1.05);
+}
+
+/* Effet de glow sur les trajets (déjà existant dans votre CSS, mais je le garde) */
+.leaflet-overlay-pane svg path {
+    stroke-width: 6px !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+    animation: radioactive-glow 1.5s ease-in-out infinite !important;
+}
+
+@keyframes radioactive-glow {
+    0% {
+        filter: drop-shadow(0 0 2px currentColor) drop-shadow(0 0 5px currentColor);
+        opacity: 0.9;
+    }
+    50% {
+        filter: drop-shadow(0 0 5px currentColor) drop-shadow(0 0 15px currentColor) drop-shadow(0 0 20px currentColor);
+        opacity: 1;
+    }
+    100% {
+        filter: drop-shadow(0 0 2px currentColor) drop-shadow(0 0 5px currentColor);
+        opacity: 0.9;
+    }
+}
