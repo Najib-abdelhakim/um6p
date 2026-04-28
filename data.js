@@ -1372,7 +1372,7 @@ var projets = [
         description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
         type: "Catering",
         sousType: "Gachipain",
-        image: "img/gachipain/gachipain1.jpg",
+        image: "img/gachipain/gachipain2.jpg",
         icone: "img/gachipain/GP.jpg",
         campus: "Ben Guerir"
     },
@@ -1383,7 +1383,7 @@ var projets = [
         description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
         type: "Catering",
         sousType: "Gachipain",
-        image: "img/gachipain/gachipain2.jpg",
+        image: "img/gachipain/gachipain1.jpg",
         icone: "img/gachipain/GP.jpg",
         campus: "Ben Guerir"
     },
@@ -1394,7 +1394,7 @@ var projets = [
         description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
         type: "Catering",
         sousType: "Gachipain",
-        image: "img/gachipain/gachipain1.jpg",
+        image: "img/gachipain/gachipain2.jpg",
         icone: "img/gachipain/GP.jpg",
         campus: "Ben Guerir"
     },
@@ -1405,7 +1405,7 @@ var projets = [
         description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
         type: "Catering",
         sousType: "Gachipain",
-        image: "img/gachipain/gachipain2.jpg",
+        image: "img/gachipain/gachipain1.jpg",
         icone: "img/gachipain/GP.jpg",
         campus: "Ben Guerir"
     },
@@ -1416,7 +1416,7 @@ var projets = [
         description: "The Gachipain is an innovative tool designed to raise awareness about food waste, allowing diners to deposit uneaten bread, which is then collected and sent to the farm to feed chickens.",
         type: "Catering",
         sousType: "Gachipain",
-        image: "img/gachipain/gachipain2.jpg",
+        image: "img/gachipain/gachipain1.jpg",
         icone: "img/gachipain/GP.jpg",
         campus: "Ben Guerir"
     },
