@@ -1699,7 +1699,7 @@ var projets = [
         type: "Energy",
         Informations_complémentaires: "• 240 solar thermal collectors installed",
         sousType: "Photovoltaic / Solar Thermal",
-        image: "img/Photovoltaique/12.jpg",
+        image: "img/Photovoltaique/12.jpeg",
         icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
@@ -1711,7 +1711,7 @@ var projets = [
         type: "Energy",
         Informations_complémentaires: "• 240 solar thermal collectors installed",
         sousType: "Photovoltaic / Solar Thermal",
-        image: "img/Photovoltaique/12.jpg",
+        image: "img/Photovoltaique/12.jpeg",
         icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
@@ -1723,7 +1723,7 @@ var projets = [
         type: "Energy",
         Informations_complémentaires: "• 240 solar thermal collectors installed",
         sousType: "Photovoltaic / Solar Thermal",
-        image: "img/Photovoltaique/12.jpg",
+        image: "img/Photovoltaique/12.jpeg",
         icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
@@ -1735,7 +1735,7 @@ var projets = [
         type: "Energy",
         Informations_complémentaires: "• 240 solar thermal collectors installed",
         sousType: "Photovoltaic / Solar Thermal",
-        image: "img/Photovoltaique/12.jpg",
+        image: "img/Photovoltaique/12.jpeg",
         icone: "img/Photovoltaique/IPT.jpg",
         campus: "Ben Guerir"
     },
