@@ -1806,7 +1806,7 @@ var projets = [
         coordinates: [32.2190787, -7.9407703],
         description: "Clothing collection bins are installed across the campus to give worn garments a second life, while encouraging the reduction of textile waste and supporting those in need.",
         type: "Waste",
-        sousType: "Clothes Recycling Collection",
+        sousType: "Recycle your clothes",
         image: "img/Clothes recycling collect/1.jpeg",
         icone: "img/Clothes recycling collect/CR.jpg",
         campus: "Ben Guerir"
@@ -1816,7 +1816,7 @@ var projets = [
         coordinates: [32.2136836, -7.9399201],
         description: "Clothing collection bins are installed across the campus to give worn garments a second life, while encouraging the reduction of textile waste and supporting those in need.",
         type: "Waste",
-        sousType: "Clothes Recycling Collection",
+        sousType: "Recycle your clothes",
         image: "img/Clothes recycling collect/1.jpeg",
         icone: "img/Clothes recycling collect/CR.jpg",
         campus: "Ben Guerir"
@@ -1826,7 +1826,7 @@ var projets = [
         coordinates: [32.2183478, -7.9361096],
         description: "Clothing collection bins are installed across the campus to give worn garments a second life, while encouraging the reduction of textile waste and supporting those in need.",
         type: "Waste",
-        sousType: "Clothes Recycling Collection",
+        sousType: "Recycle your clothes",
         image: "img/Clothes recycling collect/1.jpeg",
         icone: "img/Clothes recycling collect/CR.jpg",
         campus: "Ben Guerir"
@@ -2116,7 +2116,7 @@ var projets = [
         description: "Reservoir with a capacity of 1,000 m³ that collects rainwater from the roofs and hard surfaces of the campus (roads, paved areas), to store and reuse it, particularly for watering green spaces.",
         type: "Water",
         sousType: "Key Water Infrastructure",
-        image: "img/Water infrastructure/3.png",
+        image: "img/Water infrastructure/3.jpg",
         icone: "img/Water infrastructure/water.jpg",
         campus: "Ben Guerir"
     },
@@ -2190,7 +2190,7 @@ var projets = [
         description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
         type: "Ecomobility",
         sousType: "Electric bus stop",
-        image: "img/bus/3.png",
+        image: "img/bus/1.jpeg",
         icone: "img/bus/bus.jpg",
         campus: "Ben Guerir"
     },
@@ -2211,7 +2211,7 @@ var projets = [
         description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
         type: "Ecomobility",
         sousType: "Electric bus stop",
-        image: "img/bus/2.jpg",
+        image: "img/bus/1.jpeg",
         icone: "img/bus/bus.jpg",
         campus: "Ben Guerir"
     },{
@@ -2221,7 +2221,7 @@ var projets = [
         description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
         type: "Ecomobility",
         sousType: "Electric bus stop",
-        image: "img/bus/3.jpg",
+        image: "img/bus/1.jpeg",
         icone: "img/bus/bus.jpg",
         campus: "Ben Guerir"
     },{
@@ -2231,7 +2231,7 @@ var projets = [
         description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
         type: "Ecomobility",
         sousType: "Electric bus stop",
-        image: "img/bus/2.jpg",
+        image: "img/bus/1.jpeg",
         icone: "img/bus/bus.jpg",
         campus: "Ben Guerir"
     },{
@@ -2251,7 +2251,7 @@ var projets = [
         description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
         type: "Ecomobility",
         sousType: "Electric bus stop",
-        image: "img/bus/3.jpg",
+        image: "img/bus/1.jpeg",
         icone: "img/bus/bus.jpg",
         campus: "Ben Guerir"
     },{
@@ -2261,7 +2261,7 @@ var projets = [
         description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
         type: "Ecomobility",
         sousType: "Electric bus stop",
-        image: "img/bus/2.jpg",
+        image: "img/bus/1.jpeg",
         icone: "img/bus/bus.jpg",
         campus: "Ben Guerir"
     },{
@@ -2281,7 +2281,7 @@ var projets = [
         description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
         type: "Ecomobility",
         sousType: "Electric bus stop",
-        image: "img/bus/3.jpg",
+        image: "img/bus/1.jpeg",
         icone: "img/bus/bus.jpg",
         campus: "Ben Guerir"
     },{
@@ -2291,7 +2291,7 @@ var projets = [
         description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
         type: "Ecomobility",
         sousType: "Electric bus stop",
-        image: "img/bus/2.jpg",
+        image: "img/bus/1.jpeg",
         icone: "img/bus/bus.jpg",
         campus: "Ben Guerir"
     },
