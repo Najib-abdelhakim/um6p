@@ -1807,7 +1807,7 @@ var projets = [
         description: "Clothing collection bins are installed across the campus to give worn garments a second life, while encouraging the reduction of textile waste and supporting those in need.",
         type: "Waste",
         sousType: "Recycle your clothes",
-        image: "img/Clothes recycling collect/1.jpeg",
+        image: "img/Clothes recycling collect/2.jpeg",
         icone: "img/Clothes recycling collect/CR.jpg",
         campus: "Ben Guerir"
     },
@@ -1817,7 +1817,7 @@ var projets = [
         description: "Clothing collection bins are installed across the campus to give worn garments a second life, while encouraging the reduction of textile waste and supporting those in need.",
         type: "Waste",
         sousType: "Recycle your clothes",
-        image: "img/Clothes recycling collect/1.jpeg",
+        image: "img/Clothes recycling collect/3.jpeg",
         icone: "img/Clothes recycling collect/CR.jpg",
         campus: "Ben Guerir"
     },
