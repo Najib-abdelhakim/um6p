@@ -574,7 +574,7 @@ var projets = [
     },
     {
         id: "BG-021",
-        nom: "Palais des congrés ",
+        nom: "CONVENTION CENTER",
         coordinates: [32.214063, -7.941566],
         description: "Event facility, inaugurated in 2023, LEED BD+C v4: New Construction – Silver certified (2026), with a total area of 19,530 m², including an auditorium, conference rooms, meeting spaces, a cafeteria, VIP areas, and an underground parking equipped with electric vehicle charging stations.",
         Informations_complémentaires: "· ~53% energy savings (vs ASHRAE 90.1)</br>· ~34% reduction in water consumption</br>· ~44% of energy needs covered by renewable energy</br>· 5 EV charging stations installed",
@@ -1432,8 +1432,8 @@ var projets = [
         description: "",
         type: "Water",
         sousType: "Water recycling cube",
-        image: "img/Water infrastructure/4.png",
-        icone: "img/Water infrastructure/water.jpg",
+        image: "img/Water recycling cube/1.jpeg",
+        icone: "img/Water recycling cube/icon.jpg",
         campus: "Ben Guerir"
     },
         {
@@ -1443,8 +1443,61 @@ var projets = [
         description: "",
         type: "Water",
         sousType: "Water recycling cube",
-        image: "img/Water recycling cube/4.png",
-        icone: "img/Water recycling cube/water.jpg",
+        image: "img/Water recycling cube/1.jpeg",
+        icone: "img/Water recycling cube/icon.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-198",
+        nom: "Electric bus stop",
+        coordinates: [32.214168991357546, -7.9395266907148],
+        description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
+        type: "Ecomobility",
+        sousType: "Electric bus stop",
+        image: "img/bus/1.jpeg",
+        icone: "img/bus/bus.jpg",
+        campus: "Ben Guerir"
+    },
+        {
+        id: "BG-198",
+        nom: "Electric bus stop",
+        coordinates: [32.21697148133485, -7.935824438703281],
+        description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
+        type: "Ecomobility",
+        sousType: "Electric bus stop",
+        image: "img/bus/1.jpeg",
+        icone: "img/bus/bus.jpg",
+        campus: "Ben Guerir"
+    },{
+        id: "BG-198",
+        nom: "Electric bus stop",
+        coordinates: [32.21927652532951, -7.937945757695873],
+        description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
+        type: "Ecomobility",
+        sousType: "Electric bus stop",
+        image: "img/bus/1.jpeg",
+        icone: "img/bus/bus.jpg",
+        campus: "Ben Guerir"
+    },{
+        id: "BG-198",
+        nom: "Electric bus stop",
+        coordinates: [32.21745905732915, -7.941665473996419],
+        description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
+        type: "Ecomobility",
+        sousType: "Electric bus stop",
+        image: "img/bus/1.jpeg",
+        icone: "img/bus/bus.jpg",
+        campus: "Ben Guerir"
+    },
+    {
+        id: "BG-199",
+        nom: "SHUTTLE STATION",
+        coordinates: [32.220013, -7.939128],
+        description: "UM6P provides 4 daily shuttle services between campus and the experimental farm to encourage carpooling to reduce traffic congestion, lower carbon emissions, and promote sustainable mobility.",
+        type: "Ecomobility",
+        sousType: "Shuttle Station",
+        image: "img/station navettes/station_navettes.png",
+        icone: "img/station navettes/SN.jpg",
         campus: "Ben Guerir"
     },
     {
@@ -1507,59 +1560,6 @@ var projets = [
         sousType: "Green school",
         image: "img/Green school/1.jpg",
         icone: "img/Green school/icon.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-198",
-        nom: "Electric bus stop",
-        coordinates: [32.214168991357546, -7.9395266907148],
-        description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
-        type: "Ecomobility",
-        sousType: "Electric bus stop",
-        image: "img/bus/1.jpeg",
-        icone: "img/bus/bus.jpg",
-        campus: "Ben Guerir"
-    },
-        {
-        id: "BG-198",
-        nom: "Electric bus stop",
-        coordinates: [32.21697148133485, -7.935824438703281],
-        description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
-        type: "Ecomobility",
-        sousType: "Electric bus stop",
-        image: "img/bus/1.jpeg",
-        icone: "img/bus/bus.jpg",
-        campus: "Ben Guerir"
-    },{
-        id: "BG-198",
-        nom: "Electric bus stop",
-        coordinates: [32.21927652532951, -7.937945757695873],
-        description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
-        type: "Ecomobility",
-        sousType: "Electric bus stop",
-        image: "img/bus/1.jpeg",
-        icone: "img/bus/bus.jpg",
-        campus: "Ben Guerir"
-    },{
-        id: "BG-198",
-        nom: "Electric bus stop",
-        coordinates: [32.21745905732915, -7.941665473996419],
-        description: "Electric buses operate Monday to Friday during working hours as part of a structured initiative aimed at organizing and optimizing internal mobility across the campus. Designated stops have been carefully defined and are clearly marked with dedicated signage on both campuses, ensuring easy orientation and accessible transportation for all users.",
-        type: "Ecomobility",
-        sousType: "Electric bus stop",
-        image: "img/bus/1.jpeg",
-        icone: "img/bus/bus.jpg",
-        campus: "Ben Guerir"
-    },
-    {
-        id: "BG-199",
-        nom: "SHUTTLE STATION",
-        coordinates: [32.220013, -7.939128],
-        description: "UM6P provides 4 daily shuttle services between campus and the experimental farm to encourage carpooling to reduce traffic congestion, lower carbon emissions, and promote sustainable mobility.",
-        type: "Ecomobility",
-        sousType: "Shuttle Station",
-        image: "img/station navettes/station_navettes.png",
-        icone: "img/station navettes/SN.jpg",
         campus: "Ben Guerir"
     },
 
@@ -1925,7 +1925,306 @@ var projets = [
         image: "img/golfette/1.jpg",
         icone: "img/golfette/G.jpg",
         campus: "Rabat"
-    }
+    },
+        {
+        id: "BG-003",
+        nom: "Avifaune",
+        coordinates: [33.981372907554054, -6.726623739663303],
+        description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
+        type: "Biodiversity",
+        sousType: "Avifaune",
+        image: "img/avifaune/avifaune.png",
+        icone: "img/avifaune/AF_b.jpg",
+        campus: "Rabat"
+    },
+            {
+        id: "BG-003",
+        nom: "Avifaune",
+        coordinates: [33.98246562849809, -6.7288151028283245],
+        description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
+        type: "Biodiversity",
+        sousType: "Avifaune",
+        image: "img/avifaune/avifaune.png",
+        icone: "img/avifaune/AF_b.jpg",
+        campus: "Rabat"
+    },        {
+        id: "BG-003",
+        nom: "Avifaune",
+        coordinates: [33.978377061209535, -6.729659073783842],
+        description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
+        type: "Biodiversity",
+        sousType: "Avifaune",
+        image: "img/avifaune/avifaune.png",
+        icone: "img/avifaune/AF_b.jpg",
+        campus: "Rabat"
+    },        {
+        id: "BG-003",
+        nom: "Avifaune",
+        coordinates: [33.979236536117, -6.731258176633994],
+        description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
+        type: "Biodiversity",
+        sousType: "Avifaune",
+        image: "img/avifaune/avifaune.png",
+        icone: "img/avifaune/AF_b.jpg",
+        campus: "Rabat"
+    },
+            {
+        id: "BG-011",
+        nom: "Botanic Garden",
+        coordinates: [33.97894185997044, -6.731465467748556],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic Garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/botanic garden/BG1.jpg",
+        campus: "Rabat"
+    },             {
+        id: "BG-011",
+        nom: "Botanic Garden",
+        coordinates: [33.97818060856774, -6.7297775258511745],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic Garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/botanic garden/BG1.jpg",
+        campus: "Rabat"
+    },             {
+        id: "BG-011",
+        nom: "Botanic Garden",
+        coordinates: [33.98187629760503, -6.730058849489549],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic Garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/botanic garden/BG1.jpg",
+        campus: "Rabat"
+    },             {
+        id: "BG-011",
+        nom: "Botanic Garden",
+        coordinates: [33.980317006561414, -6.727304839025399],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic Garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/botanic garden/BG1.jpg",
+        campus: "Rabat"
+    },             {
+        id: "BG-011",
+        nom: "Botanic Garden",
+        coordinates: [33.9828339582409, -6.72831168156068],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic Garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/botanic garden/BG1.jpg",
+        campus: "Rabat"
+    },     {
+        id: "BG-001",
+        nom: "Insect Shelter",
+        coordinates: [33.983226841534396, -6.729881171395088],
+        description: "Insect shelters, designed as wooden structures to host beneficial insects, are installed across the campus to promote natural pest regulation, reduce the use of pesticides, and contribute to maintaining the biodiversity of UM6P's green spaces.",
+        type: "Biodiversity",
+        sousType: "Insect Shelter",
+        image: "img/insect shelter/1.jpeg",
+        icone: "img/insect shelter/AI.jpg",
+        campus: "Rabat"
+    },
+    {
+        id: "BG-001",
+        nom: "Insect Shelter",
+        coordinates: [33.97999777807432, -6.732146567112703],
+        description: "Insect shelters, designed as wooden structures to host beneficial insects, are installed across the campus to promote natural pest regulation, reduce the use of pesticides, and contribute to maintaining the biodiversity of UM6P's green spaces.",
+        type: "Biodiversity",
+        sousType: "Insect Shelter",
+        image: "img/insect shelter/1.jpeg",
+        icone: "img/insect shelter/AI.jpg",
+        campus: "Rabat"
+    },{
+        id: "BG-001",
+        nom: "Insect Shelter",
+        coordinates: [33.980452064375605, -6.725779768727838],
+        description: "Insect shelters, designed as wooden structures to host beneficial insects, are installed across the campus to promote natural pest regulation, reduce the use of pesticides, and contribute to maintaining the biodiversity of UM6P's green spaces.",
+        type: "Biodiversity",
+        sousType: "Insect Shelter",
+        image: "img/insect shelter/1.jpeg",
+        icone: "img/insect shelter/AI.jpg",
+        campus: "Rabat"
+    },{
+        id: "BG-001",
+        nom: "Insect Shelter",
+        coordinates: [33.978389339493724, -6.727482517133093],
+        description: "Insect shelters, designed as wooden structures to host beneficial insects, are installed across the campus to promote natural pest regulation, reduce the use of pesticides, and contribute to maintaining the biodiversity of UM6P's green spaces.",
+        type: "Biodiversity",
+        sousType: "Insect Shelter",
+        image: "img/insect shelter/1.jpeg",
+        icone: "img/insect shelter/AI.jpg",
+        campus: "Rabat"
+    },{
+        id: "BG-001",
+        nom: "Insect Shelter",
+        coordinates: [33.98090634824916, -6.728859522365168],
+        description: "Insect shelters, designed as wooden structures to host beneficial insects, are installed across the campus to promote natural pest regulation, reduce the use of pesticides, and contribute to maintaining the biodiversity of UM6P's green spaces.",
+        type: "Biodiversity",
+        sousType: "Insect Shelter",
+        image: "img/insect shelter/1.jpeg",
+        icone: "img/insect shelter/AI.jpg",
+        campus: "Rabat"
+    },
+            {
+        id: "BG-102",
+        nom: "SOLAR TREE",
+        coordinates: [33.98066881584723, -6.731238293469762],
+        description: "The UM6P Solar Tree is a renewable energy solution that combines design, comfort, and environmental responsibility. Inspired by the shape of a tree, this structure is solar-powered and offers a pleasant shaded area, while also providing charging points for devices via USB ports and 220V outlets. It also incorporates modern public lighting and offers an inclusive space accessible to people with reduced mobility.",
+        Informations_complémentaires: "• Daily production: 2,200 Wh/day<br>• Total power: 600 Wp<br>• 10 panels<br>• 10 LED lamps and 10 spots<br>• Autonomy: 16 hours continuous operation",
+        type: "Energy",
+        sousType: "Solar Tree",
+        image: "img/tree_solaire/treesalaire.png",
+        icone: "img/tree_solaire/TS.jpg",
+        campus: "Rabat"
+    },
+
+
+    // GEP
+        {
+        id: "BG-048",
+        nom: "",
+        coordinates: [32.22162027912787, -7.928605040077566],
+        description: "",
+        type: "Energy",
+        Informations_complémentaires: "",
+        sousType: "Photovoltaic / Solar Thermal",
+        image: "img/Photovoltaique/",
+        icone: "img/Photovoltaique/IPT.jpg",
+        campus: "GEP"
+    },{
+        id: "BG-048",
+        nom: "",
+        coordinates: [32.220632785955964, -7.927686914560544],
+        description: "",
+        type: "Energy",
+        Informations_complémentaires: "",
+        sousType: "Photovoltaic / Solar Thermal",
+        image: "img/Photovoltaique/",
+        icone: "img/Photovoltaique/IPT.jpg",
+        campus: "GEP"
+    },{
+        id: "BG-048",
+        nom: "",
+        coordinates: [32.222489402979456, -7.927839215376719],
+        description: "",
+        type: "Energy",
+        Informations_complémentaires: "",
+        sousType: "Photovoltaic / Solar Thermal",
+        image: "img/Photovoltaique/",
+        icone: "img/Photovoltaique/IPT.jpg",
+        campus: "GEP"
+    },    {
+        id: "BG-003",
+        nom: "Avifaune",
+        coordinates: [32.221203270001645, -7.927093288584864],
+        description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
+        type: "Biodiversity",
+        sousType: "Avifaune",
+        image: "img/avifaune/avifaune.png",
+        icone: "img/avifaune/AF_b.jpg",
+        campus: "GEP"
+    },
+        {
+        id: "BG-003",
+        nom: "Avifaune",
+        coordinates: [32.22061428715103, -7.928201522680288],
+        description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
+        type: "Biodiversity",
+        sousType: "Avifaune",
+        image: "img/avifaune/avifaune.png",
+        icone: "img/avifaune/AF_b.jpg",
+        campus: "GEP"
+    },
+        {
+        id: "BG-003",
+        nom: "Avifaune",
+        coordinates: [32.22083064864159, -7.929203195804999],
+        description: "Birdhouses are installed across the campus to enhance biodiversity and maintain a balanced ecosystem, providing shelter for birds that naturally help regulate harmful insect populations.",
+        type: "Biodiversity",
+        sousType: "Avifaune",
+        image: "img/avifaune/avifaune.png",
+        icone: "img/avifaune/AF_b.jpg",
+        campus: "GEP"
+    },
+        {
+        id: "BG-011",
+        nom: "Botanic Garden",
+        coordinates: [32.222268661340436, -7.925979481595437],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic Garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/botanic garden/BG1.jpg",
+        campus: "GEP"
+    },    {
+        id: "BG-011",
+        nom: "Botanic Garden",
+        coordinates: [32.220302411777666, -7.926657713638096],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic Garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/botanic garden/BG1.jpg",
+        campus: "GEP"
+    },    {
+        id: "BG-011",
+        nom: "Botanic Garden",
+        coordinates: [32.22296838401835, -7.9280638044551015],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic Garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/botanic garden/BG1.jpg",
+        campus: "GEP"
+    },    {
+        id: "BG-011",
+        nom: "Botanic Garden",
+        coordinates: [32.22121206989761, -7.928642783027061],
+        description: "Informational panels on campus plants are installed to promote engagement with local biodiversity and provide an educational outdoor experience, enabling the community to better understand and appreciate the richness of the ecosystem.",
+        type: "Biodiversity",
+        sousType: "Botanic Garden",
+        image: "img/botanic garden/1.png",
+        icone: "img/botanic garden/BG1.jpg",
+        campus: "GEP"
+    },
+        {
+        id: "BG-102",
+        nom: "SOLAR TREE",
+        coordinates: [32.22053775160351, -7.928539401681583],
+        description: "The UM6P Solar Tree is a renewable energy solution that combines design, comfort, and environmental responsibility. Inspired by the shape of a tree, this structure is solar-powered and offers a pleasant shaded area, while also providing charging points for devices via USB ports and 220V outlets. It also incorporates modern public lighting and offers an inclusive space accessible to people with reduced mobility.",
+        Informations_complémentaires: "• Daily production: 2,200 Wh/day<br>• Total power: 600 Wp<br>• 10 panels<br>• 10 LED lamps and 10 spots<br>• Autonomy: 16 hours continuous operation",
+        type: "Energy",
+        sousType: "Solar Tree",
+        image: "img/tree_solaire/treesalaire.png",
+        icone: "img/tree_solaire/TS.jpg",
+        campus: "GEP"
+    },
+        {
+        id: "BG-182",
+        nom: "Electric Vehicle Charging Station",
+        coordinates: [32.22020240406086, -7.927585223924778],
+        description: "UM6P campus provides dedicated parking with electric vehicle charging stations to support low-emission transportation. XX charging points are provided. ",
+        type: "Ecomobility",
+        sousType: "Electric Vehicle Charging Station",
+        image: "img/vehicles charge station/charge_station1.jpg",
+        icone: "img/vehicles charge station/VCS.jpg",
+        campus: "GEP"
+    },    {
+        id: "BG-182",
+        nom: "Electric Vehicle Charging Station",
+        coordinates: [32.22063005956378, -7.929177931091439],
+        description: "UM6P campus provides dedicated parking with electric vehicle charging stations to support low-emission transportation. XX charging points are provided. ",
+        type: "Ecomobility",
+        sousType: "Electric Vehicle Charging Station",
+        image: "img/vehicles charge station/charge_station1.jpg",
+        icone: "img/vehicles charge station/VCS.jpg",
+        campus: "GEP"
+    },
 ];
 
 //           GOLF CART STOPS
@@ -1967,14 +2266,6 @@ var arretsGolfette = [
     { id: "GOL-23", coords: [33.9809578906194, -6.73037998257016] },
 ];
 
-//          GOLF CART ROUTES
-var trajetsGolfette = [
-    { id: "TRAJET-01", nom: "Line-1-BG", couleur: "#28a745", arrets: ["GOLF-01", "GOLF-02", "GOLF-04", "GOLF-05", "GOLF-06"] },
-    { id: "TRAJET-02", nom: "Line-2-BG", couleur: "#0066b3", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-09"] },
-    { id: "TRAJET-03", nom: "Line-3-BG", couleur: "#fd7e14", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-10", "GOLF-11", "GOLF-12", "GOLF-13", "GOLF-14"] },
-    { id: "TRAJET-04", nom: "Line-1-RB", couleur: "#a72828", arrets: ["GOL-1", "GOL-2", "GOL-4", "GOL-5", "GOL-6", "GOL-7", "GOL-8", "GOL-9", "GOL-10", "GOL-11", "GOL-12", "GOL-13", "GOL-14", "GOL-15"] },
-    { id: "TRAJET-05", nom: "Line-2-RB", couleur: "#a72894", arrets: ["GOL-16", "GOL-17", "GOL-18", "GOL-19", "GOL-20", "GOL-21", "GOL-22", "GOL-23", "GOL-16"] },
-];
 
 //            BUS STOPS
 var arretsBus = [
@@ -2004,17 +2295,24 @@ var arretsBus = [
     { id: "BUS-RB-03", coords: [33.982339, -6.7244645] }
 ];
 
-// ========== TRAJETS GOLFETTES - COULEURS ULTRA FLUO / NEON ==========
+// ========== TRAJETS GOLFETTES ==========
 var trajetsGolfette = [
-    { id: "TRAJET-01", nom: "Line-1-BG", couleur: "#39FF14", arrets: ["GOLF-01", "GOLF-02", "GOLF-04", "GOLF-05", "GOLF-06"] },      // NEON GREEN
-    { id: "TRAJET-02", nom: "Line-2-BG", couleur: "#00FFFF", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-09"] },                  // NEON CYAN
-    { id: "TRAJET-03", nom: "Line-3-BG", couleur: "#FF00FF", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-10", "GOLF-11", "GOLF-12", "GOLF-13", "GOLF-14"] }, // NEON MAGENTA
-    { id: "TRAJET-04", nom: "Line-1-RB", couleur: "#FF5E00", arrets: ["GOL-1", "GOL-2", "GOL-4", "GOL-5", "GOL-6", "GOL-7", "GOL-8", "GOL-9", "GOL-10", "GOL-11", "GOL-12", "GOL-13", "GOL-14", "GOL-15"] }, // NEON ORANGE
-    { id: "TRAJET-05", nom: "Line-2-RB", couleur: "#fbff10", arrets: ["GOL-16", "GOL-17", "GOL-18", "GOL-19", "GOL-20", "GOL-21", "GOL-22", "GOL-23", "GOL-16"] }, // NEON HOT PINK
+    // Ben Guerir
+    { id: "TRAJET-01", nom: "CCI", campus: "Ben Guerir", couleur: "#39FF14", arrets: ["GOLF-01", "GOLF-02", "GOLF-04", "GOLF-05", "GOLF-06"] },
+    { id: "TRAJET-02", nom: "Conference Center", campus: "Ben Guerir", couleur: "#00FFFF", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-09"] },
+    { id: "TRAJET-03", nom: "SHBM", campus: "Ben Guerir", couleur: "#FF00FF", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-10", "GOLF-11", "GOLF-12", "GOLF-13", "GOLF-14"] },
+    
+    // Rabat
+    { id: "TRAJET-04", nom: "RABAT", campus: "Rabat", couleur: "#FF5E00", arrets: ["GOL-1", "GOL-2", "GOL-4", "GOL-5", "GOL-6", "GOL-7", "GOL-8", "GOL-9", "GOL-10", "GOL-11", "GOL-12", "GOL-13", "GOL-14", "GOL-15"] },
+    { id: "TRAJET-05", nom: "RABAT2", campus: "Rabat", couleur: "#fbff10", arrets: ["GOL-16", "GOL-17", "GOL-18", "GOL-19", "GOL-20", "GOL-21", "GOL-22", "GOL-23", "GOL-16"] },
+    
 ];
 
-// ========== TRAJETS BUS - COULEURS ULTRA FLUO / NEON ==========
+// ========== TRAJETS BUS ==========
 var trajetsBus = [
-    { id: "BUS-T1", nom: "Line-1-BG", couleur: "#ff0000", arrets: ["BUS-01", "BUS-02", "BUS-03", "BUS-04", "BUS-05", "BUS-06", "BUS-07", "BUS-08", "BUS-09", "BUS-10", "BUS-11", "BUS-12", "BUS-13", "BUS-14", "BUS-15", "BUS-16", "BUS-17", "BUS-18", "BUS-19", "BUS-20", "BUS-21"] }, // NEON RED
-    { id: "BUS-T2", nom: "Line-1-RA", couleur: "#0800ff", arrets: ["BUS-RB-01", "BUS-RB-02", "BUS-RB-03"] }, // NEON DEEP BLUE
+    // Ben Guerir
+    { id: "BUS-T1", nom: "CAMPUS2", campus: "Ben Guerir", couleur: "#ff0000", arrets: ["BUS-01", "BUS-02", "BUS-03", "BUS-04", "BUS-05", "BUS-06", "BUS-07", "BUS-08", "BUS-09", "BUS-10", "BUS-11", "BUS-12", "BUS-13", "BUS-14", "BUS-15", "BUS-16", "BUS-17", "BUS-18", "BUS-19", "BUS-20", "BUS-21"] },
+    
+    // Rabat
+    { id: "BUS-T2", nom: "RABAT2", campus: "Rabat", couleur: "#0800ff", arrets: ["BUS-RB-01", "BUS-RB-02", "BUS-RB-03"] },
 ];

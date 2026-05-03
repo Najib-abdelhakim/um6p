@@ -28,7 +28,7 @@ body {
     background: #c8e0d4;
 }
 
-/* SIDEBAR */
+/* ==================== SIDEBAR ==================== */
 .sidebar {
     width: 360px;
     background: rgba(255, 255, 255, 0.94);
@@ -80,14 +80,14 @@ body {
     cursor: pointer;
     font-size: 18px;
     transition: all 0.2s;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .toggle-sidebar:hover {
     background: #1e5a3a;
 }
 
-/* Stats */
+/* ==================== STATS ==================== */
 .stats-banner {
     background: linear-gradient(135deg, #2c7a4d20, #3c9e6230);
     border-radius: 40px;
@@ -101,8 +101,10 @@ body {
     border: 1px solid #3c9e6240;
 }
 
-/* Filtres */
-.filters-section, .sous-types-section, .trajets-section {
+/* ==================== FILTRES ==================== */
+.filters-section,
+.sous-types-section,
+.trajets-section {
     margin-bottom: 20px;
 }
 
@@ -138,13 +140,7 @@ body {
     background: #d0e8d9;
 }
 
-.type-filter-btn.active {
-    background: #2c7a4d;
-    color: white;
-    border-color: #2c7a4d;
-}
-
-/* Cartes */
+/* ==================== CARTES ==================== */
 .type-card {
     background: rgba(255, 255, 255, 0.96);
     border-radius: 18px;
@@ -155,7 +151,7 @@ body {
 }
 
 .type-header {
-    background: linear-gradient(105deg, #2c7a4d 0%, #3c9e62 100%);
+    background: linear-gradient(105deg, #2c7a4d 0%, #2c7a4d 100%);
     color: white;
     padding: 12px 16px;
     cursor: pointer;
@@ -180,17 +176,14 @@ body {
     padding: 12px;
     max-height: 480px;
     overflow-y: auto;
-    transition: max-height 0.3s ease;
     background: #fefef9;
 }
 
 .type-content.collapsed {
-    max-height: 0;
-    padding: 0 12px;
-    overflow: hidden;
+    display: none;
 }
 
-/* Sous-types */
+/* ==================== SOUS-TYPES ==================== */
 .sous-type-item {
     display: flex;
     align-items: center;
@@ -201,7 +194,6 @@ body {
     cursor: pointer;
     transition: all 0.2s;
     border-left: 4px solid transparent;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
 }
 
 .sous-type-item:hover {
@@ -236,12 +228,7 @@ body {
     margin-top: 3px;
 }
 
-.sous-types-list {
-    max-height: 350px;
-    overflow-y: auto;
-}
-
-/* Reset */
+/* ==================== RESET ==================== */
 .reset-card {
     margin-top: 20px;
     padding-top: 10px;
@@ -250,7 +237,7 @@ body {
 
 .reset-btn {
     width: 100%;
-    background: linear-gradient(135deg, #2c7a4d, #3c9e62);
+    background: linear-gradient(135deg, #2c7a4d, #2c7a4d);
     color: white;
     border: none;
     padding: 12px;
@@ -263,10 +250,10 @@ body {
 
 .reset-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(44,122,77,0.3);
+    box-shadow: 0 4px 12px rgba(44, 122, 77, 0.3);
 }
 
-/* Scrollbar */
+/* ==================== SCROLLBAR ==================== */
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -281,12 +268,12 @@ body {
     border-radius: 10px;
 }
 
-/* POPUP - TOUTES LES IMAGES EN HAUT */
+/* ==================== POPUP ==================== */
 .leaflet-popup-content-wrapper {
     border-radius: 16px !important;
     padding: 0 !important;
     overflow: hidden !important;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
 .leaflet-popup-content {
@@ -367,8 +354,6 @@ body {
     border-radius: 10px;
     color: #1f3b2e;
     font-weight: 500;
-    word-break: break-word;
-    white-space: pre-wrap;
 }
 
 .info-complementaire strong {
@@ -376,143 +361,7 @@ body {
     font-weight: 700;
 }
 
-/* Marqueurs */
-.custom-marker {
-    background: transparent;
-    border: none;
-    transition: all 0.2s ease;
-}
-
-.custom-marker:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
-}
-
-/* Controles campus */
-.campus-controls {
-    position: absolute;
-    bottom: 25px;
-    left: 20px;
-    z-index: 900;
-    display: flex;
-    gap: 12px;
-    background: rgba(255,255,255,0.85);
-    backdrop-filter: blur(8px);
-    padding: 8px 16px;
-    border-radius: 50px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
-}
-
-.campus-btn {
-    background: #2c7a4d;
-    border: none;
-    color: white;
-    padding: 8px 18px;
-    border-radius: 40px;
-    font-weight: 600;
-    font-size: 0.8rem;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.campus-btn:hover {
-    background: #165a36;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 280px;
-    }
-    
-    .leaflet-popup-content {
-        width: 300px !important;
-    }
-    
-    .popup-image-top {
-        max-height: 150px;
-    }
-    
-    .popup-image-top img {
-        max-height: 150px;
-    }
-    
-    .popup-content-text h3 {
-        font-size: 1rem;
-    }
-    
-    .campus-controls {
-        bottom: 15px;
-        left: 10px;
-        padding: 5px 12px;
-        gap: 8px;
-    }
-    
-    .campus-btn {
-        padding: 6px 12px;
-        font-size: 0.7rem;
-    }
-    
-    .stats-banner {
-        font-size: 0.7rem;
-        padding: 6px 12px;
-    }
-}
-
-/* ========== EFFET RADIOACTIF / NEON POUR LES TRAJETS ========== */
-
-/* Effet glow radioactif - tres مشعة */
-@keyframes radioactive-glow {
-    0% {
-        filter: drop-shadow(0 0 2px currentColor) drop-shadow(0 0 5px currentColor);
-        opacity: 0.9;
-    }
-    50% {
-        filter: drop-shadow(0 0 5px currentColor) drop-shadow(0 0 15px currentColor) drop-shadow(0 0 20px currentColor);
-        opacity: 1;
-    }
-    100% {
-        filter: drop-shadow(0 0 2px currentColor) drop-shadow(0 0 5px currentColor);
-        opacity: 0.9;
-    }
-}
-
-/* Application aux lignes golfettes et bus */
-.leaflet-overlay-pane svg path {
-    stroke-width: 6px !important;
-    stroke-linecap: round !important;
-    stroke-linejoin: round !important;
-    animation: radioactive-glow 1.5s ease-in-out infinite !important;
-    filter: drop-shadow(0 0 4px currentColor) !important;
-}
-
-/* Style specifique pour chaque ligne avec glow */
-.leaflet-overlay-pane svg path[stroke="#39FF14"] {
-    filter: drop-shadow(0 0 8px #39FF14) drop-shadow(0 0 15px #39FF14);
-}
-.leaflet-overlay-pane svg path[stroke="#00FFFF"] {
-    filter: drop-shadow(0 0 8px #00FFFF) drop-shadow(0 0 15px #00FFFF);
-}
-.leaflet-overlay-pane svg path[stroke="#FF00FF"] {
-    filter: drop-shadow(0 0 8px #FF00FF) drop-shadow(0 0 15px #FF00FF);
-}
-.leaflet-overlay-pane svg path[stroke="#FF5E00"] {
-    filter: drop-shadow(0 0 8px #FF5E00) drop-shadow(0 0 15px #FF5E00);
-}
-.leaflet-overlay-pane svg path[stroke="#FF10F0"] {
-    filter: drop-shadow(0 0 8px #FF10F0) drop-shadow(0 0 15px #FF10F0);
-}
-.leaflet-overlay-pane svg path[stroke="#FF0040"] {
-    filter: drop-shadow(0 0 8px #FF0040) drop-shadow(0 0 15px #FF0040);
-}
-.leaflet-overlay-pane svg path[stroke="#00BFFF"] {
-    filter: drop-shadow(0 0 8px #00BFFF) drop-shadow(0 0 15px #00BFFF);
-}
-
-
-/* ==================== AJOUT : EFFET DE RAYONNEMENT POUR LES ICÔNES ==================== */
-
-/* Conteneur du marqueur avec rayonnement */
+/* ==================== MARQUEURS ==================== */
 .marker-container {
     position: relative;
     display: flex;
@@ -557,7 +406,48 @@ body {
     cursor: pointer;
 }
 
-/* Animations de pulsation */
+.marker-container:hover .marker-image {
+    transform: scale(1.15);
+}
+
+.marker-container:hover .marker-glow {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* ==================== CONTROLES CAMPUS ==================== */
+.campus-controls {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    z-index: 900;
+    display: flex;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 8px 16px;
+    border-radius: 50px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.campus-btn {
+    background: #2c7a4d;
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.campus-btn:hover {
+    background: #165a36;
+    transform: scale(1.05);
+}
+
+/* ==================== ANIMATIONS ==================== */
 @keyframes pulse {
     0% {
         transform: translate(-50%, -50%) scale(1);
@@ -588,67 +478,22 @@ body {
     }
 }
 
-/* Effet au survol */
-.marker-container:hover .marker-image {
-    transform: scale(1.15);
-}
-
-.marker-container:hover .marker-glow {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.2);
-}
-
-/* Adaptation pour mobile */
-@media (max-width: 800px) {
-    .marker-glow, .marker-pulse {
-        width: 55px;
-        height: 55px;
+@keyframes radioactive-glow {
+    0% {
+        filter: drop-shadow(0 0 2px currentColor);
+        opacity: 0.9;
     }
-    
-    .marker-image {
-        width: 32px !important;
-        height: 32px !important;
+    50% {
+        filter: drop-shadow(0 0 5px currentColor) drop-shadow(0 0 15px currentColor);
+        opacity: 1;
     }
-    
-    .marker-container {
-        width: 55px;
-        height: 55px;
+    100% {
+        filter: drop-shadow(0 0 2px currentColor);
+        opacity: 0.9;
     }
 }
 
-/* Style pour les boutons de contrôle */
-.campus-controls {
-    position: absolute;
-    bottom: 25px;
-    left: 20px;
-    z-index: 900;
-    display: flex;
-    gap: 12px;
-    background: rgba(255,255,255,0.85);
-    backdrop-filter: blur(8px);
-    padding: 8px 16px;
-    border-radius: 50px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
-}
-
-.campus-btn {
-    background: #2c7a4d;
-    border: none;
-    color: white;
-    padding: 8px 18px;
-    border-radius: 40px;
-    font-weight: 600;
-    font-size: 0.8rem;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.campus-btn:hover {
-    background: #165a36;
-    transform: scale(1.05);
-}
-
-/* Effet de glow sur les trajets (déjà existant dans votre CSS, mais je le garde) */
+/* ==================== TRAJETS NEON ==================== */
 .leaflet-overlay-pane svg path {
     stroke-width: 6px !important;
     stroke-linecap: round !important;
@@ -656,17 +501,51 @@ body {
     animation: radioactive-glow 1.5s ease-in-out infinite !important;
 }
 
-@keyframes radioactive-glow {
-    0% {
-        filter: drop-shadow(0 0 2px currentColor) drop-shadow(0 0 5px currentColor);
-        opacity: 0.9;
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 280px;
     }
-    50% {
-        filter: drop-shadow(0 0 5px currentColor) drop-shadow(0 0 15px currentColor) drop-shadow(0 0 20px currentColor);
-        opacity: 1;
+
+    .leaflet-popup-content {
+        width: 300px !important;
     }
-    100% {
-        filter: drop-shadow(0 0 2px currentColor) drop-shadow(0 0 5px currentColor);
-        opacity: 0.9;
+
+    .popup-image-top {
+        max-height: 150px;
+    }
+
+    .popup-image-top img {
+        max-height: 150px;
+    }
+
+    .campus-controls {
+        bottom: 15px;
+        left: 10px;
+        padding: 5px 12px;
+        gap: 8px;
+    }
+
+    .campus-btn {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .marker-glow,
+    .marker-pulse {
+        width: 55px;
+        height: 55px;
+    }
+
+    .marker-image {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .marker-container {
+        width: 55px;
+        height: 55px;
     }
 }

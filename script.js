@@ -6,19 +6,29 @@ let currentTypeFilter = 'all';
 let trajetActuel = null;
 let trajetBusActuel = null;
 
-// ==================== FONCTION POUR DÉFINIR LA COULEUR DE RAYONNEMENT ====================
+// ==================== COULEURS ====================
+const glowColors = {
+    'Water': 'rgb(0, 149, 255)',
+    'Engagement In Action': 'rgb(255, 102, 0)',
+    'Waste': 'rgb(21, 0, 255)',
+    'Biodiversity': 'rgba(0, 255, 0, 0.7)',
+    'Energy': 'rgb(255, 217, 0)',
+    'Ecomobility': 'rgb(0, 251, 255)',
+    'Buildings': 'rgb(132, 0, 255)',
+    'Catering': 'rgb(255, 162, 0)'
+};
+
+const themeActiveColors = {
+    'Biodiversity': '#34a56f',
+    'Buildings': '#b700ff',
+    'Ecomobility': '#00bcd4',
+    'Energy': '#ffcc00',
+    'Engagement In Action': '#e67e22',
+    'Waste': '#270ecd',
+    'Water': '#0099ff'
+};
+
 function getGlowColor(type) {
-    const glowColors = {
-        'Water': 'rgba(0, 150, 255, 0.7)',
-        'Engagement In Action': 'rgba(255, 100, 0, 0.7)',
-        'Waste': 'rgba(50, 205, 50, 0.7)',
-        'Biodiversity': 'rgba(34, 139, 34, 0.7)',
-        'Energy': 'rgba(255, 215, 0, 0.7)',
-        'Ecomobility': 'rgba(0, 206, 209, 0.7)',
-        'Buildings': 'rgba(138, 43, 226, 0.7)',
-        'Catering': 'rgba(255, 140, 0, 0.7)'
-    };
-    
     if (type && glowColors[type]) return glowColors[type];
     return 'rgba(255, 255, 0, 0.5)';
 }
@@ -148,15 +158,13 @@ function initMap() {
     }).addTo(map);
     
     projets.forEach(proj => {
-        if(proj.coordinates && proj.coordinates.length === 2 && 
-           proj.coordinates[0] !== 32 && proj.coordinates[1] !== -7) {
+        if(proj.coordinates && proj.coordinates.length === 2 && proj.coordinates[0] !== 32 && proj.coordinates[1] !== -7) {
             if(proj.coordinates[0] > 30 && proj.coordinates[0] < 35) {
                 let marker = creerMarqueurAvecInfos(proj);
                 marker.addTo(map);
                 markersList.push({ marker: marker, projet: proj });
             }
-        } else if(proj.coordinates && proj.coordinates.length === 2 && 
-                  proj.coordinates[0] !== 32 && proj.coordinates[1] !== -7) {
+        } else if(proj.coordinates && proj.coordinates.length === 2 && proj.coordinates[0] !== 32 && proj.coordinates[1] !== -7) {
             let marker = creerMarqueurAvecInfos(proj);
             marker.addTo(map);
             markersList.push({ marker: marker, projet: proj });
@@ -183,7 +191,7 @@ function initMap() {
             <button class="campus-btn" id="btnRabat" style="background: linear-gradient(135deg, #808080, #696969); color: white;">Rabat</button>
             <button class="campus-btn" id="btnGEP" style="background: linear-gradient(135deg, #a4c840, #61873d); color: white;">GEP</button>
             <button class="campus-btn" id="btnAITTC" style="background: linear-gradient(135deg, #17a2b8, #00bcd4); color: white;">AITTC</button>
-            <button class="campus-btn" id="btnACARI" style="background: linear-gradient(135deg,  #bc9d75, #e6cfaf); color: #4a3728;">ACARI Laayoune</button>
+            <button class="campus-btn" id="btnACARI" style="background: linear-gradient(135deg, #bc9d75, #e6cfaf); color: #4a3728;">ACARI Laayoune</button>
         `;
         
         document.getElementById('btnBG').onclick = () => recentrerBenGuerir();
@@ -230,6 +238,7 @@ function filtrerParCampus(campus) {
     currentCampus = campus;
     appliquerFiltres();
     afficherFiltresTypes();
+    afficherTrajetsSection();
     afficherListeSousTypes();
     effacerTousLesTrajets();
 }
@@ -238,6 +247,7 @@ function filtrerParType(type) {
     currentTypeFilter = type;
     appliquerFiltres();
     afficherFiltresTypes();
+    afficherTrajetsSection();
     afficherListeSousTypes();
     effacerTousLesTrajets();
 }
@@ -274,24 +284,11 @@ function afficherFiltresTypes() {
     
     let typesArray = Array.from(typesUniques).sort();
     
-    // COULEURS FLUO / NEON pour chaque thème quand actif
-    const themeActiveColors = {
-        'Biodiversity': '#34a56f',        // Vert
-        'Buildings': '#9b59b6',            // Violet
-        'Ecomobility': '#00bcd4',          // Cyan
-        'Energy': '#f1c40f',               // Jaune
-        'Engagement In Action': '#e67e22',  // Orange
-        'Waste': '#2ecc71',                // Vert clair
-        'Water': '#3498db'                 // Bleu
-    };
-    
     let html = '';
     
-    // Bouton ALL - reste vert foncé quand actif
     let isAllActive = (currentTypeFilter === 'all');
     html += `<button class="type-filter-btn ${isAllActive ? 'active' : ''}" data-type="all" style="background: ${isAllActive ? '#2c7a4d' : '#e8f3ec'}; color: ${isAllActive ? 'white' : '#1e5a3a'}; border: 1px solid #c5e0cf; transition: all 0.3s ease;">All</button>`;
     
-    // Les autres boutons
     typesArray.forEach(type => {
         let isActive = (currentTypeFilter === type);
         let activeColor = themeActiveColors[type] || '#2c7a4d';
@@ -305,7 +302,6 @@ function afficherFiltresTypes() {
         btn.addEventListener('click', () => {
             let selectedType = btn.getAttribute('data-type');
             
-            // Mettre à jour tous les boutons
             document.querySelectorAll('.type-filter-btn').forEach(b => {
                 let type = b.getAttribute('data-type');
                 
@@ -387,23 +383,45 @@ function afficherListeSousTypes() {
 }
 
 // ==================== ROUTES SECTION ====================
+// ==================== ROUTES SECTION ====================
 function afficherTrajetsSection() {
     let container = document.getElementById('trajetsSection');
     if(!container) return;
     container.innerHTML = '';
     
-    if(typeof trajetsGolfette !== 'undefined' && trajetsGolfette && trajetsGolfette.length > 0) {
+    // Filtrer les trajets golfette selon le campus
+    let golfettesFiltrees = [];
+    if(typeof trajetsGolfette !== 'undefined' && trajetsGolfette) {
+        if (currentCampus === 'all') {
+            golfettesFiltrees = [...trajetsGolfette];
+        } else {
+            golfettesFiltrees = trajetsGolfette.filter(t => t.campus === currentCampus);
+        }
+    }
+    
+    // Filtrer les trajets bus selon le campus
+    let busFiltrees = [];
+    if(typeof trajetsBus !== 'undefined' && trajetsBus) {
+        if (currentCampus === 'all') {
+            busFiltrees = [...trajetsBus];
+        } else {
+            busFiltrees = trajetsBus.filter(t => t.campus === currentCampus);
+        }
+    }
+    
+    // Afficher GOLF CART
+    if(golfettesFiltrees.length > 0) {
         let card = document.createElement('div');
         card.className = 'type-card';
         card.innerHTML = `
-            <div class="type-header" style="background:#3c9e62">
+            <div class="type-header" style="background:#2c7a4d">
                 <span class="type-nom">GOLF CART Pathway</span>
                 <span class="toggle-icon">▼</span>
             </div>
             <div class="type-content" id="golfetteContent"></div>
         `;
         let content = card.querySelector('.type-content');
-        trajetsGolfette.forEach(t => {
+        golfettesFiltrees.forEach(t => {
             let item = document.createElement('div');
             item.className = 'sous-type-item';
             item.innerHTML = `
@@ -420,7 +438,8 @@ function afficherTrajetsSection() {
         container.appendChild(card);
     }
     
-    if(typeof trajetsBus !== 'undefined' && trajetsBus && trajetsBus.length > 0) {
+    // Afficher BUS
+    if(busFiltrees.length > 0) {
         let card = document.createElement('div');
         card.className = 'type-card';
         card.innerHTML = `
@@ -431,7 +450,7 @@ function afficherTrajetsSection() {
             <div class="type-content" id="busContent"></div>
         `;
         let content = card.querySelector('.type-content');
-        trajetsBus.forEach(t => {
+        busFiltrees.forEach(t => {
             let item = document.createElement('div');
             item.className = 'sous-type-item';
             item.innerHTML = `
