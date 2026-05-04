@@ -10,7 +10,7 @@ let trajetBusActuel = null;
 const glowColors = {
     'Water': 'rgb(0, 149, 255)',
     'Engagement In Action': 'rgb(255, 102, 0)',
-    'Waste': 'rgb(21, 0, 255)',
+    'Waste': 'rgb(255, 43, 43)',
     'Biodiversity': 'rgb(0, 255, 0)',
     'Energy': 'rgb(255, 217, 0)',
     'Ecomobility': 'rgb(0, 251, 255)',
@@ -24,7 +24,7 @@ const themeActiveColors = {
     'Ecomobility': '#00bcd4',
     'Energy': '#ffcc00',
     'Engagement In Action': '#e67e22',
-    'Waste': '#270ecd',
+    'Waste': '#cd0e0e',
     'Water': '#0099ff'
 };
 
@@ -35,7 +35,7 @@ function getGlowColor(type) {
 
 // ==================== FONCTION POPUP AVEC RAYONNEMENT ====================
 function creerMarqueurAvecInfos(projet) {
-    let iconUrl = projet.icone && projet.icone !== "" ? projet.icone : 'https://cdn-icons-png.flaticon.com/512/2991/2991231.png';
+    let iconUrl = projet.icone && projet.icone !== "" ? projet.icone : '';
     let glowColor = getGlowColor(projet.type);
     let markerId = projet.id || Math.random().toString(36);
     
@@ -43,9 +43,9 @@ function creerMarqueurAvecInfos(projet) {
         className: 'custom-marker',
         html: `
             <div class="marker-container" data-id="${markerId}">
-                <div class="marker-glow" style="background: radial-gradient(circle, ${glowColor} 0%, ${glowColor.replace('0.7', '0.3')} 40%, rgba(255,255,255,0) 55%);"></div>
+                <div class="marker-glow" style="background: radial-gradient(circle, ${glowColor} 0%, ${glowColor.replace('0.7', '0.4')} 40%, rgba(255,255,255,0) 55%);"></div>
                 <div class="marker-pulse" style="background: radial-gradient(circle, ${glowColor.replace('0.7', '0.4')} 0%, rgba(255,255,0,0) 100%);"></div>
-                <img src="${iconUrl}" class="marker-image" style="width:42px;height:42px;border-radius:50%;border:3px solid white;box-shadow:0 2px 12px rgba(0,0,0,0.4);background:white;padding:3px;object-fit:cover;position:relative;z-index:2;">
+                ${iconUrl ? `<img src="${iconUrl}" class="marker-image" style="width:42px;height:42px;border-radius:50%;border:3px solid white;box-shadow:0 2px 12px rgba(0,0,0,0.4);background:white;padding:3px;object-fit:cover;position:relative;z-index:2;">` : ''}
             </div>
         `,
         iconSize: [80, 80],
@@ -54,19 +54,6 @@ function creerMarqueurAvecInfos(projet) {
     });
     
     let marker = L.marker(projet.coordinates, { icon: customIcon });
-    
-    const isPriority = (projet.type === 'Water' || projet.type === 'Engagement In Action' || projet.type === 'Waste');
-    if (isPriority) {
-        setTimeout(() => {
-            const container = document.querySelector(`.marker-container[data-id="${markerId}"]`);
-            if (container) {
-                const pulseDiv = container.querySelector('.marker-pulse');
-                if (pulseDiv) pulseDiv.style.animation = 'pulse 1.5s infinite';
-                const glowDiv = container.querySelector('.marker-glow');
-                if (glowDiv) glowDiv.style.animation = 'glowPulse 2s infinite';
-            }
-        }, 100);
-    }
     
     let badgeHtml = '';
     if ((projet.type && projet.type.trim() !== "") || (projet.campus && projet.campus.trim() !== "")) {
@@ -100,11 +87,10 @@ function creerMarqueurAvecInfos(projet) {
             <div class="popup-image-top"><img src="${projet.image}" alt="${projet.nom || 'Image'}"></div>
             <div class="popup-content-text">${textContent}</div>
         </div>
-    `, { maxWidth: 450, minWidth: 350 });
+    `, { maxWidth: 300, minWidth: 200 });
     
     return marker;
 }
-
 // ==================== FONCTION POUR AMÉLIORER LA VISIBILITÉ ====================
 function ameliorerVisibiliteMarqueurs() {
     markersList.forEach(item => {
@@ -157,31 +143,25 @@ function initMap() {
         subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
     }).addTo(map);
     
+    // NE PAS ajouter les marqueurs ici - ils seront ajoutés quand on clique sur un campus
+    
+    // Créer les marqueurs mais ne pas les ajouter à la carte
     projets.forEach(proj => {
-        if(proj.coordinates && proj.coordinates.length === 2 && proj.coordinates[0] !== 32 && proj.coordinates[1] !== -7) {
-            if(proj.coordinates[0] > 30 && proj.coordinates[0] < 35) {
-                let marker = creerMarqueurAvecInfos(proj);
-                marker.addTo(map);
-                markersList.push({ marker: marker, projet: proj });
-            }
-        } else if(proj.coordinates && proj.coordinates.length === 2 && proj.coordinates[0] !== 32 && proj.coordinates[1] !== -7) {
+        if(proj.coordinates && proj.coordinates.length === 2) {
             let marker = creerMarqueurAvecInfos(proj);
-            marker.addTo(map);
+            // NE PAS FAIRE marker.addTo(map)
             markersList.push({ marker: marker, projet: proj });
         }
     });
     
-    console.log("Total markers created:", markersList.length);
+    console.log("Total markers created (not added to map):", markersList.length);
     
-    appliquerFiltres();
+    // Ne pas appeler appliquerFiltres() ici car currentCampus = 'all' afficherait tout
+    // On garde currentCampus = 'all' mais on n'affiche rien
     afficherFiltresTypes();
     afficherListeSousTypes();
     afficherTrajetsSection();
     mettreAJourStats();
-    
-    setTimeout(() => {
-        ameliorerVisibiliteMarqueurs();
-    }, 500);
     
     // Campus controls avec les 6 boutons
     let campusDiv = document.getElementById('campusControls');
@@ -205,7 +185,12 @@ function initMap() {
     document.getElementById('resetFilters')?.addEventListener('click', () => {
         currentTypeFilter = 'all';
         currentCampus = 'all';
-        appliquerFiltres();
+        // Ne pas afficher tous les marqueurs, juste cacher tous
+        markersList.forEach(item => {
+            if (map.hasLayer(item.marker)) {
+                map.removeLayer(item.marker);
+            }
+        });
         afficherFiltresTypes();
         afficherListeSousTypes();
         effacerTousLesTrajets();
@@ -214,7 +199,6 @@ function initMap() {
         mettreAJourStats();
     });
 }
-
 // ==================== FILTERS ====================
 function appliquerFiltres() {
     markersList.forEach(item => {
@@ -530,11 +514,6 @@ function recentrerRabat() {
     filtrerParCampus('Rabat');
 }
 
-function afficherTousCampus() {
-    map.setView([32.9, -7.0], 8);
-    filtrerParCampus('all');
-}
-
 function recentrerGEP() {
     let gepProject = projets.find(p => p.campus === 'GEP' && p.coordinates);
     if(gepProject && gepProject.coordinates) {
@@ -592,7 +571,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.recentrerBenGuerir = recentrerBenGuerir;
 window.recentrerRabat = recentrerRabat;
-window.afficherTousCampus = afficherTousCampus;
 window.toggleSidebar = toggleSidebar;
 window.afficherTousLesMarqueurs = afficherTousLesMarqueurs;
 window.recentrerGEP = recentrerGEP;
