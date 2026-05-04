@@ -535,8 +535,8 @@ body {
 @media (max-width: 800px) {
     .marker-glow,
     .marker-pulse {
-        width: 55px;
-        height: 55px;
+        width: 60px;
+        height: 60px;
     }
 
     .marker-image {

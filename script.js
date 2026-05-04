@@ -43,7 +43,7 @@ function creerMarqueurAvecInfos(projet) {
         className: 'custom-marker',
         html: `
             <div class="marker-container" data-id="${markerId}">
-                <div class="marker-glow" style="background: radial-gradient(circle, ${glowColor} 0%, ${glowColor.replace('0.7', '0.4')} 40%, rgba(255,255,255,0) 55%);"></div>
+                <div class="marker-glow" style="background: radial-gradient(circle, ${glowColor} 0%, ${glowColor.replace('0.7', '0.4')} 40%, rgba(255,255,255,0) 60%);"></div>
                 <div class="marker-pulse" style="background: radial-gradient(circle, ${glowColor.replace('0.7', '0.4')} 0%, rgba(255,255,0,0) 100%);"></div>
                 ${iconUrl ? `<img src="${iconUrl}" class="marker-image" style="width:42px;height:42px;border-radius:50%;border:3px solid white;box-shadow:0 2px 12px rgba(0,0,0,0.4);background:white;padding:3px;object-fit:cover;position:relative;z-index:2;">` : ''}
             </div>
