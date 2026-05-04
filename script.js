@@ -517,7 +517,7 @@ function recentrerRabat() {
 function recentrerGEP() {
     let gepProject = projets.find(p => p.campus === 'GEP' && p.coordinates);
     if(gepProject && gepProject.coordinates) {
-        map.setView(gepProject.coordinates, 16);
+        map.setView(gepProject.coordinates, 17);
     } else {
         map.setView([32.221600083, -7.92746093660], 17);
     }
@@ -527,7 +527,7 @@ function recentrerGEP() {
 function recentrerAITTC() {
     let aittcProject = projets.find(p => p.campus === 'AITTC' && p.coordinates);
     if(aittcProject && aittcProject.coordinates) {
-        map.setView(aittcProject.coordinates, 16);
+        map.setView(aittcProject.coordinates, 17);
     } else {
         map.setView([32.2191598586631, -7.89091311143900], 18);
     }
@@ -537,7 +537,7 @@ function recentrerAITTC() {
 function recentrerASARI() {
     let asariProject = projets.find(p => p.campus === 'ASARI Laayoune' && p.coordinates);
     if(asariProject && asariProject.coordinates) {
-        map.setView(asariProject.coordinates, 13);
+        map.setView(asariProject.coordinates, 18);  // ← Ici niveau de zoom 13
     } else {
         map.setView([27.178419194697753, -13.383511877580803], 18);
     }

@@ -2193,18 +2193,6 @@ var projets = [
         campus: "GEP"
     },
         {
-        id: "BG-102",
-        nom: "SOLAR TREE",
-        coordinates: [32.22053775160351, -7.928539401681583],
-        description: "The UM6P Solar Tree is a renewable energy solution that combines design, comfort, and environmental responsibility. Inspired by the shape of a tree, this structure is solar-powered and offers a pleasant shaded area, while also providing charging points for devices via USB ports and 220V outlets. It also incorporates modern public lighting and offers an inclusive space accessible to people with reduced mobility.",
-        Informations_complémentaires: "• Daily production: 2,200 Wh/day<br>• Total power: 600 Wp<br>• 10 panels<br>• 10 LED lamps and 10 spots<br>• Autonomy: 16 hours continuous operation",
-        type: "Energy",
-        sousType: "Solar Tree",
-        image: "img/tree_solaire/treesalaire.png",
-        icone: "img/tree_solaire/TS.jpg",
-        campus: "GEP"
-    },
-        {
         id: "BG-182",
         nom: "Electric Vehicle Charging Station",
         coordinates: [32.22020240406086, -7.927585223924778],
@@ -2370,8 +2358,8 @@ var trajetsGolfette = [
     { id: "TRAJET-03", nom: "SHBM", campus: "Ben Guerir", couleur: "#FF00FF", arrets: ["GOLF-01", "GOLF-07", "GOLF-08", "GOLF-10", "GOLF-11", "GOLF-12", "GOLF-13", "GOLF-14"] },
     
     // Rabat
-    { id: "TRAJET-04", nom: "RABAT", campus: "Rabat", couleur: "#FF5E00", arrets: ["GOL-1", "GOL-2", "GOL-4", "GOL-5", "GOL-6", "GOL-7", "GOL-8", "GOL-9", "GOL-10", "GOL-11", "GOL-12", "GOL-13", "GOL-14", "GOL-15"] },
-    { id: "TRAJET-05", nom: "RABAT2", campus: "Rabat", couleur: "#fbff10", arrets: ["GOL-16", "GOL-17", "GOL-18", "GOL-19", "GOL-20", "GOL-21", "GOL-22", "GOL-23", "GOL-16"] },
+    { id: "TRAJET-04", nom: "RABAT 1", campus: "Rabat", couleur: "#FF5E00", arrets: ["GOL-1", "GOL-2", "GOL-4", "GOL-5", "GOL-6", "GOL-7", "GOL-8", "GOL-9", "GOL-10", "GOL-11", "GOL-12", "GOL-13", "GOL-14", "GOL-15"] },
+    { id: "TRAJET-05", nom: "RABAT 2", campus: "Rabat", couleur: "#fbff10", arrets: ["GOL-16", "GOL-17", "GOL-18", "GOL-19", "GOL-20", "GOL-21", "GOL-22", "GOL-23", "GOL-16"] },
     
 ];
 
@@ -2381,5 +2369,5 @@ var trajetsBus = [
     { id: "BUS-T1", nom: "CAMPUS 2", campus: "Ben Guerir", couleur: "#ff0000", arrets: ["BUS-01", "BUS-02", "BUS-03", "BUS-04", "BUS-05", "BUS-06", "BUS-07", "BUS-08", "BUS-09", "BUS-10", "BUS-11", "BUS-12", "BUS-13", "BUS-14", "BUS-15", "BUS-16", "BUS-17", "BUS-18", "BUS-19", "BUS-20", "BUS-21"] },
     
     // Rabat
-    { id: "BUS-T2", nom: "RABAT2", campus: "Rabat", couleur: "#0800ff", arrets: ["BUS-RB-01", "BUS-RB-02", "BUS-RB-03"] },
+    { id: "BUS-T2", nom: "RABAT 1", campus: "Rabat", couleur: "#0800ff", arrets: ["BUS-RB-01", "BUS-RB-02", "BUS-RB-03"] },
 ];
