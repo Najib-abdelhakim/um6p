@@ -1945,7 +1945,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Avifaune",
         image: "img/avifaune/avifaune.png",
-        icone: "img/avifaune/AF_b.jpg",
+        icone: "img/avifaune/AF_g.jpg",
         campus: "Rabat"
     },        {
         id: "BG-003",
@@ -1955,7 +1955,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Avifaune",
         image: "img/avifaune/avifaune.png",
-        icone: "img/avifaune/AF_b.jpg",
+        icone: "img/avifaune/AF_r.jpg",
         campus: "Rabat"
     },        {
         id: "BG-003",
@@ -1965,7 +1965,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Avifaune",
         image: "img/avifaune/avifaune.png",
-        icone: "img/avifaune/AF_b.jpg",
+        icone: "img/avifaune/AF_y.jpg",
         campus: "Rabat"
     },
             {
@@ -2137,7 +2137,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Avifaune",
         image: "img/avifaune/avifaune.png",
-        icone: "img/avifaune/AF_b.jpg",
+        icone: "img/avifaune/AF_g.jpg",
         campus: "GEP"
     },
         {
@@ -2148,7 +2148,7 @@ var projets = [
         type: "Biodiversity",
         sousType: "Avifaune",
         image: "img/avifaune/avifaune.png",
-        icone: "img/avifaune/AF_b.jpg",
+        icone: "img/avifaune/AF_r.jpg",
         campus: "GEP"
     },
         {
@@ -2225,6 +2225,52 @@ var projets = [
         icone: "img/vehicles charge station/VCS.jpg",
         campus: "GEP"
     },
+    // AITTC
+        {
+        id: "BG-075",
+        nom: "Coxibio",
+        coordinates: [32.219383, -7.938441],
+        description: "A biological control program that replaces chemical pesticides with biological control solutions in UM6P's green spaces.",
+        type: "Biodiversity",
+        sousType: "Coxibio",
+        image: "img/coxibio/coxibio.png",
+        icone: "img/coxibio/CB.jpg",
+        campus: "AITTC"
+    },
+        {
+        id: "BG-199",
+        nom: "Plant it for the world",
+        coordinates: [32.217780809217516, -7.936651597531083],
+        description: "",
+        type: "Engagement In Action",
+        sousType: "Plant it for the world",
+        image: "img/DRESS FOR SUCCESS/1.jpg",
+        icone: "img/DRESS FOR SUCCESS/icon.jpg",
+        campus: "AITTC"
+    },
+            {
+        id: "BG-075",
+        nom: "PÉPINIÈRE",
+        coordinates: [32.219383, -7.938441],
+        description: "",
+        type: "Biodiversity",
+        sousType: "PÉPINIÈRE",
+        image: "img/coxibio/coxibio.png",
+        icone: "img/coxibio/CB.jpg",
+        campus: "AITTC"
+    },
+            {
+        id: "BG-075",
+        nom: "Poulet",
+        coordinates: [32.219383, -7.938441],
+        description: "",
+        type: "Biodiversity",
+        sousType: "Poulet",
+        image: "img/coxibio/coxibio.png",
+        icone: "img/coxibio/CB.jpg",
+        campus: "AITTC"
+    },
+    
 ];
 
 //           GOLF CART STOPS
@@ -2311,7 +2357,7 @@ var trajetsGolfette = [
 // ========== TRAJETS BUS ==========
 var trajetsBus = [
     // Ben Guerir
-    { id: "BUS-T1", nom: "CAMPUS2", campus: "Ben Guerir", couleur: "#ff0000", arrets: ["BUS-01", "BUS-02", "BUS-03", "BUS-04", "BUS-05", "BUS-06", "BUS-07", "BUS-08", "BUS-09", "BUS-10", "BUS-11", "BUS-12", "BUS-13", "BUS-14", "BUS-15", "BUS-16", "BUS-17", "BUS-18", "BUS-19", "BUS-20", "BUS-21"] },
+    { id: "BUS-T1", nom: "CAMPUS 2", campus: "Ben Guerir", couleur: "#ff0000", arrets: ["BUS-01", "BUS-02", "BUS-03", "BUS-04", "BUS-05", "BUS-06", "BUS-07", "BUS-08", "BUS-09", "BUS-10", "BUS-11", "BUS-12", "BUS-13", "BUS-14", "BUS-15", "BUS-16", "BUS-17", "BUS-18", "BUS-19", "BUS-20", "BUS-21"] },
     
     // Rabat
     { id: "BUS-T2", nom: "RABAT2", campus: "Rabat", couleur: "#0800ff", arrets: ["BUS-RB-01", "BUS-RB-02", "BUS-RB-03"] },

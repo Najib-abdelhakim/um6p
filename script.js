@@ -11,7 +11,7 @@ const glowColors = {
     'Water': 'rgb(0, 149, 255)',
     'Engagement In Action': 'rgb(255, 102, 0)',
     'Waste': 'rgb(21, 0, 255)',
-    'Biodiversity': 'rgba(0, 255, 0, 0.7)',
+    'Biodiversity': 'rgb(0, 255, 0)',
     'Energy': 'rgb(255, 217, 0)',
     'Ecomobility': 'rgb(0, 251, 255)',
     'Buildings': 'rgb(132, 0, 255)',
@@ -43,7 +43,7 @@ function creerMarqueurAvecInfos(projet) {
         className: 'custom-marker',
         html: `
             <div class="marker-container" data-id="${markerId}">
-                <div class="marker-glow" style="background: radial-gradient(circle, ${glowColor} 0%, ${glowColor.replace('0.7', '0.3')} 40%, rgba(255,255,255,0) 80%);"></div>
+                <div class="marker-glow" style="background: radial-gradient(circle, ${glowColor} 0%, ${glowColor.replace('0.7', '0.3')} 40%, rgba(255,255,255,0) 55%);"></div>
                 <div class="marker-pulse" style="background: radial-gradient(circle, ${glowColor.replace('0.7', '0.4')} 0%, rgba(255,255,0,0) 100%);"></div>
                 <img src="${iconUrl}" class="marker-image" style="width:42px;height:42px;border-radius:50%;border:3px solid white;box-shadow:0 2px 12px rgba(0,0,0,0.4);background:white;padding:3px;object-fit:cover;position:relative;z-index:2;">
             </div>
@@ -382,7 +382,6 @@ function afficherListeSousTypes() {
     }
 }
 
-// ==================== ROUTES SECTION ====================
 // ==================== ROUTES SECTION ====================
 function afficherTrajetsSection() {
     let container = document.getElementById('trajetsSection');

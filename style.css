@@ -374,8 +374,8 @@ body {
 
 .marker-glow {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -388,8 +388,8 @@ body {
 
 .marker-pulse {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     top: 50%;
     left: 50%;
