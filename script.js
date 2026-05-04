@@ -171,14 +171,14 @@ function initMap() {
             <button class="campus-btn" id="btnRabat" style="background: linear-gradient(135deg, #808080, #696969); color: white;">Rabat</button>
             <button class="campus-btn" id="btnGEP" style="background: linear-gradient(135deg, #a4c840, #61873d); color: white;">GEP</button>
             <button class="campus-btn" id="btnAITTC" style="background: linear-gradient(135deg, #17a2b8, #00bcd4); color: white;">AITTC</button>
-            <button class="campus-btn" id="btnACARI" style="background: linear-gradient(135deg, #bc9d75, #e6cfaf); color: #4a3728;">ACARI Laayoune</button>
+            <button class="campus-btn" id="btnASARI" style="background: linear-gradient(135deg, #bc9d75, #e6cfaf); color: #4a3728;">ASARI Laayoune</button>
         `;
         
         document.getElementById('btnBG').onclick = () => recentrerBenGuerir();
         document.getElementById('btnRabat').onclick = () => recentrerRabat();
         document.getElementById('btnGEP').onclick = () => recentrerGEP();
         document.getElementById('btnAITTC').onclick = () => recentrerAITTC();
-        document.getElementById('btnACARI').onclick = () => recentrerACARI();
+        document.getElementById('btnASARI').onclick = () => recentrerASARI();
     }
     
     // Reset button
@@ -271,13 +271,13 @@ function afficherFiltresTypes() {
     let html = '';
     
     let isAllActive = (currentTypeFilter === 'all');
-    html += `<button class="type-filter-btn ${isAllActive ? 'active' : ''}" data-type="all" style="background: ${isAllActive ? '#2c7a4d' : '#e8f3ec'}; color: ${isAllActive ? 'white' : '#1e5a3a'}; border: 1px solid #c5e0cf; transition: all 0.3s ease;">All</button>`;
+    html += `<button class="type-filter-btn ${isAllActive ? 'active' : ''}" data-type="all" style="background: ${isAllActive ? '#01568b' : '#e8f0f5'}; color: ${isAllActive ? 'white' : '#01568b'}; border: 1px solid #c5e0cf; transition: all 0.3s ease;">All</button>`;
     
     typesArray.forEach(type => {
         let isActive = (currentTypeFilter === type);
-        let activeColor = themeActiveColors[type] || '#2c7a4d';
+        let activeColor = themeActiveColors[type] || '#01568b';
         
-        html += `<button class="type-filter-btn ${isActive ? 'active' : ''}" data-type="${type}" style="background: ${isActive ? activeColor : '#e8f3ec'}; color: ${isActive ? 'white' : '#1e5a3a'}; border: 1px solid #c5e0cf; transition: all 0.3s ease;">${type}</button>`;
+        html += `<button class="type-filter-btn ${isActive ? 'active' : ''}" data-type="${type}" style="background: ${isActive ? activeColor : '#e8f0f5'}; color: ${isActive ? 'white' : '#01568b'}; border: 1px solid #c5e0cf; transition: all 0.3s ease;">${type}</button>`;
     });
     
     container.innerHTML = html;
@@ -292,17 +292,17 @@ function afficherFiltresTypes() {
                 if (selectedType === type) {
                     b.classList.add('active');
                     if (type === 'all') {
-                        b.style.background = '#2c7a4d';
+                        b.style.background = '#01568b';
                         b.style.color = 'white';
                     } else {
-                        let activeColor = themeActiveColors[type] || '#2c7a4d';
+                        let activeColor = themeActiveColors[type] || '#01568b';
                         b.style.background = activeColor;
                         b.style.color = 'white';
                     }
                 } else {
                     b.classList.remove('active');
-                    b.style.background = '#e8f3ec';
-                    b.style.color = '#1e5a3a';
+                    b.style.background = '#e8f0f5';
+                    b.style.color = '#01568b';
                 }
             });
             
@@ -397,7 +397,7 @@ function afficherTrajetsSection() {
         let card = document.createElement('div');
         card.className = 'type-card';
         card.innerHTML = `
-            <div class="type-header" style="background:#2c7a4d">
+            <div class="type-header" style="background:#01568b">
                 <span class="type-nom">GOLF CART Pathway</span>
                 <span class="toggle-icon">▼</span>
             </div>
@@ -426,7 +426,7 @@ function afficherTrajetsSection() {
         let card = document.createElement('div');
         card.className = 'type-card';
         card.innerHTML = `
-            <div class="type-header" style="background:#2c7a4d">
+            <div class="type-header" style="background:#01568b">
                 <span class="type-nom">BUS Pathway</span>
                 <span class="toggle-icon">▼</span>
             </div>
@@ -534,14 +534,14 @@ function recentrerAITTC() {
     filtrerParCampus('AITTC');
 }
 
-function recentrerACARI() {
-    let acariProject = projets.find(p => p.campus === 'ACARI Laayoune' && p.coordinates);
-    if(acariProject && acariProject.coordinates) {
-        map.setView(acariProject.coordinates, 13);
+function recentrerASARI() {
+    let asariProject = projets.find(p => p.campus === 'ASARI Laayoune' && p.coordinates);
+    if(asariProject && asariProject.coordinates) {
+        map.setView(asariProject.coordinates, 13);
     } else {
-        map.setView([27.17847371770062, -13.383737074369604], 18);
+        map.setView([27.178419194697753, -13.383511877580803], 18);
     }
-    filtrerParCampus('ACARI Laayoune');
+    filtrerParCampus('ASARI Laayoune');
 }
 
 function toggleSidebar() {
@@ -575,4 +575,4 @@ window.toggleSidebar = toggleSidebar;
 window.afficherTousLesMarqueurs = afficherTousLesMarqueurs;
 window.recentrerGEP = recentrerGEP;
 window.recentrerAITTC = recentrerAITTC;
-window.recentrerACARI = recentrerACARI;
+window.recentrerASARI = recentrerASARI;

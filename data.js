@@ -2229,7 +2229,7 @@ var projets = [
         {
         id: "BG-075",
         nom: "Coxibio",
-        coordinates: [32.219383, -7.938441],
+        coordinates: [32.219809784271696, -7.891963180802585],
         description: "A biological control program that replaces chemical pesticides with biological control solutions in UM6P's green spaces.",
         type: "Biodiversity",
         sousType: "Coxibio",
@@ -2240,37 +2240,58 @@ var projets = [
         {
         id: "BG-199",
         nom: "Plant it for the world",
-        coordinates: [32.217780809217516, -7.936651597531083],
+        coordinates: [32.22031576568045, -7.892655599263404],
         description: "",
         type: "Engagement In Action",
         sousType: "Plant it for the world",
-        image: "img/DRESS FOR SUCCESS/1.jpg",
-        icone: "img/DRESS FOR SUCCESS/icon.jpg",
+        image: "img/Plant it for the world/1.jpg",
+        icone: "img/Plant it for the world/icon.jpg",
         campus: "AITTC"
     },
             {
         id: "BG-075",
         nom: "PÉPINIÈRE",
-        coordinates: [32.219383, -7.938441],
+        coordinates: [32.21893499569597, -7.888711596620421],
         description: "",
         type: "Biodiversity",
         sousType: "PÉPINIÈRE",
-        image: "img/coxibio/coxibio.png",
-        icone: "img/coxibio/CB.jpg",
+        image: "img/PÉPINIÈRE/1.jpg",
+        icone: "img/PÉPINIÈRE/CB.jpg",
         campus: "AITTC"
     },
             {
         id: "BG-075",
-        nom: "Poulet",
-        coordinates: [32.219383, -7.938441],
+        nom: "poulet",
+        coordinates: [32.21898073182723, -7.892450784694281],
         description: "",
         type: "Biodiversity",
         sousType: "Poulet",
-        image: "img/coxibio/coxibio.png",
-        icone: "img/coxibio/CB.jpg",
+        image: "img/poulet/1.png",
+        icone: "img/poulet/icon.jpg",
         campus: "AITTC"
     },
-    
+    {
+        id: "BG-075",
+        nom: "green grounds",
+        coordinates: [27.178225857264007, -13.38374817077779],
+        description: "",
+        type: "Biodiversity",
+        sousType: "green grounds",
+        image: "img/green grounds/1.png",
+        icone: "img/green grounds/icon.jpg",
+        campus: "ASARI Laayoune"
+    },
+        {
+        id: "BG-075",
+        nom: "Composteur",
+        coordinates: [27.177981975071752, -13.383479889640302],
+        description: "",
+        type: "Waste",
+        sousType: "Composteur",
+        image: "img/Composteur/1.png",
+        icone: "img/Composteur/icon.jpg",
+        campus: "ASARI Laayoune"
+    },
 ];
 
 //           GOLF CART STOPS
