@@ -113,17 +113,7 @@ function ameliorerVisibiliteMarqueurs() {
     });
 }
 
-// ==================== FONCTION POUR AFFICHER TOUS LES MARQUEURS ====================
-function afficherTousLesMarqueurs() {
-    markersList.forEach(item => {
-        if (!map.hasLayer(item.marker)) {
-            item.marker.addTo(map);
-        }
-    });
-    currentTypeFilter = 'all';
-    currentCampus = 'all';
-    mettreAJourStats();
-}
+
 
 // ==================== INITIALISATION ====================
 function initMap() {
@@ -342,13 +332,16 @@ function afficherListeSousTypes() {
         item.className = 'sous-type-item';
         item.setAttribute('data-soustype', nom);
         let projectText = data.count > 1 ? 'projects' : 'project';
+        
+        // Pas d'image par défaut - seulement si une icône existe
         item.innerHTML = `
-            <img src="${data.icone || 'https://cdn-icons-png.flaticon.com/512/2991/2991231.png'}" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2991/2991231.png'">
+            ${data.icone ? `<img src="${data.icone}" style="width:38px;height:38px;border-radius:50%;object-fit:cover;margin-right:12px;">` : ''}
             <div class="sous-type-info">
                 <div class="sous-type-nom">${nom}</div>
                 <div class="sous-type-count">${data.count} ${projectText}</div>
             </div>
         `;
+        
         item.addEventListener('click', () => {
             markersList.forEach(m => { if(map.hasLayer(m.marker)) map.removeLayer(m.marker); });
             markersList.forEach(m => {
@@ -572,7 +565,6 @@ document.addEventListener('DOMContentLoaded', () => {
 window.recentrerBenGuerir = recentrerBenGuerir;
 window.recentrerRabat = recentrerRabat;
 window.toggleSidebar = toggleSidebar;
-window.afficherTousLesMarqueurs = afficherTousLesMarqueurs;
 window.recentrerGEP = recentrerGEP;
 window.recentrerAITTC = recentrerAITTC;
 window.recentrerASARI = recentrerASARI;

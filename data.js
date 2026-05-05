@@ -2249,13 +2249,13 @@ var projets = [
     },
             {
         id: "BG-075",
-        nom: "poulet",
+        nom: "poulailler",
         coordinates: [32.21898073182723, -7.892450784694281],
         description: "",
         type: "Biodiversity",
-        sousType: "Poulet",
-        image: "img/poulet/1.png",
-        icone: "img/poulet/icon.jpg",
+        sousType: "poulailler",
+        image: "img/poulailler/1.png",
+        icone: "img/poulailler/icon.jpg",
         campus: "AITTC"
     },
     {
